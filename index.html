@@ -227,26 +227,96 @@
 							</header>
 							<p>
                                 Now that we have a structure for our database, it would be nice to be able to interact with it.
-                        For instance, it would be nice to add new instances of galaxies or morphologies.
-                        SQL is the language of (most) databases. <br />
+                                For instance, it would be nice to add new instances of galaxies or morphologies.
+                                SQL is the language of (most) databases. <br />
 
-                        The SQL language consists of a only few <strong>key words</strong>. In this tutorial, we will only look at <strong>Query</strong> keywords:
+                                The SQL language consists of a only few <strong>key words</strong>. In this tutorial, we will
+                                only look at <strong>Query</strong> keywords shown on the right. <br />
+
+                                More information about these keywords and how to use them can be found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.<br />
+
+                                An practical example is provided in the next section.
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-                            <ul>
-                                <li><a href="#" class="button special">SELECT</a><br /></li>
-                                <li><a href="#" class="button special">FROM</a><br /></li>
-                                <li><a href="#" class="button special">JOIN</a><br /></li>
-                                <li><a href="#" class="button special">WHERE</a><br /></li>
-                                <li><a href="#" class="button special">GROUP BY</a><br /></li>
-                                <li><a href="#" class="button special">HAVING</a><br /></li>
-                                <li><a href="#" class="button special">ORDER BY</a><br /></li>
-							</ul>
-							<span class="image fit">
 
+                                <a href="#" class="button special">SELECT</a> <a href="#" class="button special">AS</a> <a href="#" class="button special">*</a> <a href="#" class="button special">COUNT</a><br /><br />
+                                <a href="#" class="button special">FROM</a> <a href="#" class="button special">JOIN</a> <a href="#" class="button special">ON</a><br /><br />
+                                <a href="#" class="button special">WHERE</a> <a href="#" class="button special">GROUP BY</a> <a href="#" class="button special">HAVING</a><br /><br />
+                                <a href="#" class="button special">ORDER BY</a><br /><br />
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Querying the database with <strong>SQL</strong><br /></h2>
+							</header>
+                            <p>
+                                Here is a possible SQL query example applied to our previous example:<br />
+                                <code>
+                                    SELECT MORPH.morphName AS Name,<br />
+                                       COUNT(*) AS Galaxies<br />
+                                    FROM  MORPH<br />
+                                    JOIN  GAL<br />
+                                    ON  MORPH.morphNo = GAL.morphNo<br />
+                                    GROUP BY MORPH.morphName;
+                                </code>
+                            </p>
+                            <p>
+                               This query will return all morphological names from the table MORPH,
+                                and cound the number of individual galaxies that have this particular
+                                morphology as recorded in table GAL (Figure 7).
+
+                                Since there was only two records in Figure 5, the count of each morphology is 1.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/fig7.png" alt="" />
+                                Figure 7. Query result.
                             </span>
 
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="seven" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+                            <span class="image fit">
+                                <img src="images/fig8.png" alt="" />
+                                Figure 8. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
+                            </span>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+						        <h2>Get crackin'</h2>
+                            </header>
+                            <p>
+                                There are many digital database software out there. Some are easy to use,
+                                some are slightly more complicated. Some are free, some are proprietary.
+                                But they all have more or less the same basis, which you now know!
+                            </p>
+
+                            <p>
+                                Most of them can be run from the terminal, but some also provide a <strong>Graphical User Interface (GUI, Figure 8)</strong>.
+                                A GUI can be extremely useful, especially when you start dealing with relational databases.
+                            </p>
+
+                            <p>
+                                You can have a look at <a href="https://www.sqlite.org"><strong>SQLite</strong></a> and
+                                <a href="https://www.mysql.com"><strong>MySQL</strong></a>, which are both free and popular examples.
+                                Note that MySQL requires more memory space and will install a database server on your machine.
+                            </p>
+                            <p>Here are some tutorials on <a href="http://www.mysqltutorial.org">MySQL</a> and
+                                <a href="https://www.sqlite.org/quickstart.html">SQLite</a>.</p>
 						</div>
 					</div>
 				</div>
@@ -575,14 +645,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon alt fa-google"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/macrocosme" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:dvohl@astro.swin.edu.au" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Dany Vohl, 2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</section>
 
