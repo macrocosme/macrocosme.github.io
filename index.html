@@ -258,16 +258,17 @@
 							</header>
                             <p>
                                 Here is a possible SQL query example applied to our previous example:<br />
-                                <strong>
-                                    <code>
-                                        SELECT MORPH.morphName AS Name,<br />
-                                           COUNT(*) AS Galaxies<br />
-                                        FROM  MORPH<br />
-                                        JOIN  GAL<br />
-                                        ON  MORPH.morphNo = GAL.morphNo<br />
-                                        GROUP BY MORPH.morphName;
-                                    </code>
-                                </strong>
+
+                                <code>
+                                    <strong>
+                                    SELECT MORPH.morphName AS Name,<br />
+                                       COUNT(*) AS Galaxies<br />
+                                    FROM  MORPH<br />
+                                    JOIN  GAL<br />
+                                    ON  MORPH.morphNo = GAL.morphNo<br />
+                                    GROUP BY MORPH.morphName;
+                                    </strong>
+                                </code>
                             </p>
                             <p>
                                This query will return all morphological names from the table MORPH,
