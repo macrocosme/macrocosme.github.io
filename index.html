@@ -195,43 +195,59 @@
 					</header>
 					<p>
                         To avoid having inconsistencies in the database, where no undesired anomalies
-                        would occur during a modification, relational databases are normalised. As a first rule of thumb, you can
-                        keep <a href="http://www.dummies.com/how-to/content/sql-for-dummies-cheat-sheet.html">the following</a> in mind when designing your first database:<br/>
+                        would occur during a modification, relational databases are normalised. As a rule of thumb, you can
+                        keep the following in mind when designing your first database (<a href="http://www.dummies.com/how-to/content/sql-for-dummies-cheat-sheet.html">taken from here</a>):<br/>
                     </p>
                     <p>
-                        <a href="#" class="button special">Table must be two-dimensional, with rows and columns.</a><br />
+                        <a href="#" class="button special">Table must be two-dimensional, with rows and columns.</a><br /><br />
 
-                        <a href="#" class="button special">Each row contains data that pertains to one thing or one portion of a thing.</a><br />
+                        <a href="#" class="button special">Each row contains data related to to one thing or one portion of a thing.</a><br /><br />
 
-                        <a href="#" class="button special">Each column contains data for a single attribute of the thing being described.</a><br />
+                        <a href="#" class="button special">Each column contains data for a single attribute of the thing being described.</a><br /><br />
 
-                        <a href="#" class="button special">Each cell (intersection of row and column) of the table must be single-valued.</a><br />
+                        <a href="#" class="button special">Each cell (intersection of row and column) of the table must be single-valued.</a><br /><br />
 
-                        <a href="#" class="button special">All entries in a column must be of the same kind.</a><br />
+                        <a href="#" class="button special">All entries in a column must be of the same kind.</a><br /><br />
 
-                        <a href="#" class="button special">Each column must have a unique name.</a><br />
+                        <a href="#" class="button special">Each column must have a unique name.</a><br /><br />
 
-                        <a href="#" class="button special">No two rows may be identical.</a><br />
+                        <a href="#" class="button special">No two rows may be identical.</a><br /><br />
 
                         <a href="#" class="button special">The order of the columns and of the rows does not matter.</a>
                     </p>
 				</div>
 			</section>
 
-            <section id="five" class="main style1 special">
+            <section id="five" class="main style1">
 				<div class="container">
-					<header class="major">
-						<h2>Managing and Querying the database with <strong>SQL</strong></h2>
-					</header>
-					<p>
-                        Now that we have a structure for our database, it would be nice to be able to interact with it.
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Querying the database with <strong>SQL</strong><br /></h2>
+							</header>
+							<p>
+                                Now that we have a structure for our database, it would be nice to be able to interact with it.
                         For instance, it would be nice to add new instances of galaxies or morphologies.
-                        SQL is the language of (most) databases. It consists of
-                    </p>
-					<ul class="actions uniform">
-						<li><a href="#" class="button special">Sign Up</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
-					</ul>
+                        SQL is the language of (most) databases. <br />
+
+                        The SQL language consists of a only few <strong>key words</strong>. In this tutorial, we will only look at <strong>Query</strong> keywords:
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <ul class="major-icons">
+                                <li><a href="#" class="button special">SELECT</a><br /></li>
+                                <li><a href="#" class="button special">FROM</a><br /></li>
+                                <li><a href="#" class="button special">WHERE</a><br /></li>
+                                <li><a href="#" class="button special">GROUP BY</a><br /></li>
+                                <li><a href="#" class="button special">HAVING</a><br /></li>
+                                <li><a href="#" class="button special">ORDER BY</a><br /></li>
+							</ul>
+							<span class="image fit">
+
+                            </span>
+
+						</div>
+					</div>
 				</div>
 			</section>
 
