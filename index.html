@@ -19,7 +19,7 @@
 		<!-- Header -->
 			<section id="header">
 				<div class="inner">
-					<span class="icon major fa-cloud"></span>
+					<span class="icon major fa-database"></span>
 					<h1>Good afternoon, my name is <strong>Dany</strong> and <br />
                         this is a short introductory  workshop about <br />
                         <strong>Relational Databases</strong> and <strong>SQL</strong>,<br />
@@ -47,7 +47,11 @@
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><img src="images/640px-Relational_database_terms.svg.png" alt="source:wikipedia" /></span>
+							<span class="image fit">
+                                <img src="images/640px-Relational_database_terms.svg.png" alt="" />
+                                Figure 1. A simple relational database (source: wikipedia).
+                            </span>
+
 						</div>
 					</div>
 				</div>
@@ -58,30 +62,57 @@
 				<div class="container">
 					<div class="row 150%">
 						<div class="6u 12u$(medium)">
-							<ul class="major-icons">
-								<li><span class="icon style1 major fa-code"></span></li>
-								<li><span class="icon style2 major fa-bolt"></span></li>
-								<li><span class="icon style3 major fa-camera-retro"></span></li>
-								<li><span class="icon style4 major fa-cog"></span></li>
-								<li><span class="icon style5 major fa-desktop"></span></li>
-								<li><span class="icon style6 major fa-calendar"></span></li>
-							</ul>
+							<!--ul class="major-icons">
+								<li><span class="icon style1 major fa-database"></span></li>
+								<li></li>
+								<li><span class="icon style2 major fa-table"></span></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul-->
+                            <span class="image fit">
+                                <img src="images/pict--morphological-classification-scheme-for-galaxies-tuning-fork-style-diagram-of-the-hubble-sequence.png" alt="" />
+                                Figure 2. Morphological classification scheme for galaxies (source: conceptdraw.com).
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig3.png" alt="" />
+                                Figure 3. A first attempt.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig4.png" alt="" />
+                                Figure 4. The MORPH table.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig5.png" alt="" />
+                                Figure 5. The GAL table.
+                            </span>
 						</div>
 						<div class="6u$ 12u$(medium)">
 							<header class="major">
-								<h2>Lorem ipsum dolor adipiscing<br />
-								amet dolor consequat</h2>
+								<h2>Example<br />
+								</h2>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+							<p>
+                                Say you want to <strong>classify galaxies by morphology</strong> like in Figure 1.<br /><br />
+
+                                To do so, you could create a table like in Figure 3, listing all your galaxies and their
+                                respective morphology. You would then have a straight forward way to represent the information. <br /><br />
+
+                                The problem with this is that if you delete all entries (rows), you would not only delete the objects, but the morphologies as well. You would therefore have to start from scratch.<br /><br />
+
+                                Instead, we want to keep both of those <strong>entity type</strong> separate and create relations between them. <br /><br />
+
+                                Using the principles of relational databases, the Galaxy and Morphology data can be restructured into two separate tables (say MORPH and GAL), as shown in Figures 2 and 3.<br /><br />
+
+                                We now have created the relation between the tables, having the morphology data independent to the galaxy data, and associating each galaxy to a specific morphology.
+                            </p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 		<!-- Three -->
-			<section id="three" class="main style1 special">
+			<!--section id="three" class="main style1 special">
 				<div class="container">
 					<header class="major">
 						<h2>Adipiscing amet consequat</h2>
@@ -111,6 +142,34 @@
 							<ul class="actions">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
+						</div>
+					</div>
+				</div>
+			</section-->
+            <section id="three" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>A graphical representation<br /></h2>
+							</header>
+							<p>
+                                From Figures 4 and 5, we can imagine their relationship as depicted in Figure 5.<br />
+
+                                Here, each table is depicted in a structural form as it would be represented in a
+                                digital database. The first row is the name of the table, the first column is the
+                                <strong>field name</strong>, and the second column the <strong>field type</strong> shown in italic.<br />
+
+                                When the tables are implemented in the database, the information in the two tables
+                                is linked by using special columns called <strong>foreign keys</strong>. In our exemple, morphNo is our foreign key, and we represent the link with the straight line between the two tables and the key name.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/fig6.png" alt="" />
+                                Figure 6. Relation between MORPH and GAL.
+                            </span>
+
 						</div>
 					</div>
 				</div>
