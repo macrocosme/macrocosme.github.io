@@ -74,17 +74,28 @@
                                 <img src="images/pict--morphological-classification-scheme-for-galaxies-tuning-fork-style-diagram-of-the-hubble-sequence.png" alt="" />
                                 Figure 2. Morphological classification scheme for galaxies (source: conceptdraw.com).
                             </span>
+
+                            <span class="image fit">
+                                <img src="images/NGC2685.jpg" alt="" />
+                                Figure 3. The NGC 2685 galaxy : classified as S0 (source: apod.nasa.gov).
+                            </span>
+
+                            <span class="image fit">
+                                <img src="images/LMC.jpg" alt="" />
+                                Figure 4. The Large Magellanic Cloud : classified as an irregular galaxy (source: fromquarkstoquasars.com).
+                            </span>
+
                             <span class="image fit">
                                 <img src="images/fig3.png" alt="" />
-                                Figure 3. A first attempt.
+                                Figure 5. A first attempt.
                             </span>
                             <span class="image fit">
                                 <img src="images/fig4.png" alt="" />
-                                Figure 4. The MORPH table.
+                                Figure 6. The MORPH table.
                             </span>
                             <span class="image fit">
                                 <img src="images/fig5.png" alt="" />
-                                Figure 5. The GAL table.
+                                Figure 7. The GAL table.
                             </span>
 						</div>
 						<div class="6u$ 12u$(medium)">
@@ -95,16 +106,26 @@
 							<p>
                                 Say you want to <strong>classify galaxies by morphology</strong> like in Figure 2.<br /><br />
 
-                                To do so, you could create a table like in Figure 3, listing all your galaxies and their
+                                A galaxy, simplistically speaking, is a group of stars, like our Sun, tied together by gravity.
+                                For example, we live in a galaxy that we like to call <strong>the Milky Way</strong>.
+                                They can have different shapes (or morphology). Astronomers like to classify them by shape.
+                                Two of such examples are shown in Figures 4 and 5.
+                                <br /><br />
+
+                                So, to organise your data, you could create a table like in Figure 5, listing all your galaxies and their
                                 respective morphology. You would then have a straight forward way to represent the information. <br /><br />
 
-                                The problem with this is that if you delete all entries (rows), you would not only delete the objects, but the morphologies as well. You would therefore have to start from scratch.<br /><br />
+                                The problem with this is that if you delete all entries (rows), you would not only
+                                delete the objects, but the morphologies as well. You would therefore have to start from scratch.<br /><br />
 
-                                Instead, we want to keep both of those <strong>entity type</strong> separate and create relations between them. <br /><br />
+                                Instead, we want to keep both of those <strong>entity type</strong> separate and create
+                                relations between them. <br /><br />
 
-                                Using the principles of relational databases, the Galaxy and Morphology data can be restructured into two separate tables (say MORPH and GAL), as shown in Figures 2 and 3.<br /><br />
+                                Using the principles of relational databases, the Galaxy and Morphology data can be
+                                restructured into two separate tables (say MORPH and GAL), as shown in Figures 6 and 7.<br /><br />
 
-                                We now have created the relation between the tables, having the morphology data independent to the galaxy data, and associating each galaxy to a specific morphology.
+                                We now have created the relation between the tables, having the morphology
+                                data independent to the galaxy data, and associating each galaxy to a specific morphology.
                             </p>
 						</div>
 					</div>
@@ -154,20 +175,23 @@
 								<h2>Relation<br /></h2>
 							</header>
 							<p>
-                                From Figures 4 and 5, we can represent the relationship between MORPH and GAL such as depicted in Figure 5.<br />
+                                From Figures 6 and 7, we can represent the relationship between MORPH and GAL such as depicted in Figure 8.<br />
 
                                 Here, each table is shown in a structural form as it would be represented in a
                                 digital database. The first row is the entity (the table name), the first column comprises
-                                the different <strong>field names</strong>, and the second column the relative <strong>field types</strong> shown in italic.<br />
+                                the different <strong>field names</strong>, and the second column the relative
+                                <strong>field types</strong> shown in italic.<br />
 
                                 When the tables are implemented in the database, the information in the two tables
-                                is linked by using special columns called <strong>foreign keys</strong>. In our exemple, morphNo is our foreign key, and we represent the link with the straight line between the two tables and the key name.
+                                is linked by using special columns called <strong>foreign keys</strong>.
+                                In our exemple, morphNo is our foreign key, and we represent the link with
+                                the straight line between the two tables and the key name.
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit">
                                 <img src="images/fig6.png" alt="" />
-                                Figure 6. Relation between MORPH and GAL.
+                                Figure 8. Relation between MORPH and GAL.
                             </span>
 
 						</div>
@@ -233,7 +257,8 @@
                                 The SQL language consists of a only few <strong>key words</strong>. In this tutorial, we will
                                 only look at <strong>Query</strong> keywords shown on the right. <br />
 
-                                More information about these keywords and how to use them can be found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.<br />
+                                More information about these keywords and how to use them can be
+                                found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.<br />
 
                                 An practical example is provided in the next section.
                             </p>
@@ -273,7 +298,7 @@
                             <p>
                                This query will return all morphological names from the table MORPH,
                                 and cound the number of individual galaxies that have this particular
-                                morphology as recorded in table GAL (Figure 7).
+                                morphology as recorded in table GAL (Figure 9).
                             </p>
                             <p>
                                 The beauty of SQL (I think!), is that it is very close to natural language. For instance,
@@ -282,13 +307,13 @@
                                 The two tables are joint through the columns morphNo of each table. Please group the result
                                 by morphName, so that I don't have to read the same value twice."
 
-                                Since there was only two records in Figure 5, the count of each morphology is 1.
+                                Since there was only two records in Figure 7, the count of each morphology is 1.
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit">
                                 <img src="images/fig7.png" alt="" />
-                                Figure 7. Query result.
+                                Figure 9. Query result.
                             </span>
 
 						</div>
@@ -302,7 +327,7 @@
 						<div class="6u 12u$(medium)">
                             <span class="image fit">
                                 <img src="images/fig8.png" alt="" />
-                                Figure 8. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
+                                Figure 10. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
                             </span>
 						</div>
 						<div class="6u$ 12u$(medium)">
@@ -316,7 +341,8 @@
                             </p>
 
                             <p>
-                                Most of them can be run from the terminal, but some also provide a <strong>Graphical User Interface (GUI, Figure 8)</strong>.
+                                Most of them can be run from the terminal, but some also provide
+                                a <strong>Graphical User Interface (GUI, Figure 10)</strong>.
                                 A GUI can be extremely useful, especially when you start dealing with relational databases.
                             </p>
 
