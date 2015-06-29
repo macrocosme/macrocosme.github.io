@@ -78,39 +78,41 @@
 			<section id="two" class="main style2">
 				<div class="container">
 					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-							<!--ul class="major-icons">
-								<li><span class="icon style1 major fa-database"></span></li>
-								<li></li>
-								<li><span class="icon style2 major fa-table"></span></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul-->
-                            <span class="image fit">
-                                <img src="images/pict--morphological-classification-scheme-for-galaxies-tuning-fork-style-diagram-of-the-hubble-sequence.png" alt="" />
-                                Figure 2. Morphological classification scheme for galaxies (source: conceptdraw.com).
-                            </span>
-
-                            <span class="image fit">
-                                <img src="images/NGC2685.jpg" alt="" />
-                                Figure 3. The NGC 2685 galaxy : classified as S0 (source: apod.nasa.gov).
-                            </span>
-
-						</div>
-						<div class="6u$ 12u$(medium)">
+                        <div class="6u$ 12u$(medium)">
 							<header class="major">
-								<h2>A practical example<br />
-								</h2>
+								<h2>DB Tool for this tutorial</h2>
 							</header>
 							<p>
-                                Say we want to create a database to represent your company's task-force.<br /><br />
-                                We would like to have a list of our people and the department each of them belongs to.
-                                <br /><br />
+                                There are many digital database software out there. Some are easy to use,
+                                some are slightly more complicated. Some are free, some are proprietary.
+                                But they all have more or less the same basis, which we'll cover here (a portion of it anyway!)
                             </p>
+
+                            <p>
+                                Most of them can be used directly from the terminal, but some also provide
+                                a <strong>Graphical User Interface (GUI)</strong>. Have a look at the links from Figures 10 and 11.
+                                A GUI can be extremely useful, especially when you start dealing with relational databases.
+                                To start, I think <a href="https://www.sqlite.org"><strong>SQLite</strong></a> along with <a href="http://sqlitebrowser.org">DB Browser for SQLite</a> (GUI, Figure 1) is a good place to start.
+                            </p>
+
+                            <p>
+                                For this tutorial, we will use
+                                (which you may already have on your machine) and (if you want), a graphical user interface called DB Browser for SQLite.
+                            </p>
+
+                            <p>
+                                Another popular option is <a href="https://www.mysql.com"><strong>MySQL</strong></a>.
+                                Both SQLite and MySQL are free, but MySQL is a heavier solution.
+                            </p>
+						</div>
+						<div class="6u 12u$(medium)">
                             <span class="image fit">
-                                <img src="images/LMC.jpg" alt="" />
-                                Figure 4. The Large Magellanic Cloud : classified as an irregular galaxy (source: fromquarkstoquasars.com).
+                                <img src="images/sqlitebrowser.png" alt="" />
+                                Figure 1. <a href="http://sqlitebrowser.org">DB Browser for SQLite</a>.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig8.png" alt="" />
+                                Figure 2. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
                             </span>
 						</div>
 					</div>
@@ -125,6 +127,11 @@
 								<h2>Organising your data<br />
 								</h2>
 							</header>
+                            <p>
+                                Say we want to create a database to represent your company's task-force.<br /><br />
+                                We would like to have a list of our people and the department each of them belongs to.
+                                <br /><br />
+                            </p>
 							<p>
                                 So, to organise your data, you could create a table like in Figure 5, listing all your galaxies and their
                                 respective morphology. You would then have a straight forward way to represent the information. <br /><br />
@@ -354,43 +361,14 @@
             <section id="seven" class="main style2">
 				<div class="container">
 					<div class="row 150%">
-						<div class="6u 12u$(medium)">
-                            <span class="image fit">
-                                <img src="images/fig8.png" alt="" />
-                                Figure 10. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
-                            </span>
-                            <span class="image fit">
-                                <img src="images/sqlitebrowser.png" alt="" />
-                                Figure 11. <a href="http://sqlitebrowser.org">DB Browser for SQLite</a>.
-                            </span>
-						</div>
 						<div class="6u$ 12u$(medium)">
 							<header class="major">
-						        <h2>Get crackin'</h2>
+						        <h2>Extra</h2>
                             </header>
                             <p>
-                                There are many digital database software out there. Some are easy to use,
-                                some are slightly more complicated. Some are free, some are proprietary.
-                                But they all have more or less the same basis, which you now know!
-                            </p>
-
-                            <p>
-                                You can have a look at <a href="https://www.sqlite.org"><strong>SQLite</strong></a>
-                                (which you may already have on your machine) and
-                                <a href="https://www.mysql.com"><strong>MySQL</strong></a>, which are both free and popular examples.
-                            </p>
-
-                            <p>
-                                Most of them can be run from the terminal, but some also provide
-                                a <strong>Graphical User Interface (GUI)</strong>. Have a look at the links from Figures 10 and 11.
-                                A GUI can be extremely useful, especially when you start dealing with relational databases.
-                                To start, I think SQLite with DB Browser (GUI) is a good place to start.
-                            </p>
-
-                            <p>
                                 Here are some <strong>tutorials</strong> on <a href="http://www.mysqltutorial.org">MySQL</a> and
-                                <a href="https://www.sqlite.org/quickstart.html">SQLite</a>. And if you want to know
-                                more about SQL itself, I encourage you to look at
+                                <a href="https://www.sqlite.org/quickstart.html">SQLite</a> if you want to get better.
+                                And if you want to know more about SQL itself, I encourage you to look at
                                 <a href="http://www.w3schools.com/sql/">w3school SQL's tutorial</a> or at this
                                 <a href="http://www.w3schools.com/sql/sql_quickref.asp">quick reference page</a>.
                             </p>
