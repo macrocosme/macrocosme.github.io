@@ -2712,8 +2712,6 @@
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
 			background-size: auto,							cover;
-		    webkit-filter: blur(5px);
-            filter: blur(5px);
 		}
 
 			.main.style2 a {
