@@ -178,11 +178,15 @@
                                 restructured into two separate tables (say EMPLOYEE and DEPARTMENT), as shown in Figures 6 to 8.<br /><br />
 
                                 We now have created the relation between the tables, having the department
-                                data independent to the employee data, and associating each employee to a specific department.
+                                data independent to the employee data, and associating each employee to a specific department.<br /><br />
 
                                 From Figures 6 and 7, we can see the relationship between DEPARTMENT and EMPLOYEE
                                 is built on the attribute departmentNo. This was made possible by setting up the
-                                "Foreign Key" during the creation of the table Employee.
+                                "Foreign Key" during the creation of the table Employee.<br /><br />
+
+                                Therefore, when we will want to insert a new employee along with his/her department,
+                                we will get an error if we do not provide a valid departmentNo
+                                (an non-existing department).
                             </p>
                             <p>
                                 OPTIONAL: For tips and rules on how to normalise your database properly, have a look at this <a href="http://www.dummies.com/how-to/content/sql-for-dummies-cheat-sheet.html">link</a>.
