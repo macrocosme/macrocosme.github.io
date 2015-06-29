@@ -128,31 +128,31 @@
 								</h2>
 							</header>
                             <p>
-                                Say we want to create a database to represent your company's task-force.<br /><br />
-                                We would like to have a list of our people and the department each of them belongs to.
+                                Say we want to create a database to represent a company's task-force.<br /><br />
+                                We would like to have a list of each employee and the department to which they belong.
                                 <br /><br />
                             </p>
 							<p>
-                                So, to organise your data, you could create a table like in Figure 5, listing all your galaxies and their
-                                respective morphology. You would then have a straight forward way to represent the information. <br /><br />
+                                So, to organise the data, we could create a table like in Figure 3, listing every employee and their
+                                respective department. You would then have a straight forward way to represent the information. <br /><br />
 
                                 The problem with this is that if you delete all entries (rows), you would not only
                                 delete the objects, but the morphologies as well. You would therefore have to start from scratch.<br /><br />
 
-                                Instead, we want to keep both of those <strong>entity type</strong> separate and create
-                                relations between them. <br /><br />
+                                Instead, we want to keep <strong>independent entities</strong> separate
+                                and create relations between them. <br /><br />
 
-                                Using the principles of relational databases, the Galaxy and Morphology data can be
-                                restructured into two separate tables (say MORPH and GAL), as shown in Figures 6 and 7.<br /><br />
+                                Using the principles of relational databases, the Employee and Department data can be
+                                restructured into two separate tables (say EMPLOYEE and DEPARTMENT), as shown in Figures 6 and 7.<br /><br />
 
-                                We now have created the relation between the tables, having the morphology
-                                data independent to the galaxy data, and associating each galaxy to a specific morphology.
+                                We now have created the relation between the tables, having the department
+                                data independent to the employee data, and associating each employee to a specific department.
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit">
-                                <img src="images/fig3.png" alt="" />
-                                Figure 5. A first attempt.
+                                <img src="images/whole_company.png" alt="" />
+                                Figure 3. A first attempt: the whole company.
                             </span>
                             <span class="image fit">
                                 <img src="images/fig4.png" alt="" />
@@ -335,7 +335,7 @@
                             <p>
                                This query will return all morphological names from the table MORPH,
                                 and cound the number of individual galaxies that have this particular
-                                morphology as recorded in table GAL (Figure 9).
+                                department as recorded in table GAL (Figure 9).
                             </p>
                             <p>
                                 The beauty of SQL (I think!), is that it is very close to natural language. For instance,
@@ -344,7 +344,7 @@
                                 The two tables are joint through the columns morphNo of each table. Please group the results
                                 by morphName, so that I don't have to read the same value twice."
 
-                                Since there was only two records in Figure 7, the count of each morphology is 1.
+                                Since there was only two records in Figure 7, the count of each department is 1.
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
@@ -377,7 +377,7 @@
                                 Try to start a database related to <strong>your own data</strong>.
                                 For instance, if you work in <strong>management</strong>,
                                 you could start a simple DB to list <strong>people by department</strong>
-                                (similarly to our galaxy by morphology).
+                                (similarly to our employee by department).
                             </p>
 						</div>
 					</div>
