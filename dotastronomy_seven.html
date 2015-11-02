@@ -111,7 +111,7 @@
 
                             <p>
                                 Other popular options are <a href="https://www.mysql.com"><strong>MySQL</strong></a> (e.g. LSST), or
-                                <a href="http://www.postgresql.org"><strong>postgresql</strong></a> (along with pgAdmin as GUI).
+                                <a href="http://www.postgresql.org"><strong>PostgreSQL</strong></a> (along with pgAdmin as GUI).
                             </p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
@@ -354,6 +354,8 @@
 
                                 For example, here is a <strong>tutorial</strong> about
                                 <a href="http://www.mysqltutorial.org">MySQL</a>.
+
+                                And here is one about <a href="http://www.w3resource.com/PostgreSQL/tutorial.php">PostgreSQL</a>
                             </p>
                             <p>
                                 Other topics you may want to read about (but not restricted to) are
@@ -400,6 +402,15 @@
                             look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/realquery.aspx">this page</a>.<br /><br />
 
                             For more information about how the database is structured, look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/intro.aspx">this page</a>.<br /><br />
+
+                            Here is an example to get data about quasars with redshifts less than 3.5, ordered by right ascension.
+                            <code>
+                                SELECT sp.ra, sp.dec, sp.z, sp.zErr, sp.zWarning, f.ra as FIRST_ra, f.dec as FIRST_dec
+                                FROM SpecPhotoAll AS sp
+                                INNER JOIN FIRST AS f ON sp.objid = f.objid WHERE class = 'QSO'
+                                AND sp.z < 3.5
+                                ORDER BY sp.ra
+                            </code>
 
                             Have fun with your colleagues/new friends!
                         </p>
