@@ -403,12 +403,12 @@
 
                             For more information about how the database is structured, look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/intro.aspx">this page</a>.<br /><br />
 
-                            Here is an example to get data about quasars with redshifts less than 3.5, ordered by right ascension.
+                            Here is an example to get data about quasars with redshifts less than 3.5, ordered by right ascension.<br />
                             <code>
-                                SELECT sp.ra, sp.dec, sp.z, sp.zErr, sp.zWarning, f.ra as FIRST_ra, f.dec as FIRST_dec
-                                FROM SpecPhotoAll AS sp
-                                INNER JOIN FIRST AS f ON sp.objid = f.objid WHERE class = 'QSO'
-                                AND sp.z < 3.5
+                                SELECT sp.ra, sp.dec, sp.z, sp.zErr, sp.zWarning, f.ra as FIRST_ra, f.dec as FIRST_dec<br />
+                                FROM SpecPhotoAll AS sp<br />
+                                INNER JOIN FIRST AS f ON sp.objid = f.objid WHERE class = 'QSO'<br />
+                                AND sp.z < 3.5<br />
                                 ORDER BY sp.ra
                             </code>
 
