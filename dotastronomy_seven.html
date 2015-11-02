@@ -169,15 +169,15 @@
                                 We want to keep <strong>independent entities</strong> separate
                                 and create relations between them. This process is called normalisation.<br /><br />
 
-                                Using the principles of relational databases, the Galaxy and Morphology data can be
-                                structured into two separate tables (say MORPHOLOGY and GALAXY), as shown in Figures 5 to 7.<br /><br />
+                                Simply by the GUI (e.g. using buttons, dropdown menues and input/tick boxes), the Galaxy and Morphology data can be
+                                structured into two separate tables (say MORPHOLOGY and GALAXY), as shown in <strong>Figures 5 to 7</strong>.<br /><br />
 
                                 We now have created the relation between the tables, having the morphology
                                 data independent to the galaxy data, and associating each galaxy to a specific morphology.<br /><br />
 
                                 From Figures 5 and 6, we can see the relationship between MORPHOLOGY and GALAXY
                                 is built on the attribute morphologyNo. This was made possible by setting up the
-                                "Foreign Key" during the creation of the table GALAXY.<br /><br />
+                                "Foreign Key" during the creation of the table GALAXY with <code>MORPHOLOGY(morphologyNo)</code>.<br /><br />
 
                                 Therefore, when we will want to insert a new galaxy along with its morphology,
                                 we will get an error if we do not provide a valid morphologyNo.
@@ -202,7 +202,7 @@
                                 Figure 5. Creating the MORPHOLOGY table.
                             </span>
                             <span class="image fit">
-                                <img src="images/dotAstro/galaxy.png" alt="" />
+                                <img src="images/dotAstro/galaxy_long.png" alt="" />
                                 Figure 6. Creating the GALAXY table.
                             </span>
                             <span class="image fit">
@@ -233,7 +233,7 @@
                                 (which can be very impractical if you have a lot of items in a table).<br /><br />
 
                                 The SQL language consists of a only few <strong>key words</strong>. Some keywords were
-                                already shown in the table creation figures (e.g. CREATE TABLE).
+                                already shown in the table creation figures (e.g. <code>CREATE TABLE</code>).
                                 Some important keywords are shown on the right.<br /><br />
 
                                 More information about the multiple keywords and how to use them can be
