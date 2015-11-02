@@ -403,7 +403,14 @@
 
                             For more information about how the database is structured, look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/intro.aspx">this page</a>.<br /><br />
 
-                            Here is an example to get data about quasars with redshifts less than 3.5, ordered by right ascension.<br />
+                            Have fun with your colleagues/new .astro friends!
+                        </p>
+
+                        <header class="major">
+                            <h3>Example<br /></h3>
+                        </header>
+                        <p>
+                            To get quasars with redshifts less than 3.5, ordered by right ascension, that are in both the FIRST Bright Quasar Survey (FBQS) and SDSS.<br />
                             <code>
                                 SELECT sp.ra, sp.dec, sp.z, sp.zErr, sp.zWarning, f.ra as FIRST_ra, f.dec as FIRST_dec<br />
                                 FROM SpecPhotoAll AS sp<br />
@@ -411,8 +418,6 @@
                                 AND sp.z < 3.5<br />
                                 ORDER BY sp.ra
                             </code>
-
-                            Have fun with your colleagues/new friends!
                         </p>
                     </div>
                     <div class="6u$ 12u$(medium) important(medium)">
