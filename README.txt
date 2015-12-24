@@ -1,2 +1,3 @@
-Generic SQL tutorial for Swinburne's Hacker Within
-By Dany Vohl
+macrocosme.github.io web pages
+
+Currently contains: Personal page and tutorials.
