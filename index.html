@@ -1,18 +1,273 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dany Vohl</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon fa-male active"><span>About</span></a>
+						<a href="#work" class="icon fa-paper-plane"><span>Work</span></a>
+						<!--a href="#personal" class="icon fa-camera-retro"><span>Personal</span></a-->
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+						<a href="https://github.com/macrocosme" class="icon fa-github"><span>GitHub</span></a>
+						<a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon fa-google"><span>Scholar</span></a>
+						<a href="https://au.linkedin.com/in/dany-vohl-2933028" class="icon fa-linkedin-square"><span>LinkedIn</span></a>
+					</nav>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+				<!-- Main -->
+					<div id="main">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+									<h1>Dany Vohl</h1>
+									<p>
+										PhD candidate<br />
+										Centre for Astrophysics & Supercomputing<br />
+										<a href="http://astronomy.swin.edu.au/scivis/">
+											Swinburne University of Technology
+										</a>
+									</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img src="images/Action.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Publications</h2>
+								</header>
+								<H3>Journals (refereed)</H3>
+								<p>
+									<b>Vohl, D.</b>, Fluke, C.J., Vernardos, G., 2015, “Data Compression in the Petascale Astronomy Era: a GERLUMPH case study”, Astronomy & Computing, 12, 200.
+									<a href="http://adsabs.harvard.edu/abs/2015A%26C....12..200V" class="icon fa-external-link"></a>
+								</p>
+								<p>
+									Vernardos, G., Fluke, C.J., Bate, N.F., Croton, D.A., <b>Vohl, D.</b>, 2015, “GERLUMPH Data Release 2: 2.5 billion simulated microlensing light curves”, Astrophysical Journal Supplement Series, 217, 23.
+									<a href="http://adsabs.harvard.edu/abs/2015ApJS..217...23V" class="icon fa-external-link"></a>
+								</p>
+								<!--p>
+									<b>Vohl, D.</b>, Fluke, C.J., Barnes, D.G., Hassan, A.H., 2016. “Comparative and quantitative visualisation in the CAVE2”, In preparation.
+								</p-->
+
+								<H3>Workshop (refereed)</H3>
+								<p>
+									<b>Vohl, D.</b>, Quimper, C.-G., Dubé, D. 2012. “Finding Synchronization Codes to Boost Compression by Substring Enumeration”. In Proceedings of the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012), held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12).
+									<a href="https://www.researchgate.net/publication/255708267_Finding_Synchronization_Codes_to_Boost_Compression_by_Substring_Enumeration" class="icon fa-external-link"></a>
+								</p>
+
+								<H3>Conference (non refereed)</H3>
+								<p><b>Vohl, D.</b>, Fluke, C.J., Barnes, D.G., Hassan, A.H., 2016. “An interactive, comparative and quantitative 3D visualisation system for large-scale spectral-cube surveys using CAVE2”, In Proceedings of the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference, In press.</p>
+
+								<H3>Master's thesis (French)</H3>
+								<p>
+									<b>Vohl, D.</b> 2013, “Algorithmes de compression d'images hyperspectrales astrophysiques”. Universit&eacute; Laval, Canada.
+									<a href="http://theses.ulaval.ca/archimede/fichiers/30110/30110.pdf" class="icon fa-download"></a>
+								</p>
+
+								<H3>Outreach</H3>
+								<p>
+									<b>Vohl, D.</b> “Mes donn&eacute;es astronomiques &agrave; l’&egrave;re du p&eacute;taoctet”, D&eacute;ecouvrir magazine, Oct. 2015.
+									<a href="http://www.acfas.ca/publications/decouvrir/2015/10/donnees-astronomiques-l-ere-petaoctet" class="icon fa-external-link"></a>
+								</p>
+
+								<header>
+									<h2>Talks</h2>
+								</header>
+								<p>
+									<b>Vohl, D.</b>, 2015, “Astronomy in the Petascale Data Era: storage, transfer and visualization”, Presented at <a href="http://dotastronomy.com/events/seven/">.Astronomy7</a> conference, Sydney, Australia.
+									<a href="https://speakerdeck.com/macrocosme/dany-vohl-astronomy7-astronomy-in-the-petascale-data-era-storage-transfer-and-visualization" class="icon fa-external-link"></a>
+								</p>
+								<p>
+									<b>Vohl, D.</b>, Quimper, C.-G., Dubé, D. 2012. “Finding Synchronization Codes to Boost Compression by Substring Enumeration”. Presented at the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012), held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12).
+									<a href="http://www.cmears.id.au/modref2012/" class="icon fa-external-link"></a>
+								</p>
+
+								<header>
+									<h2>Posters</h2>
+								</header>
+								<p>
+									<b>Vohl, D.</b>, Fluke, C.J., Barnes, D.G., Hassan, A.H., 2015. “An interactive, comparative and quantitative 3D visualisation system for large-scale spectral-cube surveys using CAVE2”, Presented at the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference, Sydney, Australia.
+									<a href="https://drive.google.com/file/d/0B2DF-fU7AGOfNmJSamJqSWhEc1U/view?usp=sharing" class="icon fa-external-link"></a>
+								</p>
+								<p>
+									<b>Vohl, D.</b>, Fluke, C. J., Vernardos, G.  2014, “Should I compress my data or throw it away?”, Presented at the Astronomical Society of Australia (ASA) Annual Scientific Meeting, Sydney, Australia.
+								</p>
+
+								<header>
+									<h2>Tutorials</h2>
+								</header>
+								<p>
+									<b>Vohl, D.</b>, 2015, “Introduction to Relational Databases with SQL for .Astronomy7”, Presented at <a href="http://dotastronomy.com/events/seven/">.Astronomy7</a> conference, Sydney, Australia.
+									<a href="http://macrocosme.github.io/dotastronomy_seven.html" class="icon fa-external-link"></a>
+								</p>
+								<p>
+									<b>Vohl, D.</b>, 2015, “Introduction to Relational Databases with SQL”, Presented at <a href="http://www.thehackerwithin.org/swinburne/posts/databases01/">the Hacker Within</a>, Swinburne University of Technology, Hawthorn, Australia.
+									<a href="http://macrocosme.github.io/db_sql.html" class="icon fa-external-link"></a>
+								</p>
+
+								<header>
+									<h2>Software</h2>
+								</header>
+								<p>
+									<b>Vohl, D.</b>, 2015, “KERLUMPH”, described in <a href="http://adsabs.harvard.edu/abs/2015A%26C....12..200V">Vohl, Fluke and Vernardos, A&C, 2015</a>.
+									<a href="http://supercomputing.swin.edu.au/projects/kerlumph/" class="icon fa-external-link"></a>
+								</p>
+								<p>
+									Kakadu Software talks about KERLUMPH. <a href="http://kakadusoftware.com/case-studies/" class="icon fa-external-link"></a>
+								</p>
+
+
+								<!--section>
+									<div class="row">
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										</div>
+									</div>
+								</section-->
+							</article>
+
+
+							<!--article id="personal" class="panel">
+								<section>
+									<H2>Other interests</H2>
+									<p><H3>Photography</H3></p>
+									<div class="row">
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+										</div>
+										<div class="4u 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+										</div>
+										<div class="4u$ 12u$(mobile)">
+											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										</div>
+									</div>
+									<!--p><H3>Featured Music</H3></p>
+									<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4082617877/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://danyvohl.bandcamp.com/album/our-common-future-2">Our Common Future by Dany Vohl</a></iframe-->
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="http://formspree.io/dvohl@swin.edu.au" method="post">
+									<div>
+										<div class="row">
+											<div class="6u 12u$(mobile)">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="6u$ 12u$(mobile)">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="12u$">
+												<textarea name="message" placeholder="Message" rows="8"></textarea>
+											</div>
+											<div class="12u$">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Dany Vohl, 2015.</li><li>Scaffold: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
