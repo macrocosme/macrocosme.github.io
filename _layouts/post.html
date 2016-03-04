@@ -12,13 +12,11 @@ comments: true
   </nav>
 
   <!-- Main -->
-  <p id="main">
+  <div id="main">
     <article id="blog" class="panel">
       <h1>{{ page.title }}</h1>
       <p>
-          {{ content }}
-      </p>
-      <p>
+        {{ content }}
         Written on {{ page.date | date: "%B %e, %Y" }}
       </p>
       <p>
