@@ -132,6 +132,9 @@ layout: default
         <article class="post">
 
           <h2>{{ post.title }}</h2>
+          <div class="date">
+            {{ post.date | date: "%B %e, %Y" }}
+          </div>
 
           <p>
             {{ post.excerpt }}
@@ -139,9 +142,7 @@ layout: default
           </p>
 
 
-          <div class="date">
-            Written on {{ post.date | date: "%B %e, %Y" }}
-          </div>
+
 
 
         </article>
