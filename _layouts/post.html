@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <div id="wrapper">
@@ -8,6 +9,7 @@ layout: default
     <a href="#blog" class="icon fa-rss-square active"><span>Blog</span></a>
   </nav>
 
+  <div id="main">
   <article id="blog" class="panel">
     <h1>{{ page.title }}</h1>
 
@@ -21,4 +23,12 @@ layout: default
 
     {% include disqus.html %}
   </article>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <ul class="copyright">
+      <li>&copy; Dany Vohl, 2015.</li><li>Scaffold: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </div>
 </div>
