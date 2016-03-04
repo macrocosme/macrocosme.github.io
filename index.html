@@ -135,8 +135,9 @@ layout: default
 
           <p>
             {{ post.excerpt }}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
           </p>
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+
 
           <div class="date">
             Written on {{ post.date | date: "%B %e, %Y" }}
