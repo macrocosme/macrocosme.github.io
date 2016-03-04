@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing a paper takes time
+title: Writing a scientific paper takes time
 ---
 
  I have been working on an article for my current project for a few weeks now. Writing takes time. And effort.
@@ -16,8 +16,6 @@ It may be worth taking a few more reads before publishing it!
 
  As I wrote a few papers already, it seems like it is getting a bit more of a natural process to put into place.
  Nevertheless, it still is a hard process that demands both a lot of time and mental efforts!
-
-  Oh well, I may as well go back at it now.
 
   (Some proof reading on this blog would be required. But it is a blog after all,
   so please do not assume everything is polished - it is most likely gonna be written in a first draft writing style.)
