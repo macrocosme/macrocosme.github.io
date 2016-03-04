@@ -1115,14 +1115,15 @@
 /* comments */
 
 #comments {
-	padding-top: 6em;
+	padding-top: 1em;
 	width: 45em;
 	margin: 0 auto;
 	color: #ccc;
+	padding-bottom: 1em;
 }
 
 #comments.tall {
-	padding-bottom: 6em;
+	padding-bottom: 3em;
 }
 
 /* Footer */
