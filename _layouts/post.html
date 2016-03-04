@@ -2,16 +2,22 @@
 layout: default
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
+<div id="wrapper">
+  <nav id="nav">
+    <a href="http://macrocosme.github.io/#blog" class="icon fa fa-arrow-left"><span>Back to Blog Meta</span></a>
+  </nav>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+  <article class="post">
+    <h1>{{ page.title }}</h1>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+    <div class="entry">
+      {{ content }}
+    </div>
 
-  {% include disqus.html %}
-</article>
+    <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+
+    {% include disqus.html %}
+  </article>
+</div>
