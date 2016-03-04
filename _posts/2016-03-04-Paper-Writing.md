@@ -3,7 +3,7 @@ layout: post
 title: Writing a scientific paper takes time
 ---
 
- I have been working on an article for my current project for a few weeks now. Writing takes time. And effort.
+ I have been working on an article for a current project for a few weeks now. Writing takes time. And effort.
 As much as it seems straight forward when you start a paper, it always takes way more time to actually get to a
 polished result than expected. And for good reasons. This in principle will last in the science archive forever.
 It may be worth taking a few more reads before publishing it!
