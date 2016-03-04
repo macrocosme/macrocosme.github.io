@@ -1115,36 +1115,14 @@
 /* comments */
 
 #comments {
+	padding-top: 6em;
+	width: 45em;
+	margin: 0 auto;
 	color: #ccc;
-	color: rgba(0, 0, 0, 0.45);
 }
 
-#comments a {
-	color: #000000;
-	color: rgba(0, 0, 0, 0.65);
-	-moz-transition: color .25s ease-in-out;
-	-webkit-transition: color .25s ease-in-out;
-	-ms-transition: color .25s ease-in-out;
-	transition: color .25s ease-in-out;
-}
-
-#comments a:hover {
-	color: grey;
-}
-
-#comments .copyright li {
-	display: inline-block;
-}
-
-#comments .copyright li:before {
-	display: inline;
-	content: '\2022';
-	opacity: 0.5;
-	padding: 0 0.75em 0 0.75em;
-}
-
-#comments .copyright li:first-child:before {
-	display: none;
+#comments.tall {
+	padding-bottom: 6em;
 }
 
 /* Footer */
