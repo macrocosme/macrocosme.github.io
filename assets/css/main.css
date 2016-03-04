@@ -880,6 +880,14 @@
 		line-height: 1.35em;
 	}
 
+	form a {
+		color: #000000;
+	}
+
+	form a:hover {
+		color: grey;
+	}
+
 	form ::-webkit-input-placeholder {
 		color: #999;
 	}
@@ -1112,7 +1120,7 @@
 }
 
 #comments a {
-	color: #ddd;
+	color: #000000;
 	color: rgba(0, 0, 0, 0.65);
 	-moz-transition: color .25s ease-in-out;
 	-webkit-transition: color .25s ease-in-out;
