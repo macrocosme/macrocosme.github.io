@@ -2,7 +2,6 @@
 layout: default
 comments: true
 ---
-<br /><br />
 <!-- Wrapper-->
 <div id="wrapper">
   <!-- Nav -->
@@ -19,11 +18,10 @@ comments: true
         {{ content }}
         Written on {{ page.date | date: "%B %e, %Y" }}
       </p>
+
+      {% include disqus.html %}
     </article>
 
-  </div>
-  <div class="footer">
-    {% include disqus.html %}
   </div>
 
 </div>
