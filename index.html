@@ -123,137 +123,27 @@ layout: default
       </p>
 
 
-      <!--section>
-          <div class="row">
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-              </div>
-              <div class="4u$ 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-              </div>
-              <div class="4u$ 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-              </div>
-              <div class="4u$ 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-              </div>
-              <div class="4u 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-              </div>
-              <div class="4u$ 12u$(mobile)">
-                  <a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-              </div>
-          </div>
-      </section-->
     </article>
 
-
-    <!--article id="personal" class="panel">
-        <section>
-            <H2>Other interests</H2>
-            <p><H3>Photography</H3></p>
-            <div class="row">
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-                </div>
-                <div class="4u$ 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-                </div>
-                <div class="4u$ 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-                </div>
-                <div class="4u$ 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-                </div>
-                <div class="4u 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-                </div>
-                <div class="4u$ 12u$(mobile)">
-                    <a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-                </div>
-            </div>
-            <!--p><H3>Featured Music</H3></p>
-            <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4082617877/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://danyvohl.bandcamp.com/album/our-common-future-2">Our Common Future by Dany Vohl</a></iframe-->
-    </section>
-    </article>
-
+    <!-- Blog -->
     <article id="blog" class="panel">
       <div class="posts">
-        <a href="{{ site.baseurl }}/feed.xml"><i class="svg-icon rss"></i></a>
         {% for post in site.posts %}
         <article class="post">
 
-          <h2><a href="{{ site.baseurl }}{{ post.url }}/">{{ post.title }}</a></h2>
+          <h2>{{ post.title }}</h2>
 
           <div class="entry">
             {{ post.excerpt }}
           </div>
 
+          <a href="{{ site.baseurl }}{{ post.url }}/" class="read-more">Read More</a>
+
           <div class="date">
             Written on {{ post.date | date: "%B %e, %Y" }}
           </div>
 
-          <!--div class="comments">
-            {% if post.comments %}
-                <div id="disqus_thread"></div>
-                <script>
-                /** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC
-                 *  VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
-                 *  https://disqus.com/admin/universalcode/#configuration-variables */
-                 var disqus_config = function () {
-                  this.page.url = PAGE_URL;
-                  // Replace PAGE_URL with your page's canonical URL variable
-                  this.page.identifier = PAGE_IDENTIFIER;
-                  // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                  };
-                  (function() {
-                    // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = '//macrocosme.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s); })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-            {% endif %}
-          </div-->
 
-          <!--a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a-->
         </article>
         {% endfor %}
       </div>
@@ -289,11 +179,5 @@ layout: default
 
   </div>
 
-  <!-- Footer -->
-  <div id="footer">
-    <ul class="copyright">
-      <li>&copy; Dany Vohl, 2015.</li><li>Scaffold: <a href="http://html5up.net">HTML5 UP</a></li>
-    </ul>
-  </div>
 
 </div>
