@@ -1115,16 +1115,16 @@
 /* comments */
 
 #comments {
-	color: #ccc;
-	padding: 3.5em 2.5em 3.5em 2.5em;
-	position: absolute;
-	top: 0;
-	left: 0;
+	padding-top: 1em;
 	width: 45em;
+	margin: 0 auto;
+	color: #ccc;
+	padding-bottom: 1em;
 }
 
 #comments.tall {
 	padding-bottom: 6em;
+	width: 45em;
 }
 
 /* Footer */
@@ -1598,6 +1598,14 @@
 				#me header > p {
 					font-size: 1.25em;
 				}
+
+		/* comments */
+
+		#comments {
+			text-align: center;
+			padding: 15px 15px 15px 15px;
+			font-size: 0.85em;
+		}
 
 		/* Footer */
 
