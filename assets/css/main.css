@@ -1087,7 +1087,8 @@
 
 	#main {
 		position: relative;
-		overflow: hidden;
+		overflow: scroll;
+		overflow-x: hidden;
 	}
 
 	.panel {
