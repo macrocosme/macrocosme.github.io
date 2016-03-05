@@ -1087,6 +1087,7 @@
 
 	#main {
 		position: relative;
+		overflow-y: visible;
 		overflow: hidden;
 	}
 
