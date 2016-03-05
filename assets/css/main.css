@@ -1095,11 +1095,6 @@
 		overflow: visible;
 	}
 
-	.panel #disqus_thread {
-		position: relative;
-		overflow: visible;
-	}
-
 /* Me */
 
 	#me .pic {
@@ -1371,11 +1366,6 @@
 				width: 45em;
 			}
 
-			.panel #disqus_thread {
-				position: relative;
-				overflow: visible;
-			}
-
 		/* Me */
 
 			#me {
@@ -1588,10 +1578,6 @@
 					padding-top: 1em;
 				}
 
-			.panel #disqus_thread {
-				position: relative;
-				overflow: visible;
-			}
 		/* Me */
 
 			#me .pic {
