@@ -1087,8 +1087,7 @@
 
 	#main {
 		position: relative;
-		overflow-y: visible;
-		overflow: hidden;
+		overflow: visible;
 	}
 
 	.panel {
@@ -1582,6 +1581,7 @@
 
 			.panel #disqus_thread {
 				position: relative;
+				overflow: visible;
 			}
 		/* Me */
 
