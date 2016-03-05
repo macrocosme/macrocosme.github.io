@@ -1087,7 +1087,7 @@
 
 	#main {
 		position: relative;
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 
 	.panel {
@@ -1119,7 +1119,7 @@
 
 /* comments */
 
-.comments {
+#comments {
 	padding-top: 1em;
 	width: 45em;
 	margin: 0 auto;
@@ -1127,7 +1127,7 @@
 	padding-bottom: 1em;
 }
 
-.comments.tall {
+#comments.tall {
 	padding-bottom: 6em;
 	width: 45em;
 }
@@ -1616,7 +1616,7 @@
 
 		/* comments */
 
-			.comments {
+			#comments {
 				padding: 15px 15px 15px 15px;
 				margin: 0 0 7px 0;
 			}
