@@ -9,6 +9,7 @@ comments: true
   <nav id="nav">
     <a href="http://macrocosme.github.io/#blog" class="icon fa fa-arrow-left"><span>Back</span></a>
     <a href="#blog" class="icon fa-rss-square active"><span>Post</span></a>
+    <a href="#disqus_thread" class="icon fa-comments"><span>Comments</span></a>
   </nav>
 
   <!-- Main -->
@@ -19,24 +20,21 @@ comments: true
         {{ content }}
         Written on {{ page.date | date: "%B %e, %Y" }}
       </p>
-
-      <p>
-        {% if site.disqus %}
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-
-          var disqus_shortname = '{{ site.disqus }}';
-
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        {% endif %}
-      </p>
     </article>
+
+    <article id="disqus_thread"></article>
+    <script type="text/javascript">
+
+      var disqus_shortname = '{{ site.disqus }}';
+
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
   </div>
 </div>
