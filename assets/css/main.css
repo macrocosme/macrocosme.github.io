@@ -1092,11 +1092,12 @@
 
 	.panel {
 		position: relative;
-
+		overflow: visible;
 	}
 
 	.panel #disqus_thread {
 		position: relative;
+		overflow: visible;
 	}
 
 /* Me */
@@ -1368,6 +1369,11 @@
 				top: 0;
 				left: 0;
 				width: 45em;
+			}
+
+			.panel #disqus_thread {
+				position: relative;
+				overflow: visible;
 			}
 
 		/* Me */
