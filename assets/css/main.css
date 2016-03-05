@@ -1094,6 +1094,10 @@
 		position: relative;
 	}
 
+	.panel #disqus_thread {
+		position: relative;
+	}
+
 /* Me */
 
 	#me .pic {
@@ -1575,6 +1579,9 @@
 					padding-top: 1em;
 				}
 
+			.panel #disqus_thread {
+				position: relative;
+			}
 		/* Me */
 
 			#me .pic {
