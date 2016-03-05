@@ -1087,12 +1087,12 @@
 
 	#main {
 		position: relative;
-		/*overflow: hidden;*/
+		overflow: hidden;
 	}
 
 	.panel {
 		position: relative;
-		overflow: visible;
+
 	}
 
 	.panel #disqus_thread {
