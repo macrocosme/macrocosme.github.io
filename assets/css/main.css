@@ -1087,8 +1087,7 @@
 
 	#main {
 		position: relative;
-		overflow: scroll;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 
 	.panel {
@@ -1266,7 +1265,6 @@
 		/* Nav */
 
 			#nav {
-				padding-top: 2em;
 				text-align: center;
 				height: 4.25em;
 				cursor: default;
