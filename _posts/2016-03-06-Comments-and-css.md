@@ -7,16 +7,18 @@ I have been fiddling around to add the comment section for this blog. By itself,
 For instance, while using Jekyll, all you need to do is to follow these
 [Disqus instructions](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions).
 It is a very basic recipe. In fact, using the [Jekyll now](https://github.com/barryclark/jekyll-now) template includes
-all of it already. The trick is...
+all of it already. The problem was...
 
-As for this page I based it on a template from html5up, a lot is predefined. For instance, The whole menu at the top
+As I based the whole site on a template from html5up, a lot is predefined. For instance, The whole menu at the top
   is set up programmatically with a bit of javascript. I thought about a good design so that all would still feel
-  smooth while incorporating the blog. I added the middle section for the blog with blurb about the post, which links to
-  the whole post. It makes it a bit more RESTful (you can directly reach the blog post if you have the direct link.
+  smooth while incorporating the blog. To do so, I added the middle section for the blog with blurb about the post,
+  which then links to the whole post. It makes it a bit more RESTful
+  (you can directly reach the blog post if you have the direct link).
 
 To add the comment section, I was not sure where to incorporate it. For instance, adding it directly to the white rectangle
-where this text is tended to cut the comments. CSS was not displaying the overflow. I twiddle for a while, and finally
-decided to simply display it after, on its own. I then looked around in the css file to get the proper alignment and width.
+(where this text is displayed) tended to cut the comments. CSS was not displaying the overflow, and I was loosing patience
+looking for which section of the page was troublesome. Finally, I decided to simply display it on its own.
+I then looked around in the css file to get the proper alignment and width.
 
  I ended up adding this css:
 
