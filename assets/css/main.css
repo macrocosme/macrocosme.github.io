@@ -1355,6 +1355,10 @@
 				width: 45em;
 			}
 
+			.panel img {
+				width: 100%;
+			}
+
 		/* Disqus */
 			#disqus_thread {
 				margin: 0 auto;
@@ -1568,6 +1572,10 @@
 
 				.panel header {
 					padding-top: 1em;
+				}
+
+				.panel img {
+					width: 100%;
 				}
 
 		/* Disqus */
