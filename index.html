@@ -135,10 +135,11 @@ layout: default
     <!-- Blog -->
     <article id="blog" class="panel">
       <h2>Latest posts</h2>
-      <hr>
+
 
       <div class="posts">
         {% for post in site.posts %}
+        <hr>
         <article class="post">
 
           <h3>{{ post.title }}</h3>
@@ -152,7 +153,6 @@ layout: default
           </p>
 
         </article>
-        <hr>
         {% endfor %}
       </div>
     </article>
