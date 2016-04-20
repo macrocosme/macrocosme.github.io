@@ -12,7 +12,8 @@ it allows to run shader code on the GPU with near-optimal run-time. I did a prel
 few data cubes from the [THINGS survey](http://www.mpia.de/THINGS/Data.html) with a little help from the
 [Astropy](http://astropy.org/) package, and managed to get something going in a very small amount of time.
 
-Here I show the galaxy NGC 3621
+Here I show the galaxy NGC 3621. There is still some work to do to get the data shown with a bit more luxury, but for the
+time I spent on it, I think it's nice. It's 3D-rendered, and in real-time at about 40-50frames per seconds on my macbook.
  ![alt text](https://macrocosme.github.io/images/ngc-3621.png "NGC 3621 from THINGS")
 
 I'm not gonna lie, I **really** like it.
