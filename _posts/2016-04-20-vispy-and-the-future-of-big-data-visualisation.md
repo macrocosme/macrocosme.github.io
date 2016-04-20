@@ -17,7 +17,7 @@ Here I show the galaxy NGC 3621
 
 I'm not gonna lie, I **really** like it.
 
-I read a few things over the day by Cyrille Roissant. A few blog [posts](http://cyrille.rossant.net/compiler-data-visualization/),
+I read a few things over the day by Cyrille Rossant. A few blog [posts](http://cyrille.rossant.net/compiler-data-visualization/),
 and one of his [paper](http://journal.frontiersin.org/Journal/10.3389/fninf.2013.00036/full) (with KD Harris) that explains how it's done.
 
 For those interested, here is a presentation about Vispy at SciPy2015 by Luke Campagnola.
