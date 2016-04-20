@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Vispy and the future of Big Data visualisation
+title: VisPy and the future of Big Data visualisation
 ---
 
 
 A few weeks ago I discovered PyOpenGL to run OpenGL code from Python. I thought there was some potential there.
 
 Today, in my search for documentation on OpenGL and its shading language (GLSL), I stepped upon a really interesting project
-held together by a few individuals called [Vispy](http://vispy.org). Based on OpenGL (specifically PyOpenGL) and NumPy,
+held together by a few individuals called [VisPy](http://vispy.org). Based on OpenGL (specifically PyOpenGL) and NumPy,
 it allows to run shader code on the GPU with near-optimal run-time. I did a prelimirary test today to render a
 few data cubes from the [THINGS survey](http://www.mpia.de/THINGS/Data.html) with a little help from the
 [Astropy](http://astropy.org/) package, and managed to get something going in a very small amount of time.
