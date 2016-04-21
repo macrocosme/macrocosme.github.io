@@ -1,6 +1,6 @@
 # Dany Vohl (macrocosme)
 
-**[macrocosme.github.io](macrocosme.github.io)** is my simple research page.
+**[macrocosme.github.io](http://macrocosme.github.io)** is my simple research page.
 
 **[Tutorial for SHW](http://macrocosme.github.io/db_sql.html)**
 and **[Tutorial for .Astronomy7](http://macrocosme.github.io/dotastronomy_seven.html)** are
