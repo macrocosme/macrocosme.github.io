@@ -26,3 +26,8 @@ I particularly like the plot of all plots.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3YoaeoiIFI" frameborder="0" allowfullscreen></iframe>
 
 I'll stop here for now. More to come from this exciting project and what I build with it soon I hope!
+
+--
+Edit:
+Is VisPy the future of big data visualisation? Not as it is *per se*. But the potential I see is that it can bring powerful
+tool to a broader public. Personally, I like the fact that we do not always have to start from zero with OpenGL.
