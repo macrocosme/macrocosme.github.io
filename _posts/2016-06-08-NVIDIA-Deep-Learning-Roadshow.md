@@ -1,4 +1,4 @@
-             ---
+---
 layout: post
 title: NVIDIA Deep Learning Roadshow - Downunder Edition (Melbourne - Monash University): sparse notes and blurry pictures
 ---
