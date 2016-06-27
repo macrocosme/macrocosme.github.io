@@ -3,8 +3,6 @@ layout: post
 title: OPB files from SyncBits paper to be used as benchmark at PB16!
 ---
 
-![alt text](https://macrocosme.github.io/images/paper_sync.png "Header of Dany Vohl, Claude-Guy Quimper, and Danny Dubé. Finding Synchronization Codes to Boost Compression by Substring Enumeration. In Proceedings of the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012), held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12), 16 pages, 2012.")
-
 We have been contacted by [Olivier Roussel](http://www.cril.univ-artois.fr/~roussel) to use our OPB files (from our
 2012 paper [Finding Synchronization Codes to Boost Compression by Substring Enumeration](http://arxiv.org/abs/1605.08102)) 
 as a benchmark for the 2016 Pseudo-Boolean Competition ([PB2016](http://www.cril.univ-artois.fr/PB16/)). This competition will be 
