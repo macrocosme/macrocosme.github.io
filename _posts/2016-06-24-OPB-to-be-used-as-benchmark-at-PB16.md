@@ -13,7 +13,7 @@ These files are implementing our pseudo-boolean constraint model that computes t
 i.e. those that add the fewest synchronization bits to the original data. As their name indicates, these codes are 
 usually used to help programs stay synchronized, for example when sending data over the internet or when reading information
 on your hard-drive. My supervisor at the time, Danny Dubé, and his student Vincent Beaudoin invented a compression scheme 
-about a year prior to my time at ULaval called [compression by substring enumaration (CSE)](http://www2.ift.ulaval.ca/~dadub100/files/DCC10.pdf).
+about a year prior to my time at ULaval called [compression by substring enumeration (CSE)](http://www2.ift.ulaval.ca/~dadub100/files/DCC10.pdf).
 As this technique is bit oriented, whereas most benchmark are byte oriented, it suffers from a problem refered 
 to as phase unawareness. In short, the compressor is not aware of byte boundaries. By adding synchronization codes to 
 the data, we can help the compressor keeping track of binary words, and help compressing data further. 
