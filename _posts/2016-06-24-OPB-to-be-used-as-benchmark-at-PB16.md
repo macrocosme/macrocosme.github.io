@@ -3,8 +3,8 @@ layout: post
 title: OPB files from SyncBits paper to be used as benchmark at PB16!
 ---
 
-We have been contacted by [Olivier Roussel](http://www.cril.univ-artois.fr/~roussel) to use our OPB files (from our
-2012 paper [Finding Synchronization Codes to Boost Compression by Substring Enumeration](http://arxiv.org/abs/1605.08102)) 
+We have been contacted to use our OPB files (from our 2012 paper 
+[Finding Synchronization Codes to Boost Compression by Substring Enumeration](http://arxiv.org/abs/1605.08102)) 
 as a benchmark for the 2016 Pseudo-Boolean Competition ([PB2016](http://www.cril.univ-artois.fr/PB16/)). This competition will be 
 held during the 19th International Conference on Theory and Applications of Satisfiability 
 Testing ([SAT2016](http://sat2016.labri.fr)).
