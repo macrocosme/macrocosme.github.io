@@ -27,6 +27,4 @@ Hence, the pseudo-boolean solvers at PB16 will (likely) be tested to see how fas
 
 I'm looking forward to see the results!
 
-p.s. I believe Danny has an algorithm to find them faster than with this model, but I've never seen it!
-
 ![alt text](https://macrocosme.github.io/images/fig1_sync.png "Fig. 1 of Dany Vohl, Claude-Guy Quimper, and Danny Dubé. Finding Synchronization Codes to Boost Compression by Substring Enumeration. In Proceedings of the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012), held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12), 16 pages, 2012.")
