@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OPB files from SyncBits paper to be used as benchmark at PB16!
+title: Vohl et al. 2016 paper published! 
 ---
 
 ![alt text](https://macrocosme.github.io/images/paper-large-scale.png "Paper as advertised on PeerJ CS.")
