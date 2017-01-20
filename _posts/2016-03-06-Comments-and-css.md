@@ -22,7 +22,7 @@ I then looked around in the css file to get the proper alignment and width.
 
  I ended up adding this css:
 
- ```
+ ```css
 #disqus_thread {
     margin: 0 auto;
     width: 50em;
