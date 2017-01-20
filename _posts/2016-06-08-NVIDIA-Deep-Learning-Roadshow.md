@@ -18,15 +18,12 @@ Some papers of interest:
 Some libraries:
  cuDNN, [NCCL](https://github.com/NVIDIA/nccl), cuSPARSE, cuBLAS, cuFFT...
 
-Post-presentation thought: A bit too high level but a good overview of what can be used through NVIDIA for deep learning.
 
 ![alt text](https://macrocosme.github.io/images/IMG_9175.jpg "AI timeline")
 ![alt text](https://macrocosme.github.io/images/IMG_9178.jpg "What you can get/use")
 
 
 # NVIDIA DGX-1, PASCAL AND NVLINK (Pradeep Gupta, NVIDIA)
-
-Thought: Seems to be targeted to HPC hardware management people. 
 
 (PCI --> 16GB/s) : NVLink --> 4 links @ 20GB/s (GPU to GPU, GPU to CPU, ...) 
 CoWoS HBM2 (2.5D memory)
@@ -104,7 +101,7 @@ word2vec (google)
 
 RNN is a new feature in cuDNN v5.
 
-Some a few more blurry slides on RNN I thought were interesting at the time:
+A few more blurry slides on RNN I thought were interesting at the time:
 ![alt text](https://macrocosme.github.io/images/IMG_9185.jpg "RNN 1")
 ![alt text](https://macrocosme.github.io/images/IMG_9186.jpg "RNN 2")
 ![alt text](https://macrocosme.github.io/images/IMG_9187.jpg "RNN 3")
