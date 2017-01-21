@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutorial
 ---
 
 <!-- Wrapper-->
@@ -19,49 +19,121 @@ layout: default
 
     <!-- intro -->
     <article id="intro" class="panel">
-        <header>
-            <h2>Introduction</h2>
-            <h3>Why do we need version control?</h3>
-            <h3>What is Git?</h3>
-        </header>
+        <div class="posts">
+            {% for post in site.tutorial.basics %}
+            <hr>
+            <article class="post">
+                <h2>
+                    {{ post.title }}
+                </h2>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- basics -->
     <article id="basics" class="panel">
-      <h2>Basics</h2>
-      <h3></h3>
-
-
+        <div class="posts">
+            {% for post in site.tutorial.basics %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- comparing -->
     <article id="comparing" class="panel">
-      <h2>Comparing</h2>
-      <h3></h3>
+        <div class="posts">
+            {% for post in site.tutorial.comparing %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- branches -->
     <article id="branches" class="panel">
-      <h2>Branches</h2>
-      <h3></h3>
+        <div class="posts">
+            {% for post in site.tutorial.branches %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- merge -->
     <article id="merge" class="panel">
-      <h2>Merge & Conflicts</h2>
-      <h3></h3>
+        <div class="posts">
+            {% for post in site.tutorial.merge %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- github -->
     <article id="github" class="panel">
-      <h2>Github</h2>
-      <h3></h3>
+        <div class="posts">
+            {% for post in site.tutorial.github %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
     <!-- more -->
     <article id="more" class="panel">
-      <h2>More</h2>
-      <h3></h3>
+        <div class="posts">
+            {% for post in site.tutorial.more %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
     </article>
 
   </div>
