@@ -753,8 +753,8 @@
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 500;
-		color: #333333;
+		font-weight: 300;
+		color: #000000;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -770,12 +770,12 @@
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 500;
-		color: #333333;
+		font-weight: 300;
+		color: #000000;
 	}
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
-		font-weight: 600;
+		font-weight: 400;
 		color: #363636;
 	}
 
@@ -832,7 +832,7 @@
 
 		table.default th {
 			text-align: left;
-			font-weight: 600;
+			font-weight: 400;
 			padding: 0.5em 1em 0.5em 1em;
 		}
 
@@ -844,7 +844,7 @@
 
 	form label {
 		display: block;
-		font-weight: 600;
+		font-weight: 400;
 		color: #363636;
 		margin: 0 0 1em 0;
 	}
@@ -980,7 +980,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #000000;
 		}
 
 		input[type="button"]:active,
@@ -996,7 +996,7 @@
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background-color: #333333;
+			background-color: #000000;
 		}
 
 			input[type="button"].alt:hover,
