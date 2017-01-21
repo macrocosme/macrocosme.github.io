@@ -752,7 +752,7 @@
 		cardboard_texture.jpg
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
-		font-family: 'Amatic SC', serif;
+		font-family: 'EB Garamond', serif;
 		font-weight: 300;
 		color: #777777;
 	}
@@ -769,7 +769,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Amatic SC', serif;
+		font-family: 'EB Garamond', serif;
 		font-weight: 300;
 		color: #777777;
 	}
