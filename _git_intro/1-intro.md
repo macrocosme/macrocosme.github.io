@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction
+title: Introduction: version control with git
 ---
 
 This is a tutorial about version control, and in particular git, for 

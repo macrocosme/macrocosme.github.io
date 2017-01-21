@@ -3,7 +3,7 @@ layout: post
 title: Git
 ---
 
-In this tutorial we will be using [Git](http://git-scm.com/] for version control. 
+In this tutorial we will be using [Git](http://git-scm.com/) for version control. 
 
 > *Git is a free and open source distributed version control system
 > designed to handle everything from small to very large projects with speed
