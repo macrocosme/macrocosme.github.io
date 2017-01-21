@@ -1,0 +1,73 @@
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Header -->
+<header id="header" class="alt">
+	<span class="logo"><img src="images/logo.svg" alt="" /></span>
+	<h1>Introduction to version control with git</h1>
+	<h2>ANITA 2017 Astroinformatics school, Hobart, Tasmania.</h2>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+	<ul>
+		<li><a href="#intro" class="active">Introduction</a></li>
+		<li><a href="#basics">Basics</a></li>
+		<li><a href="#view">View</a></li>
+		<li><a href="#branch">Branch</a></li>
+		<li><a href="#merge">Merge</a></li>
+		<li><a href="#collaboration">Collaboration</a></li>
+		<li><a href="#more">More</a></li>
+	</ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+		{% for post in site.git_tutorial %}
+		<section id={{ post.title }} class="main special">
+			<div class="major">
+				<div class="content">
+					<hr>
+					<header class="major">
+						<h2>{{ post.title }}</h2>
+					</header>
+					<p class="content">
+						{{ post.content }}
+					</p>
+				</div>
+			</div>
+		</section>
+		{% endfor %}
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<section>
+		<h2>About me</h2>
+		<p>I am a 3rd year PhD student at the Centre for Astrophysics and Supercomputing, Swinburne University of Technology.
+			I research novel tools and methods related to visualisation
+			and analysis, data storage and data transfer of large survey data --
+			all of which are developed to enable large and heterogeneous
+			collaborations and surveys.</p>
+	</section>
+	<section>
+		<h2>Tutorial by Dany Vohl</h2>
+		<dl class="alt">
+			<dt>Email</dt>
+			<dd><a href="#">dvohl [at] swin [dot] edu [dot] au</a></dd>
+		</dl>
+		<ul class="icons">
+			<li><a href="https://twitter.com/danyvohl" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+			<li><a href="https://github.com/macrocosme" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+			<li><a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon fa-google alt"><span class="label">Scholar</span></a></li>
+			<li><a href="https://au.linkedin.com/in/dany-vohl-2933028" class="icon fa-linkedin-square alt"><span class="label">LinkedIn</span></a></li>
+		</ul>
+	</section>
+	<!--p class="copyright">&copy; Dany Vohl, 2017. All right reserved.</p><p>Scaffold: <a href="http://html5up.net">HTML5 UP</a></p-->
+	<p class="copyright"> This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License.</a>
+		Scaffold: <a href="http://html5up.net">HTML5 UP</a>
+	</p>
+</footer>
+
+</div>
