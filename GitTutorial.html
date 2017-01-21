@@ -27,8 +27,12 @@ layout: tutorial
 <!-- Main -->
 <div id="main">
 
+		<script>
+			ids = ['intro', 'basics', 'view', 'branch', 'merge', 'collaboration', 'more'];
+			counter = 0;
+		</script>
 		{% for post in site.git_tutorial %}
-		<section id={{ post.title }} class="main special">
+			<script>document.write('<section id="'+ids[counter]+'" class="main special">'); counter+=1;</script>
 			<div class="major">
 				<div class="content">
 					<hr>
