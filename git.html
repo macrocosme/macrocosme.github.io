@@ -20,8 +20,7 @@ layout: tutorial
     <!-- intro -->
     <article id="intro" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'intro' %}
+            {% for post in site.git_intro %}
             <hr>
             <article class="post">
                 <h2>
@@ -31,16 +30,14 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
 
-    <!-- basics -->
+    <!-- git_basics -->
     <article id="basics" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'basics' %}
+            {% for post in site.git_basics %}
             <hr>
             <article class="post">
                 <h3>
@@ -50,16 +47,14 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
 
-    <!-- comparing -->
+    <!-- git_comparing -->
     <article id="comparing" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'comparing' %}
+            {% for post in site.git_comparing %}
             <hr>
             <article class="post">
                 <h3>
@@ -69,7 +64,6 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
@@ -77,8 +71,7 @@ layout: tutorial
     <!-- branches -->
     <article id="branches" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'branches' %}
+            {% for post in site.git_branches %}
             <hr>
             <article class="post">
                 <h3>
@@ -88,7 +81,6 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
@@ -96,8 +88,7 @@ layout: tutorial
     <!-- merge -->
     <article id="merge" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'merge' %}
+            {% for post in site.git_merge %}
             <hr>
             <article class="post">
                 <h3>
@@ -107,7 +98,6 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
@@ -115,8 +105,7 @@ layout: tutorial
     <!-- github -->
     <article id="github" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'github' %}
+            {% for post in site.git_github %}
             <hr>
             <article class="post">
                 <h3>
@@ -126,7 +115,6 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>
@@ -134,8 +122,7 @@ layout: tutorial
     <!-- more -->
     <article id="more" class="panel">
         <div class="posts">
-            {% for post in site.tutorial %}
-            {% if post.category == 'more' %}
+            {% for post in site.git_more %}
             <hr>
             <article class="post">
                 <h3>
@@ -145,7 +132,6 @@ layout: tutorial
                     {{ post.content }}
                 </p>
             </article>
-            {% endif %}
             {% endfor %}
         </div>
     </article>

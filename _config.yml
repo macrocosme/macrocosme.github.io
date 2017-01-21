@@ -33,7 +33,15 @@ footer-links:
 
 
 collections:
-  - tutorial
+  - git_basics
+  - git_branches
+  - git_comparing
+  - git_github
+  - git_intro
+  - git_merge
+  - git_more
+
+
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
