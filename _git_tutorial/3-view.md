@@ -147,7 +147,7 @@ You can find a list of options [here](https://git-scm.com/download/gui/linux).
 
 ![alt text](https://macrocosme.github.io/images/gitk.jpg "gitk")
 
-![alt text](https://macrocosme.github.io/images/github-gui.jpg "github")
+![alt text](https://macrocosme.github.io/images/github-gui.png "github")
 
 
 # Playing the blame game
