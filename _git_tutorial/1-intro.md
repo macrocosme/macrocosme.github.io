@@ -17,9 +17,8 @@ branches
 merging and conflicts
 online hosting and collaboration
 
-This tutorial follows the excellent tutorial by Simon Mutch from Astroinformatics 2013, 
-with changes here and there. If you prefer a documentation-style structure, you can find the original version
-[here](](http://astroinformaticsau.github.io/VersionControlTutorial/index.html).
+This tutorial follows the [excellent tutorial by Simon Mutch from Astroinformatics 2013](http://astroinformaticsau.github.io/VersionControlTutorial/index.html), 
+with changes here and there.
 
 # What is version control?
 
