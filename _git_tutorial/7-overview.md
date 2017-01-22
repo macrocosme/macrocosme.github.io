@@ -3,6 +3,9 @@ layout: post
 title: Commands overview
 ---
 
-![alt text](https://macrocosme.github.io/images/git-cheatsheet.png "cheat sheet")
+![alt text](https://macrocosme.github.io/images/github-git-cheat-sheet.jpg "cheat sheet")
 
-Source: [github.com/hbons/git-cheat-sheet](https://github.com/hbons/git-cheat-sheet)
+You can find the original pdf of this figure [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf).
+
+Another good cheat sheet style website, I encourage you to have a look 
+at [http://ndpsoftware.com/git-cheatsheet.html](http://ndpsoftware.com/git-cheatsheet.html).

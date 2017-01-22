@@ -9,15 +9,15 @@ title: More
 
 Other great tutorials and resources for learning Git include:
 
-* The Git Pro book (`<http://git-scm.com/book>`_)
-* The Github help pages (`<https://help.github.com/>`_) 
-* John McDonnell's Git for Scientists tutorial
-  (`<http://nyuccl.org/pages/GitTutorial/>`_)
+* [GitHub online interactive tutorial](https://try.github.io/levels/1/challenges/1)
+* [The Git Pro book](http://git-scm.com/book)
+* [The Github help pages](https://help.github.com/) 
+* [John McDonnell's Git for Scientists tutorial](http://nyuccl.org/pages/GitTutorial/)
 
 
 ## GUI clients
 
-See the `list <http://git-scm.com/downloads/guis>`_ on the Git homepage for a
+See the [list](http://git-scm.com/downloads/guis) on the Git homepage for a
 good run down on the different options here. 
 
 
