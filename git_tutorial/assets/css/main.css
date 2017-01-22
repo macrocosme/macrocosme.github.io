@@ -3358,6 +3358,9 @@
 			#nav {
 				/*display: none;*/
 				display: inline-block;
+				width: 64em;
+				max-width: calc(100% - 4em);
+				padding: 1em;
 			}
 
 				#nav + #main {
