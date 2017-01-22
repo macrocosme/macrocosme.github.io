@@ -308,20 +308,16 @@ the following diagram:
 
 ## **Command summary**
 
-+------------------------+-------------------------------------------+
-| Command                | Description                               |
-+========================+===========================================+
-| ``git init``           | Initialise a new Git repository.          |
-+------------------------+-------------------------------------------+
-| ``git status``         | Check the current status of a repository. |
-+------------------------+-------------------------------------------+
-| ``git add``            | Stage new and modified files.             |
-+------------------------+-------------------------------------------+
-| ``git commit``         | Commit staged changes.                    |
-+------------------------+-------------------------------------------+
-| ``git commit --amend`` | Amend the last commit                     |
-+------------------------+-------------------------------------------+
-| ``git rm``             | Delete a file and stage this change.      |
-+------------------------+-------------------------------------------+
-| ``git mv``             | Move a file and stage this change.        |
-+------------------------+-------------------------------------------+
+``git init``: Initialise a new Git repository.
+
+``git status``: Check the current status of a repository.
+
+``git add``: Stage new and modified files.
+
+``git commit``: Commit staged changes.
+
+``git commit --amend``: Amend the last commit.
+
+``git rm``: Delete a file and stage this change.
+
+``git mv``: Move a file and stage this change.
