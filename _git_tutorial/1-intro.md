@@ -9,13 +9,13 @@ title: Foreword
 This session introduces the concept of version control and its particular importance for researchers. 
 We will also try out some practical examples using the Git version control system and touch on the following topics:
 
-> * **basic usage (creating a repository, adding files, committing changes)**
-> * **branches**
-> * **merging and conflicts**
-> * **online hosting and collaboration**
+> 1. **basic usage (creating a repository, adding files, committing changes)**
+> 2. **branches**
+> 3. **merging and conflicts**
+> 4. **online hosting and collaboration**
 
 This tutorial follows the [excellent tutorial](http://astroinformaticsau.github.io/VersionControlTutorial/index.html)
-by Simon Mutch from Astroinformatics 2013, with mofidications here and there.
+by Simon Mutch (Astroinformatics 2013), with mofidications here and there.
 
 --------
 
