@@ -299,6 +299,7 @@ The method with which we move each file from one state to another is outlined in
 the following diagram:
 
 ![alt text](https://macrocosme.github.io/images/file-lifecycle.png "lifecycle")
+
 Credit: The [Pro Git](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository) book.
 
 
