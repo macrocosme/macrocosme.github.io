@@ -1702,7 +1702,8 @@
 	}
 
 	p {
-		font-size: 25px;
+		font-size: 22px;
+		text-align: justify;
 		margin: 0 0 2em 0;
 	}
 
