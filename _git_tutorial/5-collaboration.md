@@ -8,27 +8,26 @@ title: Collaboration
 As well as managing our own codes and documents, another important use of
 version control is for collaboration...
 
-## Online hosting
+## **Online hosting**
 
-As :ref:`already discussed <git_intro>`, Git uses a "distributed" model that
+As already discussed in the Basics section, Git uses a "distributed" model that
 allows everyone working on a project to have their own independent copy of the
 entire repository.  To collaborate effectively though we need a central version
 of the code base which is used to unify everyones' efforts.  Typically the best
 place for such a central repository is online.
 
 There are a number of excellent options for online hosting of git repositories
-(for a list see `this
-<http://en.wikipedia.org/wiki/Git_(software)#Source_code_hosting>`_ Wikipedia
+(for a list see [this](http://en.wikipedia.org/wiki/Git_(software)#Source_code_hosting) Wikipedia
 entry). However, there are two options in particular which stand out in my
 opinion:
 
-* `Bitbucket <https://bitbucket.org/>`_: This site overs unlimited free public
+* [Bitbucket])https://bitbucket.org/): This site overs unlimited free public
   repositories (where anyone can see and checkout your project).  If you have an
   email address from an academic institution though, then you can also get
   [unlimited free private repositories](http://blog.bitbucket.org/2012/08/20/bitbucket-academic/)!  These
   repositories only allow users who you specify to have access.  
   
-* `Github`_: This is site also offers unlimited free
+* [Github](http://github.com): This is site also offers unlimited free
   public repositories.  With an academic institution email address you can also
   get 5 free private repositories.  Github is probably **the** place for new
   open source software and tools.  It's a fantastic service and well worth
@@ -37,7 +36,7 @@ opinion:
   Github.
 
 
-## Cloning a repository
+## **Cloning a repository**
 
 If you have the address (and correct permissions) for an online repository then
 you can grab your own copy using the ``clone`` command.  Try cloning your own
@@ -60,7 +59,7 @@ and you will see that you also have the full commit history.
 
 
 
-## Collaboration strategies
+## **Collaboration strategies**
 
 Unfortunately, it is out-with the scope of this tutorial to cover all of the
 different ways you can collaborate with Git.  There are a number of options for
