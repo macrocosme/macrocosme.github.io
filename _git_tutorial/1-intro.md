@@ -4,6 +4,8 @@ title: Introduction to version control with git
 
 ---
 
+![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd")
+
 This is a tutorial for 
 the [2017 ASA/ANITA Astroinformatics Summer School](https://asa-anita.github.io/workshop2017/).
 
@@ -15,8 +17,9 @@ branches
 merging and conflicts
 online hosting and collaboration
 
-This tutorial follows the excellent [tutorial by Simon Mutch](http://astroinformaticsau.github.io/VersionControlTutorial/index.html) 
-from Astroinformatics 2013, with changes here and there.
+This tutorial follows the excellent tutorial by Simon Mutch from Astroinformatics 2013, 
+with changes here and there. If you prefer a documentation-style structure, you can find the original version
+[here](](http://astroinformaticsau.github.io/VersionControlTutorial/index.html).
 
 # What is version control?
 
@@ -87,7 +90,7 @@ writing papers.  Here we can use version control to:
 The upshot is **you should use version control for almost everything**.  The
 benefits are well worth it...
 
-# Git
+# Introducing... Git!
 
 In this tutorial we will be using [Git](http://git-scm.com/) for version control. 
 

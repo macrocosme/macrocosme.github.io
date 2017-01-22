@@ -55,8 +55,8 @@ looking at the help for the ``log`` command:
     % git help log
 ```
 
-.. tip:
-
+> ## **tip:**
+>
 > ``git help <command>`` can be used to get the documentation for almost every
 > Git command.  If you type ``git help`` on it's own, you will also be
 > presented with a list of all major commands for reference.
@@ -129,8 +129,8 @@ commits.
 since the last commit.  To do this simply run the command with no arguments.
 
 
-## **Exercise 2a**
-
+> ## **Exercise 2a**
+>
 > Add a sentence to the section "A New Hope" of ``paper.tex`` but don't
 >   commit the change.  Now try running:
 >
@@ -140,12 +140,12 @@ since the last commit.  To do this simply run the command with no arguments.
 
 
 Another useful way to view the commit history of your repository is to use the
-``gitk`` GUI program which is packaged with Git.  This program displays both the
-commit history and relevant diffs all together.
+``gitk`` Graphical User Interface (GUI) program which is packaged with Git.  This program displays both the
+commit history and relevant diffs all together. There are other GUI options like [GitHub GUI](https://desktop.github.com). 
+You can find a list of options [here](https://git-scm.com/download/gui/linux).
 
-.. image: /_static/gitk.jpg
-   :align: center
-   :width: 80%
+
+![alt text](https://macrocosme.github.io/images/gitk.jpg "Tree")
 
 
 # Playing the blame game

@@ -277,8 +277,8 @@ achieved by passing the ``--cached`` flag to the ``rm`` command (i.e. ``git rm
 
 > ## **Exercise 1b**
 >
->  Remove the bibliography.tex file you added in :ref:`Exercise
->  1a<exercise-1a>` using the ``git rm <file>`` command.  Remember to commit
+>  Remove the bibliography.tex file you added in Exercise 1a 
+>  using the ``git rm <file>`` command.  Remember to commit
 >  afterwards!
 
 To move or rename a file, use the ``git mv`` command.  This will again both move
@@ -298,12 +298,8 @@ Git.  Each file can have one of four different states:
 The method with which we move each file from one state to another is outlined in
 the following diagram:
 
-.. figure: /_static/file-lifecycle.png
-   :align: center
-   :width: 50%
-
-   Credit: The [Pro Git](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository)
-   book.
+![alt text](https://macrocosme.github.io/images/file-lifecycle.png "lifecycle")
+Credit: The [Pro Git](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository) book.
 
 
 # **Command summary**
