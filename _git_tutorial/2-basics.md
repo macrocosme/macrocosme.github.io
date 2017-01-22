@@ -298,9 +298,9 @@ Git.  Each file can have one of four different states:
 The method with which we move each file from one state to another is outlined in
 the following diagram:
 
-![alt text](https://macrocosme.github.io/images/file-lifecycle.png "lifecycle")
+![alt text](https://macrocosme.github.io/images/lifecycle.png "lifecycle")
 
-Credit: The [Pro Git](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository) book.
+Source: [http://adamwilson.us/RDataScience/11_Git.html](http://adamwilson.us/RDataScience/11_Git.html).
 
 
 # **Command summary**
