@@ -4,8 +4,7 @@ title: Foreword
 
 ---
 
-![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd")
-#### Image created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)
+![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd") #####Image created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)
 
 This session introduces the concept of version control and its particular importance for researchers. 
 We will also try out some practical examples using the Git version control system and touch on the following topics:
