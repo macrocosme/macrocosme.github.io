@@ -89,11 +89,9 @@ Your commit reference will be different to mine however, and so you must
 substitute the appropriate reference in place of ``ef5ca0a``.  Remember, you
 can get this reference using the ``git log`` command as outlined above.
 
-.. highlight: diff
-
 Once you run ``git diff`` successfully, you will see something like this:
 
-```bash
+```diff
     diff --git c/appendix.tex w/appendix.tex
     new file mode 100644
     index 0000000..e69de29
@@ -110,8 +108,6 @@ Once you run ``git diff`` successfully, you will see something like this:
     +
      \end{document}
 ```
-
-.. highlight: console
 
 The ``+`` signs show text which has been added since our first commit, and any
 ``-`` signs would indicate text which has been removed.  At the top of the diff,
@@ -133,7 +129,7 @@ commits.
 since the last commit.  To do this simply run the command with no arguments.
 
 
-.. topic: Exercise 2a
+## Exercise 2a
 
 > Add a sentence to the section "A New Hope" of ``paper.tex`` but don't
 >   commit the change.  Now try running:

@@ -3,98 +3,328 @@ layout: post
 title: Basics
 ---
 
-# What is version control?
+First steps
+===========
 
-Version control, a.k.a. revision control / source code management, is basically
-a system for recording and managing changes made to files and folders.  It is
-commonly used to manage source code, however, it is also well suited to
-tracking changes to any kind of file which contains mostly text.  It can also
-be used by a lone developer or as a means for many people to share and
-collaborate on projects efficiently and safely.
+I'll assume that you already have git installed on your system.  If not then
+probably the easiest way to achieve this is to download an installer from [here](http://git-scm.com/downloads).
 
-Chances are, you already employ your own version control system, even if you
-don't realise it...  Many modern editors such as Microsoft Word and Apple Pages
-have this facility built in.  Also Dropbox maintains a full history of all of
-the files you have deletes and edited during the last month. 
+Once you have Git installed, the next step is to provide it with your name and
+email address which will be used to sign your commits.  This provides us with
+the ability to see who made what changes when collaborating on a project.
 
-You have almost certainly employed your own simple form of a version control
-system in the past.  Here is an example:
+Type the following in a terminal, making the obvious substitutions:
 
-![alt text](https://macrocosme.github.io/images/intro1.png "Tree")
+```bash
+    % git config --global user.name "G Lucas" 
+    % git config --global user.email glucas@jabbaspalace.edu.au
+```
 
-This image shows the files and folders making up a paper fictitious paper
-submission.  There are a number of saved copies of the final ``article.tex``
-which have created incrementally as the paper has been written, redrafted and
-submitted.  These are called **revisions**.  By looking at any of these
-revisions we are able to see the state of the paper as it was when the revision
-file was saved.  By comparing revision files we can also get a rough idea of
-how the paper developed and changed as it was written.  Of course, the more
-saved revisions we have, the easier it is to piece together how things changed
-over time.
+Next you need to tell Git what editor you want to use when Git needs you to type
+something:
+   
+```bash
+    % git config --global core.editor vim
+```
 
-# Why you should use it (for everything)?
+You should replace ``vim`` with what ever your favorite editor is (e.g.
+``emacs``, ``nano``, ``subl``, etc.).
 
-> *In practice, everything that has been created manually should be put in
-> version control, including programs, original field observations, and the
-> source files for papers.*
+You can also make things a little easier on the eyes by telling Git to add some
+color to its messages:
+
+```bash
+    % git config --global color.ui true
+```
+
+Now that your all set up we can start looking at actually using Git for version
+control.  In what follows, we will use writing and collaborating on a LaTeX
+paper as an example project... 
+
+
+Creating a repository
+---------------------
+
+First of all we need to start our paper by creating a repository. 
+
+Decide where you would like your paper to be stored and ``cd`` to that
+directory.  Once there, create a new directory for the paper:
+
+```bash
+    % mkdir dummy_paper
+    % cd dummy_paper
+```
+
+Now initialise your empty repository by typing:
+
+```bash
+    % git init
+```
+
+To check everything has been successful type:
+
+```bash
+    % ls -a
+```
+
+and you should see the directory ``.git``.  This special folder is where Git
+will store and manage the version control history of your project.  
+
+## warning:
+
+>    Unless you are familiar with Git it is generally best to avoid touching the
+>    ``.git`` folder or it's contents.
+
+
+
+Adding files
+------------
+
+Now we have our fresh Git repository.  The next step is to start adding files!
+
+Use your editor of choice to start a LaTeX file named ``paper.tex`` in your
+project directory (``dummy_paper``).   Add the following to your file and save
+your changes:
+
+```LaTeX
+    \documentclass{article}   
+
+    \title{A dummy paper}
+
+    \begin{document}
+    \maketitle
+
+    \section{Introduction}
+    A long time ago in a galaxy far, far away...
+
+    \end{document}
+```
+
+### note:
+
+>   If your unsure what editor to use you can try ``nano`` for this simple
+>     exercise:
 >
->  -- Best Practices for Scientific Computing; Wilson et al. 2012
->   [arXiv:1210.0530](http://arxiv.org/abs/1210.0530)
-
-In important aspect of any scientific endeavour is **reproducibility**.  We
-should be able to replicate every figure we have ever published, even if we have
-significantly developed our codes and tools since. 
-
-As astronomers, we spend much of our time writing code, whether it be a
-simulation code or an observational reduction pipeline.  As such, our codes are
-often constantly evolving.  By putting all of our code under version control we
-can:
-
-* tag code versions for later reference *(via tags)*.
-* record a unique identifier for the exact code version used to produce a
-  particular plot or result *(via commit identifiers)*.
-* roll back our code to previous states *(via checkout)*.
-* identify when/how bugs were introduced *(via diff/blame)*.
-* keep multiple versions of the same code in sync with each other *(via
-  branches/merging)*.
-* efficiently share and collaborate on our codes with others *(via
-  remotes/online hosting)*.
-
-It's important to also realise that many of the advantages of version control
-are not limited to just managing code.  For example, it can also be useful when
-writing papers.  Here we can use version control to:
-
-* bring back that paragraph we accidentally deleted last week.
-* try out a different structure and simply disregard it if we don't like it.
-* concurrently work on a paper with a collaborator and then automatically merge
-  all of our changes together.
-
-The upshot is **you should use version control for almost everything**.  The
-benefits are well worth it...
-
-# Git
-
-In this tutorial we will be using [Git](http://git-scm.com/) for version control. 
-
-> *Git is a free and open source distributed version control system
-> designed to handle everything from small to very large projects with speed
-> and efficiency.*
+>     ``% nano paper.tex``
 >
-> *Git is easy to learn and has a tiny footprint with lightning fast
-> performance. It outclasses SCM tools like Subversion, CVS, Perforce, and
-> ClearCase with features like cheap local branching, convenient staging
-> areas, and multiple workflows.*
+>   To save and exit the file press ``Control-x``, then answer the question
+>     with the ``y`` key, before finally accepting the filename presented by
+>     hitting ``Enter``. 
+
+Now let's check the status of our repository using the following command:
+
+```bash
+    % git status
+```
+
+You should see something similar to the following:
+
+```git
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Untracked files:
+    #   (use "git add <file>..." to include in what will be committed)
+    #
+    #	paper.tex
+    nothing added to commit but untracked files present (use "git add" to track) 
+```
+
+This tells us that ``paper.tex`` currently falls under the category of
+"untracked" files.  In other words, Git is not tracking any changes we make to
+this file.
+
+In order to tell Git to start tracking our new file, use the following command:
+
+```bash
+    % git add paper.tex
+```
+
+# Committing changes
+
+At this point, if you type again:
+
+```bash
+    % git status
+```
+
+you should see something like the following:
+
+```git
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Changes to be committed:
+    #   (use "git rm --cached <file>..." to unstage)
+    #
+    #	new file:   paper.tex
+    #
+```
+
+This tells us that we have changes to our repository (here the creation of a new
+file called ``paper.tex``) that need to be "committed".
+
+Committing changes to the repository is the key step of version control.  This
+is where we save a snapshot of the current state of all tracked files.  To
+commit our current changes type:
+
+```bash
+    % git commit
+```
+
+This will bring up your favorite editor to allow you to provide a "commit
+message".  On the **first line** of the file write the following commit
+message:
+
+```git
+    Add basic structure of paper.tex
+```
+
+then save and exit.
+
+That's it!  We have now created a repository, added our first file and committed
+our changes.
+
+## tip:
+
+>    Writing good commit messages will make your life much easier in future when
+>    trying to track down particular changes.  The first line should be a short
+>    (i.e. less than 80 characters), descriptive message that makes it clear what
+>    the relevant changes being committed are.  If more detail is required then
+>    leave a blank line and add a longer more descriptive message there.
+
+    Also note that the norm is to use the future tense in a commit message.
+    i.e. if you were to apply the changes in the commit, the message would say
+    what would happen...
+
+
+# Staging modified files
+
+Add another section to ``paper.tex`` with the following:
+
+```latex
+    \section{A New Hope}
+    That's no moon, that's a battle station.
+```
+
+If you now run ``git status``, you should see the following:
+
+```git
+    # On branch master
+    # Changes not staged for commit:
+    #   (use "git add <file>..." to update what will be committed)
+    #   (use "git checkout -- <file>..." to discard changes in working directory)
+    #
+    #	modified:   paper.tex
+    #
+    no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+What Git now tells us is that ``paper.tex`` falls under the category of
+"Changes not staged for commit".  This means the file has changed since the last
+commit, however, we haven't told Git that we want to include these new changes
+in our next commit.  To do that, we must "stage" the file using ``git add``
+again:
+
+```bash
+    % git add paper.tex
+```
+
+A final check with ``git status`` should show that ``paper.tex`` now falls
+under the category of "Changes to be committed".
+
+## Exercise 1a
+
+>    Add another file to your git repository called ``appendix.tex``.  You can
+>    put whatever you want in here (or just leave it empty), but don't forget to
+>    ``add`` it to your repository.
 >
-> [Git website](http://git-scm.com/)
+>    Go ahead and commit your staged changes to both ``paper.tex`` and
+>    ``appendix.tex``.
 
-The main feature of Git that sets it apart from other alternatives is that its
-**distributed**.  This means every person has their own complete copy of the
-entire repository and can make changes as they like, only committing to, or
-checking out from, the 'central' repository when they are happy.  With more
-traditional "centralised" systems such as Subversion, users must have access to
-the central repository to commit any changes.  With Git, you could happily work
-away on a plane without an internet connection.
 
-Git is also much faster than many alternatives, such as Subversion, and is
-written primarily in C and shell script.  Finally - it's worth noting that Git
-was originally written by the famous Linus Torvalds (creator of Linux).
+# Dealing with mistakes
+
+Perhaps you make a typo in your commit message, or maybe you forget to stage an
+important change before committing.  In this case you can easily amend your
+last commit using the ``git commit --amend`` command.
+
+Let's imagine that we forgot to add the file ``bibliography.tex`` to our
+repository when we made our last commit.  To fix this, first create the file and
+then stage it into the index.  Finally, run ``git commit --amend``:
+
+```bash
+    % touch bibliography.tex
+    % git add bibliography.tex
+    % git commit --amend
+```
+
+You will then be given the opportunity to change the last commit message if you
+want to.
+
+
+# Deleting and moving files
+
+To delete a file in your repository use the ``git rm`` command.  This will both
+delete the file from the file system and stage this deletion action for your
+next commit.
+
+Alternatively, you can tell Git to remove a file from the repository (stop
+tracking the file) without actually deleting it from the file system.  This is
+achieved by passing the ``--cached`` flag to the ``rm`` command (i.e. ``git rm
+--cached <filename>``).
+
+## Exercise 1b
+
+>  Remove the bibliography.tex file you added in :ref:`Exercise
+>  1a<exercise-1a>` using the ``git rm <file>`` command.  Remember to commit
+>  afterwards!
+
+To move or rename a file, use the ``git mv`` command.  This will again both move
+the file and stage this change to the repository.
+
+
+# The circle of life
+
+At this point we have covered the basic "life cycle" of files and changes in
+Git.  Each file can have one of four different states:
+
+* **Untracked**: It's not listed in the last commit
+* **Unmodified**: It hasn't changed since the last commit
+* **Modified**: It has changed since the last commit
+* **Staged**: The changes will be recorded in the next commit made
+
+The method with which we move each file from one state to another is outlined in
+the following diagram:
+
+.. figure: /_static/file-lifecycle.png
+   :align: center
+   :width: 50%
+
+   Credit: The `Pro Git
+   <http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository>`_
+   book.
+
+
+Command summary
+---------------
+
++------------------------+-------------------------------------------+
+| Command                | Description                               |
++========================+===========================================+
+| ``git init``           | Initialise a new Git repository.          |
++------------------------+-------------------------------------------+
+| ``git status``         | Check the current status of a repository. |
++------------------------+-------------------------------------------+
+| ``git add``            | Stage new and modified files.             |
++------------------------+-------------------------------------------+
+| ``git commit``         | Commit staged changes.                    |
++------------------------+-------------------------------------------+
+| ``git commit --amend`` | Amend the last commit                     |
++------------------------+-------------------------------------------+
+| ``git rm``             | Delete a file and stage this change.      |
++------------------------+-------------------------------------------+
+| ``git mv``             | Move a file and stage this change.        |
++------------------------+-------------------------------------------+
