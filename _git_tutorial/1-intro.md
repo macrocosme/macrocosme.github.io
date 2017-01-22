@@ -37,7 +37,7 @@ the files you have deletes and edited during the last month.
 You have almost certainly employed your own simple form of a version control
 system in the past.  Here is an example:
 
-![alt text](https://macrocosme.github.io/images/folder-tree.png "Folder Tree")
+![alt text](https://macrocosme.github.io/images/tree.png "Folder Tree")
 
 This image shows the files and folders making up a paper fictitious paper
 submission.  There are a number of saved copies of the final ``article.tex``
