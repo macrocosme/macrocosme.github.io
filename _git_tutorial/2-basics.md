@@ -26,7 +26,7 @@ something:
     % git config --global core.editor vim
 ```
 
-You should replace ``vim`` with what ever your favorite editor is (e.g.
+You should replace ``vim`` with your favorite editor (e.g.
 ``emacs``, ``nano``, ``subl``, etc.).
 
 You can also make things a little easier on the eyes by telling Git to add some
@@ -68,8 +68,8 @@ To check everything has been successful type:
 and you should see the directory ``.git``.  This special folder is where Git
 will store and manage the version control history of your project.  
 
-## **warning:**
-
+> ## **warning:**
+>
 >    Unless you are familiar with Git it is generally best to avoid touching the
 >    ``.git`` folder or it's contents.
 
@@ -97,8 +97,8 @@ your changes:
     \end{document}
 ```
 
-### **note:**
-
+> ## **note:**
+>
 >   If your unsure what editor to use you can try ``nano`` for this simple
 >     exercise:
 >
@@ -137,6 +137,8 @@ In order to tell Git to start tracking our new file, use the following command:
 ```bash
     % git add paper.tex
 ```
+
+
 
 # Committing changes
 
@@ -184,8 +186,8 @@ then save and exit.
 That's it!  We have now created a repository, added our first file and committed
 our changes.
 
-## **Tip:**
-
+> ## **Tip:**
+>
 >    Writing good commit messages will make your life much easier in future when
 >    trying to track down particular changes.  The first line should be a short
 >    (i.e. less than 80 characters), descriptive message that makes it clear what
@@ -232,8 +234,8 @@ again:
 A final check with ``git status`` should show that ``paper.tex`` now falls
 under the category of "Changes to be committed".
 
-## **Exercise 1a**
-
+> ## **Exercise 1a**
+>
 >    Add another file to your git repository called ``appendix.tex``.  You can
 >    put whatever you want in here (or just leave it empty), but don't forget to
 >    ``add`` it to your repository.
@@ -273,8 +275,8 @@ tracking the file) without actually deleting it from the file system.  This is
 achieved by passing the ``--cached`` flag to the ``rm`` command (i.e. ``git rm
 --cached <filename>``).
 
-## **Exercise 1b**
-
+> ## **Exercise 1b**
+>
 >  Remove the bibliography.tex file you added in :ref:`Exercise
 >  1a<exercise-1a>` using the ``git rm <file>`` command.  Remember to commit
 >  afterwards!
@@ -300,8 +302,7 @@ the following diagram:
    :align: center
    :width: 50%
 
-   Credit: The `Pro Git
-   <http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository>`_
+   Credit: The [Pro Git](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository)
    book.
 
 
