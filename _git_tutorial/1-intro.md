@@ -60,7 +60,7 @@ over time.
 >  -- Best Practices for Scientific Computing; Wilson et al. 2012
 >   [arXiv:1210.0530](http://arxiv.org/abs/1210.0530)
 
-In important aspect of any scientific endeavour is **reproducibility**.  We
+An important aspect of any scientific endeavour is **reproducibility**.  We
 should be able to replicate every figure we have ever published, even if we have
 significantly developed our codes and tools since. 
 

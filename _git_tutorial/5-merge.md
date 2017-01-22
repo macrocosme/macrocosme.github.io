@@ -38,7 +38,7 @@ If everything runs smoothly, running ``git log`` should show your commits from
 the ``risky_idea`` branch.
 
 At this stage you could either checkout the ``risky_idea`` branch again and
-continue working, or if your finished with it you can delete it.  
+continue working, or if you are finished with it you can delete it.  
 
 We no longer need the ``risky_idea`` branch, so delete it using:
 

@@ -36,7 +36,7 @@ color to its messages:
     % git config --global color.ui true
 ```
 
-Now that your all set up we can start looking at actually using Git for version
+Now that you are all set up we can start looking at actually using Git for version
 control.  In what follows, we will use writing and collaborating on a LaTeX
 paper as an example project... 
 

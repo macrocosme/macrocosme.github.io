@@ -23,8 +23,8 @@ good run down on the different options here.
 
 # Miscelaneous
 
-If your feeling adventurous, try learning Git with [Githug](https://github.com/Gazler/githug).
+If you are feeling adventurous, try learning Git with [Githug](https://github.com/Gazler/githug).
 
-If your looking for an excellent command line Git client try [Tig](http://jonas.nitro.dk/tig/).
+If you are looking for an excellent command line Git client try [Tig](http://jonas.nitro.dk/tig/).
 
 If you use Vim then I can't recommend enough the [Fugitive](https://github.com/tpope/vim-fugitive) plugin.
