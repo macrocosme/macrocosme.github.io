@@ -9,5 +9,5 @@ title: Commands overview
 
 You can find the original pdf of the above figures [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf).
 
-Another good cheat sheet style website, I encourage you to have a look 
+For another good `cheat sheet'-style website, I encourage you to have a look
 at [http://ndpsoftware.com/git-cheatsheet.html](http://ndpsoftware.com/git-cheatsheet.html).
