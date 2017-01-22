@@ -3356,11 +3356,13 @@
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				/*display: none;*/
+				display: inline-block;
 			}
 
 				#nav + #main {
-					padding-top: 0;
+					/*padding-top: 0;*/
+					padding-top: 4.25em;
 				}
 
 		}
