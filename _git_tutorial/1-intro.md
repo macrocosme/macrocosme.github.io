@@ -16,7 +16,7 @@ merging and conflicts
 online hosting and collaboration
 
 This tutorial follows the excellent [tutorial by Simon Mutch](http://astroinformaticsau.github.io/VersionControlTutorial/index.html) 
-from Astroinformatics 2013.
+from Astroinformatics 2013, with changes here and there.
 
 # What is version control?
 

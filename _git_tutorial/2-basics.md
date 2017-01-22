@@ -306,7 +306,7 @@ the following diagram:
    book.
 
 
-## **Command summary**
+# **Command summary**
 
 ``git init``: Initialise a new Git repository.
 
