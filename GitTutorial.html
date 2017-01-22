@@ -32,7 +32,7 @@ layout: tutorial
 			counter = 0;
 		</script>
 		{% for post in site.git_tutorial %}
-			<script>if (counter > 1){document.write('<section id="'+ids[counter]+'" class="main special">'); counter+=1;}
+			<script>if (counter > 0){document.write('<section id="'+ids[counter]+'" class="main special">'); counter+=1;}
 					else {document.write('<section id="'+ids[counter]+'" class="main">'); counter+=1;}
 			</script>
 				<header class="major">
