@@ -37,13 +37,13 @@ recent commit first).
 There are a whole host of flags and arguments you can pass to ``git log`` to
 change what information is presented and how it looks.  For example, try typing:
 
-```git
+```bash
     % git log --pretty=format:"%h %s <%an>" --graph
 ```
 
 The result should be something like this:
 
-```git
+```bash
     * 98cdaf3 Delete bibliography.tex. <Simon Mutch>
     * cc745db Add another section, appendix.tex and bibliography.tex. <Simon Mutch>
     * f615b15 Add basic structure of paper.tex <Simon Mutch>
@@ -51,7 +51,7 @@ The result should be something like this:
 To investigate all the different options for formatting your log output, try
 looking at the help for the ``log`` command:
 
-```git
+```bash
     % git help log
 ```
 
@@ -65,7 +65,7 @@ Its useful to be able to have this concise view of the log without having to
 type the long command every time.  We can achieve this by adding the command as
 an alias.  Try this command:
 
-```git
+```bash
     % git config --global alias.lg 'log --pretty=format:"%h %s <%an>" --graph'  
 ```
 
@@ -81,7 +81,7 @@ changed.  To do this we use the ``git diff`` command.  For example, to see how
 our paper has changed between the most recent commit and our first commit **I**
 would type:
 
-```git
+```bash
     % git diff ef5ca0a
 ```
 
@@ -93,7 +93,7 @@ can get this reference using the ``git log`` command as outlined above.
 
 Once you run ``git diff`` successfully, you will see something like this:
 
-```git
+```bash
     diff --git c/appendix.tex w/appendix.tex
     new file mode 100644
     index 0000000..e69de29
@@ -120,7 +120,7 @@ we can also see that we have added the ``appendix.tex`` file.
 By specifying only one commit reference when calling ``git diff`` we actually
 implicitly ran:
 
-```git
+```bash
     % git diff ef5ca0a..HEAD
 ```
 
@@ -159,7 +159,7 @@ see in which commit each line was last changed.  Imagine that we identified a
 bug in a line of code.  We could then use this technique to see how long ago
 that bug was introduced (and by who!).  Try this:
 
-```git
+```bash
     % git blame paper.tex --date=relative
 ```
 
