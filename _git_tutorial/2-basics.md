@@ -32,7 +32,7 @@ how the paper developed and changed as it was written.  Of course, the more
 saved revisions we have, the easier it is to piece together how things changed
 over time.
 
-## Why you should use it (for everything)?
+# Why you should use it (for everything)?
 
 > *In practice, everything that has been created manually should be put in
 > version control, including programs, original field observations, and the
