@@ -99,7 +99,7 @@ your changes:
 
 > ## **note:**
 >
->   If your unsure what editor to use you can try ``nano`` for this simple
+>   If you are unsure what editor to use you can try ``nano`` for this simple
 >     exercise:
 >
 >     ``% nano paper.tex``
