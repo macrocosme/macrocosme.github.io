@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to version control with git
+title: Foreword
 
 ---
 
