@@ -290,10 +290,10 @@ the file and stage this change to the repository.
 At this point we have covered the basic "life cycle" of files and changes in
 Git.  Each file can have one of four different states:
 
-* **Untracked**: It's not listed in the last commit
-* **Unmodified**: It hasn't changed since the last commit
-* **Modified**: It has changed since the last commit
-* **Staged**: The changes will be recorded in the next commit made
+> * **Untracked**: It's not listed in the last commit
+> * **Unmodified**: It hasn't changed since the last commit
+> * **Modified**: It has changed since the last commit
+> * **Staged**: The changes will be recorded in the next commit made
 
 The method with which we move each file from one state to another is outlined in
 the following diagram:

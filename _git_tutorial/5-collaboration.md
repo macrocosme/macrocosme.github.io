@@ -69,15 +69,15 @@ direct pushing.
 
 The basic work-flow is almost always the same though:
 
-* Make your changes in your own personal copy of the repository, ideally in a
-  new branch.
-* "Pull" (using the command ``git pull``) the most recent version of the central
-  repository into your ``master`` branch.  This makes sure you are up-to-date
-  with any changes which were made by someone else subsequent to when you last
-  pulled (or made your original clone).
-* Merge your changes from your new branch into ``master``.
-* Once any conflicts are resolved you can update the central repository with your
-  new code (using for example ``git push``).
+> * Make your changes in your own personal copy of the repository, ideally in a
+>  new branch.
+> * "Pull" (using the command ``git pull``) the most recent version of the central
+>  repository into your ``master`` branch.  This makes sure you are up-to-date
+>  with any changes which were made by someone else subsequent to when you last
+>  pulled (or made your original clone).
+> * Merge your changes from your new branch into ``master``.
+> * Once any conflicts are resolved you can update the central repository with your
+>  new code (using for example ``git push``).
 
 > ## **Further reading**
 >
