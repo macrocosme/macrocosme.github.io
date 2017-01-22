@@ -9,7 +9,7 @@ The command ``git log`` displays the commit history of the current branch.  If
 you try it in your ``dummy_paper`` directory you should see something like the
 following:
 
-```git
+```bash
     commit 98cdaf38c12fccbfe92d4f15dc869afc12792b22
     Author: Simon Mutch <smutch@unimelb.edu.au>
     Date:   Sat Feb 16 15:56:41 2013 +1100
