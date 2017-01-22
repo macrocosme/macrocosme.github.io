@@ -2471,6 +2471,16 @@
 				width: 100%;
 			}
 
+		.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.main img {
+				width: 100%;
+			}
+
 /* List */
 
 	ol {
