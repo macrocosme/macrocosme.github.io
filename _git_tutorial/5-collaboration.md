@@ -21,7 +21,7 @@ There are a number of excellent options for online hosting of git repositories
 entry). However, there are two options in particular which stand out in my
 opinion:
 
-* [Bitbucket])https://bitbucket.org/): This site overs unlimited free public
+* [Bitbucket](https://bitbucket.org/): This site overs unlimited free public
   repositories (where anyone can see and checkout your project).  If you have an
   email address from an academic institution though, then you can also get
   [unlimited free private repositories](http://blog.bitbucket.org/2012/08/20/bitbucket-academic/)!  These
