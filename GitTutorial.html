@@ -29,7 +29,7 @@ layout: tutorial
 <div id="main">
 
 		<script>
-			ids = ['intro', 'basics', 'view', 'branch', 'merge', 'collaboration', 'more'];
+			ids = ['intro', 'basics', 'view', 'branch', 'merge', 'collaboration', 'more', 'cheatsheet'];
 			counter = 0;
 		</script>
 		{% for post in site.git_tutorial %}
@@ -40,16 +40,6 @@ layout: tutorial
 				{{ post.content }}
 			</section>
 		{% endfor %}
-
-		<section id="cheet" class="main special">
-			<header class="major">
-				Git Cheat Sheet
-			</header>
-			<p>
-				<img src="https://macrocosme.github.io/images/git-cheatsheet.png" />
-				Source: <a href="https://github.com/hbons/git-cheat-sheet">github.com/hbons/git-cheat-sheet</a>
-			</p>
-		</section>
 </div>
 
 <!-- Footer -->
