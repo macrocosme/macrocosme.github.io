@@ -1,11 +1,9 @@
 ---
 layout: post
-title: More
+title: More resources
 ---
 
-# Other resources
-
-## Tutorials
+# Tutorials
 
 Other great tutorials and resources for learning Git include:
 
@@ -15,13 +13,13 @@ Other great tutorials and resources for learning Git include:
 * [John McDonnell's Git for Scientists tutorial](http://nyuccl.org/pages/GitTutorial/)
 
 
-## GUI clients
+# GUI clients
 
 See the [list](http://git-scm.com/downloads/guis) on the Git homepage for a
 good run down on the different options here. 
 
 
-## Miscelaneous
+# Miscelaneous
 
 If your feeling adventurous, try learning Git with [Githug](https://github.com/Gazler/githug).
 
