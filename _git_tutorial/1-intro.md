@@ -5,7 +5,6 @@ title: Foreword
 ---
 
 ![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd")
-
 Created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)
 
 This is a tutorial for 
