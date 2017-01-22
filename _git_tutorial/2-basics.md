@@ -3,8 +3,7 @@ layout: post
 title: Basics
 ---
 
-First steps
-===========
+# First steps
 
 I'll assume that you already have git installed on your system.  If not then
 probably the easiest way to achieve this is to download an installer from [here](http://git-scm.com/downloads).
@@ -42,8 +41,7 @@ control.  In what follows, we will use writing and collaborating on a LaTeX
 paper as an example project... 
 
 
-Creating a repository
----------------------
+# Creating a repository
 
 First of all we need to start our paper by creating a repository. 
 
@@ -70,15 +68,14 @@ To check everything has been successful type:
 and you should see the directory ``.git``.  This special folder is where Git
 will store and manage the version control history of your project.  
 
-## warning:
+## **warning:**
 
 >    Unless you are familiar with Git it is generally best to avoid touching the
 >    ``.git`` folder or it's contents.
 
 
 
-Adding files
-------------
+# Adding files
 
 Now we have our fresh Git repository.  The next step is to start adding files!
 
@@ -100,7 +97,7 @@ your changes:
     \end{document}
 ```
 
-### note:
+### **note:**
 
 >   If your unsure what editor to use you can try ``nano`` for this simple
 >     exercise:
@@ -187,7 +184,7 @@ then save and exit.
 That's it!  We have now created a repository, added our first file and committed
 our changes.
 
-## tip:
+## **Tip:**
 
 >    Writing good commit messages will make your life much easier in future when
 >    trying to track down particular changes.  The first line should be a short
@@ -235,7 +232,7 @@ again:
 A final check with ``git status`` should show that ``paper.tex`` now falls
 under the category of "Changes to be committed".
 
-## Exercise 1a
+## **Exercise 1a**
 
 >    Add another file to your git repository called ``appendix.tex``.  You can
 >    put whatever you want in here (or just leave it empty), but don't forget to
@@ -276,7 +273,7 @@ tracking the file) without actually deleting it from the file system.  This is
 achieved by passing the ``--cached`` flag to the ``rm`` command (i.e. ``git rm
 --cached <filename>``).
 
-## Exercise 1b
+## **Exercise 1b**
 
 >  Remove the bibliography.tex file you added in :ref:`Exercise
 >  1a<exercise-1a>` using the ``git rm <file>`` command.  Remember to commit
@@ -308,8 +305,7 @@ the following diagram:
    book.
 
 
-Command summary
----------------
+## **Command summary**
 
 +------------------------+-------------------------------------------+
 | Command                | Description                               |

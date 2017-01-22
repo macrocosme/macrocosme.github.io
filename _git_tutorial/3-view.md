@@ -129,7 +129,7 @@ commits.
 since the last commit.  To do this simply run the command with no arguments.
 
 
-## Exercise 2a
+## **Exercise 2a**
 
 > Add a sentence to the section "A New Hope" of ``paper.tex`` but don't
 >   commit the change.  Now try running:
