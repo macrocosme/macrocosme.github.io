@@ -5,7 +5,7 @@ title: Foreword
 ---
 
 ![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd")
-Created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)
+> Image created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)
 
 This is a tutorial for 
 the [2017 ASA/ANITA Astroinformatics Summer School](https://asa-anita.github.io/workshop2017/).
@@ -20,6 +20,8 @@ We will also try out some practical examples using the Git version control syste
 
 This tutorial follows the [excellent tutorial by Simon Mutch from Astroinformatics 2013](http://astroinformaticsau.github.io/VersionControlTutorial/index.html), 
 with minor mofidications here and there.
+
+--------
 
 # What is version control?
 
@@ -49,6 +51,8 @@ file was saved.  By comparing revision files we can also get a rough idea of
 how the paper developed and changed as it was written.  Of course, the more
 saved revisions we have, the easier it is to piece together how things changed
 over time.
+
+--------
 
 # Why you should use it (for everything)?
 
@@ -89,6 +93,8 @@ writing papers.  Here we can use version control to:
 
 The upshot is **you should use version control for almost everything**.  The
 benefits are well worth it...
+
+--------
 
 # Introducing... Git!
 

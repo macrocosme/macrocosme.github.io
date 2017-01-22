@@ -73,6 +73,7 @@ Now you can get the concise log view by simply typing:
 
     % git lg
 
+--------
 
 # Comparing commits
 
@@ -153,6 +154,7 @@ Figure: gitk
 
 Figure: github-gui
 
+--------
 
 # Playing the blame game
 
@@ -168,6 +170,7 @@ that bug was introduced (and by who!).  Try this:
 and you should see a copy of ``paper.tex`` with the reference, author and time
 of the last commit where each line was modified.  
 
+--------
 
 # Command summary
 

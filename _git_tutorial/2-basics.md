@@ -40,6 +40,7 @@ Now that your all set up we can start looking at actually using Git for version
 control.  In what follows, we will use writing and collaborating on a LaTeX
 paper as an example project... 
 
+--------
 
 # Creating a repository
 
@@ -73,7 +74,7 @@ will store and manage the version control history of your project.
 >    Unless you are familiar with Git it is generally best to avoid touching the
 >    ``.git`` folder or it's contents.
 
-
+--------
 
 # Adding files
 
@@ -138,7 +139,7 @@ In order to tell Git to start tracking our new file, use the following command:
     % git add paper.tex
 ```
 
-
+--------
 
 # Committing changes
 
@@ -198,6 +199,7 @@ our changes.
     i.e. if you were to apply the changes in the commit, the message would say
     what would happen...
 
+--------
 
 # Staging modified files
 
@@ -243,6 +245,7 @@ under the category of "Changes to be committed".
 >    Go ahead and commit your staged changes to both ``paper.tex`` and
 >    ``appendix.tex``.
 
+--------
 
 # Dealing with mistakes
 
@@ -263,6 +266,7 @@ then stage it into the index.  Finally, run ``git commit --amend``:
 You will then be given the opportunity to change the last commit message if you
 want to.
 
+--------
 
 # Deleting and moving files
 
@@ -284,6 +288,7 @@ achieved by passing the ``--cached`` flag to the ``rm`` command (i.e. ``git rm
 To move or rename a file, use the ``git mv`` command.  This will again both move
 the file and stage this change to the repository.
 
+--------
 
 # The circle of life
 
@@ -302,6 +307,7 @@ the following diagram:
 
 Source: [http://adamwilson.us/RDataScience/11_Git.html](http://adamwilson.us/RDataScience/11_Git.html).
 
+--------
 
 # **Command summary**
 

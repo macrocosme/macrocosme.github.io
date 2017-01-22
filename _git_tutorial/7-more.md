@@ -12,12 +12,14 @@ Other great tutorials and resources for learning Git include:
 > * [The Github help pages](https://help.github.com/) 
 > * [John McDonnell's Git for Scientists tutorial](http://nyuccl.org/pages/GitTutorial/)
 
+--------
 
 # GUI clients
 
 See the [list](http://git-scm.com/downloads/guis) on the Git homepage for a
 good run down on the different options here. 
 
+--------
 
 # Miscelaneous
 

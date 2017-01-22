@@ -9,6 +9,7 @@ At this stage we have two branches, ``master`` and ``risky_idea``.  Let's
 imagine that we have continued to work away on the ``risky_idea`` branch,
 committing our changes as we go...
 
+--------
 
 # Merging
 
@@ -44,6 +45,8 @@ We no longer need the ``risky_idea`` branch, so delete it using:
 ```bash
     % git branch -d risky_idea
 ```
+
+--------
 
 # Dealing with conflicts
 
@@ -176,9 +179,9 @@ committing your results:
 The commit message will be auto-populated for you, and so there is no need to
 edit it.
 
+--------
 
-Command summary
----------------
+# Command summary
 
 ``git merge``: Merge branches and commits.
 

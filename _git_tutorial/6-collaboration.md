@@ -58,7 +58,6 @@ whatever you want with it.  Try:
 and you will see that you also have the full commit history.
 
 
-
 ## **Collaboration strategies**
 
 Unfortunately, it is out-with the scope of this tutorial to cover all of the

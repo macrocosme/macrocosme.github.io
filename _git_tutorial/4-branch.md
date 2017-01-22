@@ -14,6 +14,7 @@ In Git, branching is generally quick, flexible and simple.  It is a fantastic
 way to test out ideas, try new things and safely develop your repository.  This
 is especially true when collaborating with other people...
 
+--------
 
 # Creating branches
 
@@ -69,6 +70,7 @@ the original.
 >       % git diff master
 >       ```
 
+--------
 
 # Command summary
 
