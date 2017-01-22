@@ -303,9 +303,7 @@ Git.  Each file can have one of four different states:
 The method with which we move each file from one state to another is outlined in
 the following diagram:
 
-![alt text](https://macrocosme.github.io/images/lifecycle.png "lifecycle")
-
-Source: [http://adamwilson.us/RDataScience/11_Git.html](http://adamwilson.us/RDataScience/11_Git.html).
+![alt text](https://macrocosme.github.io/images/lifecycle.png "lifecycle") *Image source: [http://adamwilson.us/RDataScience/11_Git.html](http://adamwilson.us/RDataScience/11_Git.html).*
 
 --------
 
