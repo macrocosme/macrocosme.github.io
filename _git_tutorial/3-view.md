@@ -169,11 +169,10 @@ of the last commit where each line was modified.
 
 # Command summary
 
-|--------------------------------|-------------------------------------------------|
 | Command                        | Description                                     |
 |--------------------------------|-------------------------------------------------|
 | ``git log``                    | View the commit history for the current branch. |
 | ``git diff <commit> <commit>`` | Compare (difference) two commits.               |
 | ``gitk``                       | View the commit history in a GUI.               |
 | ``git blame <file> ``          | See when each line of a file was last changed.  |
-|--------------------------------|-------------------------------------------------|
+[Command summary]
