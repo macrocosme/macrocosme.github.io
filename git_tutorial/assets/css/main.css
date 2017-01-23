@@ -3356,16 +3356,11 @@
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				/*display: none;*/
-				display: inline-block;
-				width: 64em;
-				max-width: calc(100% - 4em);
-				padding: 1em;
+				display: none;
 			}
 
 				#nav + #main {
-					/*padding-top: 0;*/
-					padding-top: 4.25em;
+					padding-top: 0;
 				}
 
 		}
@@ -3698,7 +3693,7 @@
 			}
 
 				#main > .main {
-					padding: 7em 1em 0.5em 1em ;
+					padding: 2.5em 1em 0.5em 1em ;
 				}
 
 					#main > .main > .image.main:first-child {
