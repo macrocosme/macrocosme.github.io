@@ -66,9 +66,9 @@ the original.
 >    Then stage and commit your changes.  Finally, compare the ``risky_idea``
 >    branch with the tip of the ``master`` branch using ``git diff``:
 >
->      ```bash
+>   ```bash
 >       % git diff master
->       ```
+>   ```
 
 --------
 
