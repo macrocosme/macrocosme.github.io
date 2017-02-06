@@ -123,7 +123,7 @@ implicitly ran:
 
 ``HEAD`` is a shortcut for the commit reference pointing to the most recent
 relevant commit.  To access the second most recent commit we can use the
-shortcut ``^HEAD``.  These shortcuts are handy to remember when comparing
+shortcut ``HEAD^``.  These shortcuts are handy to remember when comparing
 commits.
 
 ``git diff`` can also be used to see how the current state of files have changed
