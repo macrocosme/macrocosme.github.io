@@ -15,7 +15,7 @@ We will also try out some practical examples using the Git version control syste
 > 4. **online hosting and collaboration**
 
 This tutorial follows the [excellent tutorial](http://astroinformaticsau.github.io/VersionControlTutorial/index.html)
-by Simon Mutch (Astroinformatics 2013), with mofidications here and there.
+by Simon Mutch (Astroinformatics 2013), with modifications here and there by Dany Vohl (Astroinformatics 2017).
 
 --------
 
