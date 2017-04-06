@@ -3,7 +3,7 @@ layout: post
 title: Paper submitted!
 ---
 
-![alt text](https://github.com/macrocosme/shwirl/blob/master/docs/_static/shwirl_splash.png "shwirl")
+![alt text](https://macrocosme.github.io/images/shwirl.png "Shwirl")
 
 I just submitted our latest paper (shortly discussed [here](http://macrocosme.github.io/New-papers-under-way/)) 
 to the journal Monthly Notices of the Royal Astronomical Society ([MNRAS](http://mnras.oxfordjournals.org))!
