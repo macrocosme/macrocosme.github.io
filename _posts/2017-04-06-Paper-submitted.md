@@ -8,7 +8,7 @@ title: Paper submitted!
 I just submitted our latest paper (shortly discussed [here](http://macrocosme.github.io/New-papers-under-way/)) 
 to the journal Monthly Notices of the Royal Astronomical Society ([MNRAS](http://mnras.oxfordjournals.org))!
 
-The paper demonstrate how transfer functions and graphics shaders can be exploited 
+The paper demonstrates how transfer functions and graphics shaders can be exploited 
 to provide new astronomy-specific explorative colouring methods for volume rendering of spectral cube data. 
 
 Along with the paper, I released a piece of code called [shwirl](https://github.com/macrocosme/shwirl) 
