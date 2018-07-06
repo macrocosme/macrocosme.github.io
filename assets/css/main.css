@@ -1094,6 +1094,34 @@
 		position: relative;
 	}
 
+	.panel ol {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	}
+		.panel li {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	}
+		.panel li::before {
+	  content: counter(my-awesome-counter);
+	  background: black;
+	  width: 2rem;
+	  height: 2rem;
+	  display: inline-block;
+	  line-height: 2rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+		.panel ol ol li::before {
+	  background: black;
+	}
+		.panel ol ol ol li::before {
+	  background: black;
+	}
+
+
+
 /* comments */
 
 	#disqus_thread {
