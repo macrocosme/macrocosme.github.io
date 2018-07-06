@@ -1102,15 +1102,23 @@
 	  counter-increment: my-awesome-counter;
 	  margin: 0.25rem;
 	}
+	.panel li a {
+      background-color: black;
+      color: white !important;
+        text-decoration: none;
+	}
+	.panel li a:hover {
+      background-color: rgb(246, 246, 246);
+      color: black !important;
+        text-decoration: none;
+	}
 	.panel li::before {
-	  content: counter(my-awesome-counter);
 	  color: black;
 	  background: black;
 	  width: 2rem;
 	  height: 2rem;
 	  display: inline-block;
 	  line-height: 2rem;
-	  color: white;
 	  text-align: center;
 	  margin-right: 0.5rem;
 	}
