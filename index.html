@@ -301,29 +301,29 @@ layout: default
     </article>
 
     <!-- Blog -->
-    <!--<article id="blog" class="panel">-->
-      <!--<h2>Research blog</h2>-->
-      <!--<h3>Unpolished thoughts, unpolished writing</h3>-->
+    <article id="blog" class="panel">
+      <h2>Research blog</h2>
+      <h3>Unpolished thoughts, unpolished writing</h3>
 
-      <!--<div class="posts">-->
-        <!--{% for post in site.posts %}-->
-        <!--<hr>-->
-        <!--<article class="post">-->
+      <div class="posts">
+        {% for post in site.posts %}
+        <hr>
+        <article class="post">
 
-          <!--<h3>{{ post.title }}</h3>-->
-          <!--<div class="date">-->
-            <!--{{ post.date | date: "%B %e, %Y" }}-->
-          <!--</div>-->
+          <h3>{{ post.title }}</h3>
+          <div class="date">
+            {{ post.date | date: "%B %e, %Y" }}
+          </div>
 
-          <!--<p>-->
-            <!--{{ post.excerpt }}-->
-            <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
-          <!--</p>-->
+          <p>
+            {{ post.excerpt }}
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </p>
 
-        <!--</article>-->
-        <!--{% endfor %}-->
-      <!--</div>-->
-    <!--</article>-->
+        </article>
+        {% endfor %}
+      </div>
+    </article>
 
     <!-- Contact -->
     <article id="contact" class="panel">
