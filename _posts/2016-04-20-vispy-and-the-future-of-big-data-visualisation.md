@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VisPy and the future of Big Data visualisation
+title: VisPy 
 ---
 
 
