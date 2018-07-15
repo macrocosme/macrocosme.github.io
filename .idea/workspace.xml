@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09fa045d-fada-4fbd-aea5-678c6114bf9c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-04-08-shadertoy.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2016-04-08-shadertoy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2015-04-01-GERLUMPH-Data-Release-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2015-04-01-GERLUMPH-Data-Release-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md" beforeDir="false" afterPath="$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,33 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="257" column="7" selection-start-line="257" selection-start-column="7" selection-end-line="257" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-08-14-blog-post-1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2012-08-14-blog-post-1.md">
+      <file leaf-file-name="2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="30">
-                <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="13" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="15">
-                <caret line="1" column="126" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="126" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -53,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/_publications/2015-04-01-GERLUMPH-Data-Release-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="225">
-                <caret line="7" column="222" selection-start-line="1" selection-end-line="7" selection-end-column="222" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,8 +52,92 @@
         <entry file="file://$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="600">
-                <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-12-01-Sentiment-Analysis-ready-for-conservation.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="75">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               </first_editor>
               <second_editor />
             </state>
@@ -88,6 +159,7 @@
       <find>encube</find>
       <find>. encube</find>
       <find />
+      <find>your</find>
     </findStrings>
     <replaceStrings>
       <replace>. Encube</replace>
@@ -101,19 +173,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_publications/2009-10-01-paper-title-number-1.md" />
-        <option value="$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md" />
         <option value="$PROJECT_DIR$/_publications/2015-10-01-paper-title-number-3.md" />
         <option value="$PROJECT_DIR$/_publications/2010-10-01-paper-title-number-2.md" />
-        <option value="$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md" />
         <option value="$PROJECT_DIR$/_publications/2015-04-01-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" />
-        <option value="$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md" />
-        <option value="$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md" />
         <option value="$PROJECT_DIR$/_publications/2017-11-01-.md" />
-        <option value="$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" />
         <option value="$PROJECT_DIR$/_publications/2016-10-10-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" />
-        <option value="$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md" />
         <option value="$PROJECT_DIR$/_publications/2015-04-01-.md" />
-        <option value="$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md" />
         <option value="$PROJECT_DIR$/backup_local/_posts/2016-03-04-Paper-Writing.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-04-Hello-World.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-04-Paper-Writing.md" />
@@ -129,8 +194,18 @@
         <option value="$PROJECT_DIR$/_posts/2017-01-20-New-papers-under-way.md" />
         <option value="$PROJECT_DIR$/_posts/2017-04-06-Paper-submitted.md" />
         <option value="$PROJECT_DIR$/_posts/2016-04-08-shadertoy.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md" />
+        <option value="$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md" />
+        <option value="$PROJECT_DIR$/_publications/2015-04-01-GERLUMPH-Data-Release-2.md" />
+        <option value="$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md" />
+        <option value="$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md" />
+        <option value="$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md" />
+        <option value="$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md" />
+        <option value="$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md" />
+        <option value="$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md" />
+        <option value="$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md" />
       </list>
     </option>
   </component>
@@ -320,86 +395,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/500x300.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="4" column="1029" selection-start-line="4" selection-start-column="1029" selection-end-line="4" selection-end-column="1029" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="630">
-            <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="420">
-            <caret line="13" column="155" lean-forward="true" selection-start-line="13" selection-start-column="155" selection-end-line="13" selection-end-column="155" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="465">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="525">
-            <caret line="13" column="224" selection-start-line="13" selection-start-column="224" selection-end-line="13" selection-end-column="224" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backup_local/_bibliography/references.bib">
       <provider selected="true" editor-type-id="text-editor">
@@ -594,11 +589,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md">
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="62" selection-start-line="61" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2012-10-01-Finding-Synchronization-Codes-to-Boost-Compression-by-Substring-Enumeration.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="600">
-            <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
           </first_editor>
           <second_editor />
         </state>
@@ -607,25 +612,98 @@
     <entry file="file://$PROJECT_DIR$/_publications/2015-04-01-GERLUMPH-Data-Release-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="225">
-            <caret line="7" column="222" selection-start-line="1" selection-end-line="7" selection-end-column="222" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="257" column="7" selection-start-line="257" selection-start-column="7" selection-end-line="257" selection-end-column="7" />
+    <entry file="file://$PROJECT_DIR$/_publications/2015-09-01-Data-compression-in-the-petascale-astronomy-era-A-GERLUMPH-case-study.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_publications/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="126" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="126" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2016-10-10-Large-scale-comparative-visualisation-of-sets-of-multidimensional-data.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2016-12-01-Sentiment-Analysis-ready-for-conservation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2017-01-29-3D-stereoscopic-immersive-analytics-projects-at-Monash-University-and-University-of-Konstanz.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2017-09-01-Enabling-near-real-time-remote-search-for-fast-transient-events-with-lossy-data.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2017-10-01-Collaborative-visual-analytics-of-radio-surveys-in-the-Big-Data-era.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_publications/2017-11-01-Real-time-colouring-and-filtering-with-graphics-shaders.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>

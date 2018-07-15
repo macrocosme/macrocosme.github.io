@@ -2,7 +2,7 @@
 title: "Collaborative Workspaces to Accelerate Discovery"
 collection: publications
 permalink: /publication/2017-11-01-Collaborative-Workspaces-to-Accelerate-Discovery
-excerpt: 'By applying a display ecology to the Deeper, Wider, Faster proactive, simultaneous telescope observing campaign, we have shown a dramatic reduction in the time taken to inspect DECam CCD images for potential transient candidates and to produce time-critical triggers to standby telescopes. We also show how facilitating rapid corroboration of potential candidates and the exclusion of non-candidates improves the accuracy of detection; and establish that a practical and enjoyable workspace can improve the experience of an otherwise taxing task for astronomers. We provide a critical road test of two advanced displays in a research context-a rare opportunity to demonstrate how they can be used rather than simply discuss how they might be used to accelerate discovery.'
+excerpt: ''
 date: 2017-11-01
 venue: 'Monthly Notices of the Royal Astronomical Society'
 paperurl: 'Meade, B., Fluke, C., Cooke, J., Andreoni, I., Pritchard, T., Curtin, C., ... & Vohl, D. (2017). Collaborative Workspaces to Accelerate Discovery. <i>Publications of the Astronomical Society of Australia</i>, 34.'
