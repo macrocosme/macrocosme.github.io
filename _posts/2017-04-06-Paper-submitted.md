@@ -1,6 +1,13 @@
 ---
-layout: post
 title: Paper submitted!
+date: 2017-04-06
+permalink: /posts/2017/04/06/new-paper-under-way
+tags:
+  - Writing 
+  - Shader
+  - GPU
+  - Spectral cube
+  - 3D 
 ---
 
 ![alt text](https://macrocosme.github.io/images/shwirl.png "Shwirl")

@@ -1,6 +1,9 @@
 ---
-layout: post
-title: New papers under way 
+title: New papers under way
+date: 2017-01-20
+permalink: /posts/2017/01/20/new-paper-under-way
+tags:
+  - Writing 
 ---
 
 2017 kicked in. Postdoc application season seems to be over. 

@@ -1,6 +1,11 @@
 ---
-layout: post
-title: Vohl et al. 2016 paper published! 
+title: Vohl et al. 2016 paper published!
+date: 2016-10-12
+permalink: /posts/2016/10/12/paper-published
+tags:
+  - Writing 
+  - encube
+  - CAVE2
 ---
 
 ![alt text](https://macrocosme.github.io/images/paper-large-scale.png "Paper as advertised on PeerJ CS.")

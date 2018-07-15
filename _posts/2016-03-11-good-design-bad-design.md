@@ -1,6 +1,10 @@
 ---
-layout: post
 title: Good design, bad design
+date: 2016-03-11
+permalink: /posts/2016/03/11/good-design-bad-design
+tags:
+  - Writing
+  - Design
 ---
 
 I just read this from the 'preface to the revised edition' of 'The design of everyday things' by Don Norman:

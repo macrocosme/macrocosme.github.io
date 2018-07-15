@@ -1,6 +1,10 @@
 ---
-layout: post
 title: Writing a scientific paper takes time
+date: 2016-03-04
+permalink: /posts/2016/03/04/paper-writing
+tags:
+  - Writing
+  - Academia
 ---
 
  I have been working on an article for a current project for a few weeks now. Writing takes time. And effort.

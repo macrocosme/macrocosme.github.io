@@ -1,6 +1,10 @@
 ---
-layout: post
-title: Proceedings papers submitted and Pre-submission review completed. 
+title: Proceedings papers submitted and Pre-submission review completed.
+date: 2016-12-09
+permalink: /posts/2016/12/09/proceedings-and-review
+tags:
+  - Writing 
+  - Conference
 ---
 
 ![alt text](https://macrocosme.github.io/images/paper-iau-adass.png "Snapshot of IAU Symposium 325 and ADASS XXVI papers titles")

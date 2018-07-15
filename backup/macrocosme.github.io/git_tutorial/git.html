@@ -1,0 +1,143 @@
+---
+layout: tutorial
+---
+
+<!-- Wrapper-->
+<div id="wrapper">
+<nav id="nav">
+    <a href="#intro" class="icon fa-git active"><span>Intro</span></a>
+    <a href="#basics" class="icon fa-battery-empty"><span>Basics</span></a>
+    <a href="#comparing" class="icon fa-battery-quarter"><span>Comparing</span></a>
+    <a href="#branches" class="icon fa-battery-half"><span>Branches</span></a>
+    <a href="#merge" class="icon fa-battery-three-quarters"><span>Merge</span></a>
+    <a href="#github" class="icon fa-github"><span>GitHub+</span></a>
+    <a href="#more" class="icon fa-battery-full"><span>More</span></a>
+  </nav>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- intro -->
+    <article id="intro" class="panel">
+        <h1>Introduction</h1>
+        <div class="posts">
+            {% for post in site.git_intro %}
+            <hr>
+            <article class="post">
+                <h2>
+                    {{ post.title }}
+                </h2>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- git_basics -->
+    <article id="basics" class="panel">
+        <div class="posts">
+            {% for post in site.git_basics %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- git_comparing -->
+    <article id="comparing" class="panel">
+        <div class="posts">
+            {% for post in site.git_comparing %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- branches -->
+    <article id="branches" class="panel">
+        <div class="posts">
+            {% for post in site.git_branches %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- merge -->
+    <article id="merge" class="panel">
+        <div class="posts">
+            {% for post in site.git_merge %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- github -->
+    <article id="github" class="panel">
+        <div class="posts">
+            {% for post in site.git_github %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+    <!-- more -->
+    <article id="more" class="panel">
+        <div class="posts">
+            {% for post in site.git_more %}
+            <hr>
+            <article class="post">
+                <h3>
+                    {{ post.title }}
+                </h3>
+                <p>
+                    {{ post.content }}
+                </p>
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+
+  </div>
+
+
+</div>
