@@ -183,6 +183,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  git_tutorial:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
