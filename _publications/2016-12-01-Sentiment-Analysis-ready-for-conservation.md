@@ -6,7 +6,6 @@ excerpt: ''
 date: 2016-12-01
 venue: 'Frontiers in Ecology and the Environment'
 paperurl: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/fee.1435'
-citation: 'Drijfhout, M., Kendal, D., Vohl, D., & Green, P. T. (2016). Sentiment Analysis: ready for conservation. <i>Frontiers in Ecology and the Environment</i>, 14(10), 525-526.'
 ---
 Write Back. We welcome the paper by Ladle et al.(2016), as it brings attention to the important topic of 
 understanding social responses and cultural trends through the analysis of digital texts. The 
