@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Foreword
-
 ---
 
 ![alt text](https://macrocosme.github.io/images/vc-xkcd.jpg "vc-xkcd") *Image created using the awesome [Comix I/O](http://cmx.io/) ... and yes, [this comic is under version control](https://gist.github.com/smutch/4951871). :)*
