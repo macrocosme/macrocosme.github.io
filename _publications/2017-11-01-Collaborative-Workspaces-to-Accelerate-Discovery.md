@@ -7,7 +7,7 @@ date: 2017-11-01
 venue: 'Monthly Notices of the Royal Astronomical Society'
 paperurl: 'https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/collaborative-workspaces-to-accelerate-discovery/E787CE425AB6B6C212B01A3C118F98FD'
 ---
-![alt text](https://macrocosme.github.io/images/encube.png "encube.")
+![alt text](https://macrocosme.github.io/images/dwf-bernard.png "Collaborative workspace.")
 
 <b>Conference paper.</b>
 
