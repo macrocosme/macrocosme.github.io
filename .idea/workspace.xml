@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09fa045d-fada-4fbd-aea5-678c6114bf9c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_layouts/blank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitTutorial-anita-astroinformatics-school-2017.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitTutorial.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup/macrocosme.github.io/GitTutorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/macrocosme.github.io/GitTutorial.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_sql.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotastronomy_seven.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/morphology_galaxy.html" beforeDir="false" />
-    </list>
+    <list default="true" id="09fa045d-fada-4fbd-aea5-678c6114bf9c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +23,8 @@
       <file leaf-file-name="db_sql.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_pages/db_sql.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="495">
+              <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -41,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/_layouts/tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -171,16 +163,6 @@
             <path>
               <item name="macrocosme.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="macrocosme.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="macrocosme.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="macrocosme.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="macrocosme.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="macrocosme.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -598,7 +580,7 @@
     <entry file="file://$PROJECT_DIR$/_layouts/tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -682,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_pages/db_sql.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="495">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
         </state>
       </provider>
     </entry>
