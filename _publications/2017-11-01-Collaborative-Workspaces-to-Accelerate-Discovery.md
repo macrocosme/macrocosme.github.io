@@ -6,6 +6,7 @@ excerpt: ''
 date: 2017-11-01
 venue: 'Monthly Notices of the Royal Astronomical Society'
 paperurl: 'https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/collaborative-workspaces-to-accelerate-discovery/E787CE425AB6B6C212B01A3C118F98FD'
+authors: 'Meade, B., Fluke, C., Cooke, J., Andreoni, I., Pritchard, T., Curtin, C., Bernard, S. R., Asher, A., Mack, K. J., Murphy, M T., <b>Vohl, D.</b>, Codoreanu, A., Kotus, S. M., Rumokoy, F., Horst, C., and Reynolds, T.'
 ---
 ![alt text](https://macrocosme.github.io/images/dwf-bernard.png "Collaborative workspace.")
 

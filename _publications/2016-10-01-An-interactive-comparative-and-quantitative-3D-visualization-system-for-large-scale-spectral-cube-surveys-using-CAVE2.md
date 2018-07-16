@@ -6,6 +6,7 @@ excerpt: ''
 date: 2016-10-01
 venue: 'Proceedings of the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference, In press.'
 paperurl: 'https://peerj.com/articles/cs-88/'
+authors: '<b>Vohl, D.</b>, Fluke, C.J., Barnes, D.G., Hassan, A.H.'
 ---
 
 <b>Conference paper.</b>

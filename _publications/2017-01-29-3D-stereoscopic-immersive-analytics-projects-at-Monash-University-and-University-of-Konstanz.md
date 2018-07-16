@@ -6,6 +6,7 @@ excerpt: ''
 date: 2017-01-29
 venue: 'Proceedings of Electronic Imaging, Stereoscopic Displays and Applications XXVIII'
 paperurl: 'https://www.ingentaconnect.com/contentone/ist/ei/2017/00002017/00000005/art00025'
+authors: 'Sommer, B., Barnes D. G., Boyd, S., Chandler, T., Cordeil, M., Klein, K., Nguyen, T. D., Nim, H., Stephens, K., <b>Vohl, D.</b>, Wilson, E., McCormack, J., Mariott, K., Schreiber, F.'
 ---
 ![alt text](https://macrocosme.github.io/images/3d.png "CAVE2.")
 

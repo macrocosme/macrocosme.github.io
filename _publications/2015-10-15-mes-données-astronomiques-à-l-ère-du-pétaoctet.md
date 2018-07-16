@@ -6,6 +6,7 @@ excerpt: ''
 date: 2015-10-15
 venue: 'Découvrir'
 paperurl: 'http://www.acfas.ca/publications/decouvrir/2015/10/donnees-astronomiques-l-ere-petaoctet'
+authors: 'Vohl, D.'
 ---
 ![alt text](https://macrocosme.github.io/images/the_devil_is_in_the_details-2014_copie.jpg "Differences.")
 

@@ -6,6 +6,7 @@ excerpt: ''
 date: 2017-10-01
 venue: 'Proceedings of IAU Symposium 325 astroinformatics (Sorrento, Italy; 2016), Cambridge Press.'
 paperurl: 'http://adsabs.harvard.edu/abs/2017IAUS..325..311V'
+authors: '<b>Vohl, D.</b>, Fluke, C., Hassan, A., Barnes, D., & Kilborn, V.'
 ---
 ![alt text](https://macrocosme.github.io/images/encube.png "encube.")
 

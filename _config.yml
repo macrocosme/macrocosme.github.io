@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dany Vohl / Astronomical visual analytics"
+title                    : "Astronomical visual analytics"
 title_separator          : "-"
 name                     : &name "Dany Vohl"
 description              : &description "Research page"

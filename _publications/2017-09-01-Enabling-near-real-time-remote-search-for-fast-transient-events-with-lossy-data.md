@@ -6,6 +6,7 @@ excerpt: ''
 date: 2017-09-01
 venue: 'Publications of the Astronomical Society of Australia'
 paperurl: 'https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/enabling-near-realtime-remote-search-for-fast-transient-events-with-lossy-data-compression/B1A5287ADCEFC9C62165097F36DB1897'
+authors: '<b>Vohl, D.</b>, Pritchard, T., Andreoni, I., Cooke, J., & Meade, B.'
 ---
 ![alt text](https://macrocosme.github.io/images/dwf2.png "DECam CCD mosaic.")
 

@@ -6,6 +6,7 @@ excerpt: ''
 date: 2016-10-10
 venue: 'PeerJ Computer Science'
 paperurl: 'https://peerj.com/articles/cs-88/'
+authors: '<b>Vohl, D.</b>, Barnes D. G., Fluke C. J., Poudel G., Georgiou-Karistianis N., Hassan A. H., Benovitski Y., Wong T. H., Kaluza O. .L, Nguyen T. D., Bonnington C. P.'
 ---
 ![alt text](https://macrocosme.github.io/images/encube-live.png "encube.")
 

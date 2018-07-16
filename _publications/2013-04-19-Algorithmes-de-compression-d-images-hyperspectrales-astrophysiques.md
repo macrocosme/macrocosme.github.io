@@ -6,6 +6,7 @@ excerpt: ''
 date: 2013-04-19
 venue: "Master's thesis (Université Laval)."
 paperurl: 'http://hdl.handle.net/20.500.11794/24459'
+authors: 'Vohl, D.'
 ---
 
 ![alt text](https://macrocosme.github.io/images/xor.png "xor for lossless compression.")

@@ -6,6 +6,7 @@ excerpt: ''
 date: 2018-01-01
 venue: 'PhD thesis (Swinburne University of Technology)'
 paperurl: 'http://hdl.handle.net/1959.3/442128'
+authors: 'Vohl, D.'
 ---
 ![alt text](https://macrocosme.github.io/images/dv-cave2.png "DV surrounded by encube running on the CAVE2 at Monash University.")
 

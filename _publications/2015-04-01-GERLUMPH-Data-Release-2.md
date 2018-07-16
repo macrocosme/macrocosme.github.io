@@ -6,6 +6,7 @@ excerpt: ''
 date: 2015-04-01
 venue: 'The Astrophysical Journal Supplement Series'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+authors: 'Vernardos, G., Fluke, C. J., Bate, N. F., Croton, D., & <b>Vohl, D.</b>'
 ---
 ![alt text](https://macrocosme.github.io/images/gerlumph.png "Light curves.")
 

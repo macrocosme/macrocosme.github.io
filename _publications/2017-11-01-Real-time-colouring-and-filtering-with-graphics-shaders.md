@@ -6,6 +6,7 @@ excerpt: ''
 date: 2017-11-01
 venue: 'Monthly Notices of the Royal Astronomical Society'
 paperurl: 'https://academic.oup.com/mnras/article-abstract/471/3/3323/3922864'
+authors: '<b>Vohl, D.</b>, Fluke, C. J., Barnes, D. G., & Hassan, A. H.'
 ---
 ![alt text](https://macrocosme.github.io/images/shwirl-1.png "First moment-inspired transfer function for 3D visualisation of spectral cube data.")
 

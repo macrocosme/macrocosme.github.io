@@ -6,6 +6,7 @@ excerpt: ''
 date: 2015-09-01
 venue: 'Astronomy and Computing'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2213133715000578'
+authors: '<b>Vohl, D.</b>, Fluke, C. J., & Vernardos, G.'
 ---
 ![alt text](https://macrocosme.github.io/images/kerlumph.png "Differences.")
 

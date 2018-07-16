@@ -6,6 +6,7 @@ excerpt: ''
 date: 2012-10-01
 venue: 'Proceedings of the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012), held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12).'
 paperurl: 'https://arxiv.org/abs/1605.08102'
+authors: '<b>Vohl, D.</b>, Quimper, C. G., & Dubé, D.'
 ---
 
 ![alt text](https://macrocosme.github.io/images/pseudo-boolean.png "Portion of the pseudo-boolean model.")

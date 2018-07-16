@@ -6,6 +6,7 @@ excerpt: ''
 date: 2016-12-01
 venue: 'Frontiers in Ecology and the Environment'
 paperurl: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/fee.1435'
+authors: 'Drijfhout, M., Kendal, D., <b>Vohl, D.</b>, & Green, P. T.'
 ---
 ![alt text](https://macrocosme.github.io/images/sentiment.png "Sentiment analysis.")
 
