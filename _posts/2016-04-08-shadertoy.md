@@ -1,10 +1,6 @@
 ---
+layout: post
 title: Shadertoy
-date: 2016-04-08
-permalink: /posts/2016/04/08/shadertoy
-tags:
-  - Shader
-  - Programming
 ---
 
 While reading on the topic of [shader](https://en.wikipedia.org/wiki/Shader) in the past weeks, I discovered a fun place on the web :

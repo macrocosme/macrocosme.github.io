@@ -1,33 +1,39 @@
----
-layout: compress
----
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Dany Vohl</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="http://macrocosme.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="http://macrocosme.github.io/assets/css/main.css" />
+  <link rel="stylesheet" href="http://macrocosme.github.io/assets/css/prism.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <noscript><link rel="stylesheet" href="http://macrocosme.github.io/assets/css/noscript.css" /></noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://macrocosme.github.io/assets/css/ie8.css" /><![endif]-->
 
-{% include base_path %}
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+</head>
+<body>
 
-  <body>
+{{ content }}
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+<!-- Footer -->
+<div id="footer">
+    <ul class="copyright">
+        <li>&copy; Dany Vohl, 2015-<script>document.write(new Date().getFullYear())</script>. All right reserved.</li><li>Scaffold: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</div>
 
-    {{ content }}
+<!-- Scripts -->
+<script src="http://macrocosme.github.io/assets/js/jquery.min.js"></script>
+<script src="http://macrocosme.github.io/assets/js/skel.min.js"></script>
+<script src="http://macrocosme.github.io/assets/js/skel-viewport.min.js"></script>
+<script src="http://macrocosme.github.io/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="http://macrocosme.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="http://macrocosme.github.io/assets/js/main.js"></script>
+<script src="http://macrocosme.github.io/assets/js/prism.js"></script>
+<script id="dsq-count-scr" src="//macrocosme.disqus.com/count.js" async></script>
 
-    </script>
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+{% include analytics.html %}
+</body>
 </html>

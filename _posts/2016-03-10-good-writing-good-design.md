@@ -1,10 +1,6 @@
 ---
+layout: post
 title: Good writing, good design
-date: 2016-03-10
-permalink: /posts/2016/03/10/good-writing-good-design
-tags:
-  - Writing
-  - Design
 ---
 
 Writing is part of today's and yesterday's researchers lives. It's how we communicate our ideas (mostly).

@@ -1,9 +1,6 @@
 ---
+layout: post
 title: Hello world!
-date: 2016-03-04
-permalink: /posts/2016/03/04/Hello-World
-tags:
-  - Webdev
 ---
 
 I just added this blog section to my research website. Happy that it's working easily.

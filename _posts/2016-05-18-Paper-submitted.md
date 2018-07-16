@@ -1,9 +1,6 @@
 ---
+layout: post
 title: Paper submitted!
-date: 2016-05-18
-permalink: /posts/2016/05/18/style-checker
-tags:
-  - Writing
 ---
 
 I just submitted our latest paper to the new PeerJ journal on Computer Science (a.k.a [PeerJ Computer Science](https://peerj.com/computer-science/)!)

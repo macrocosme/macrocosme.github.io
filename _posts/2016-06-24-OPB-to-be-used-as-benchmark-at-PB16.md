@@ -1,10 +1,6 @@
 ---
+layout: post
 title: OPB files from SyncBits paper to be used as benchmark at PB16!
-date: 2016-06-24
-permalink: /posts/2016/06/24/OPB-to-be-used-as-benchmark-at-PB16
-tags:
-  - Dataset
-  - Pseudo-boolean
 ---
 
 We have been contacted to use our OPB files (from our 2012 paper [Finding Synchronization Codes to Boost Compression by Substring Enumeration](http://arxiv.org/abs/1605.08102)) 
