@@ -7,6 +7,8 @@ date: 2015-04-01
 venue: 'The Astrophysical Journal Supplement Series'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 ---
+![alt text](https://macrocosme.github.io/images/gerlumph.png "Light curves.")
+
 In the upcoming synoptic all-sky survey era of astronomy, thousands of new multiply imaged quasars are expected to be discovered and monitored regularly. Light curves from the images of gravitationally lensed quasars are further affected by superimposed variability due to microlensing. In order to disentangle the microlensing from the intrinsic variability of the light curves, the time delays between the multiple images have to be accurately measured. The resulting microlensing light curves can then be analyzed to reveal information about the background source, such as the size of the quasar accretion disk. In this paper we present the most extensive and coherent collection of simulated microlensing light curves; we have generated \gt 2.5 billion light curves using the GERLUMPH high resolution microlensing magnification maps. Our simulations can be used to train algorithms to measure lensed quasar time delays, plan future monitoring campaigns, and study light curve properties throughout parameter space. Our data are openly available to the community and are complemented by online eResearch tools, located at http://gerlumph.swin.edu.au.
 
 [Download paper here](http://academicpages.github.io/files/paper3.pdf)

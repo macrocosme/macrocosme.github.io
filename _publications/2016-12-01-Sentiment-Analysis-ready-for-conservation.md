@@ -7,7 +7,11 @@ date: 2016-12-01
 venue: 'Frontiers in Ecology and the Environment'
 paperurl: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/fee.1435'
 ---
-Write Back. We welcome the paper by Ladle et al.(2016), as it brings attention to the important topic of 
+![alt text](https://macrocosme.github.io/images/sentiment.png "Sentiment analysis.")
+
+<b>Write Back.</b> 
+
+We welcome the paper by Ladle et al.(2016), as it brings attention to the important topic of 
 understanding social responses and cultural trends through the analysis of digital texts. The 
 availability of these data, along with the number of tools created to analyze them, has 
 increased immensely with the arrival of, and growing access to, the internet. We agree with 

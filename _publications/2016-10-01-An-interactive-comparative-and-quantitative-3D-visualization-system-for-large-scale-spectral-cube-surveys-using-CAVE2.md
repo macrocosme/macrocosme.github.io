@@ -4,11 +4,14 @@ collection: publications
 permalink: /publication/2016-10-01-An-interactive-comparative-and-quantitative-3D-visualization-system-for-large-scale-spectral-cube-surveys-using-CAVE2
 excerpt: ''
 date: 2016-10-01
-venue: 'ADASS XXV, ASP Conf. Series'
+venue: 'Proceedings of the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference, In press.'
 paperurl: 'https://peerj.com/articles/cs-88/'
 ---
+
+<b>Conference paper.</b>
+
 As the quantity and resolution of spectral-cubes from optical/infrared and radio surveys increase, desktop-based visualization and analysis solutions must adapt and evolve. Novel immersive 3D environments such as the CAVE2 at Monash University can overcome personal computer's visualization limitations. CAVE2 is part advanced 2D/3D visualization space (80 stereo-capable screens providing a total of 84 million pixels) and part supercomputer (~100 TFLOPS of integrated GPU-based processing power). We present a novel visualization system enabling simultaneous 3D comparative visualization of ~100 spectral-cubes. With CAVE2 augmented by our newly developed web-based controller interface, astronomers can easily organise spectral-cubes on the different display panels, apply real-time transforms to one or many spectral cubes, and request quantitative information about the displayed data. We also discuss how such a solution can help accelerate the discovery rate in varied research scenarios.
 
 [Download paper here](https://peerj.com/articles/cs-88/)
 
-Recommended citation: Vohl, D., Fluke, C.J., Barnes, D.G., Hassan, A.H., 2016. “An interactive, comparative and quantitative 3D visualisation system for large-scale spectral-cube surveys using CAVE2”, In Proceedings of the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference (Sydney, Australia; 2015), edited by N. P. F. Lorente & K. Shortridge (San Francisco: ASP), <i>ASP Conf. Series</i>.
+Recommended citation: Vohl, D., Fluke, C.J., Barnes, D.G., Hassan, A.H., 2016. “An interactive, comparative and quantitative 3D visualisation system for large-scale spectral-cube surveys using CAVE2”, In Proceedings of the twenty-fifth annual Astronomical Data Analysis Software and Systems Conference (Sydney, Australia; 2015), edited by N. P. F. Lorente & K. Shortridge (San Francisco: ASP), <i>ASP Conf. Series</i>. In press.
