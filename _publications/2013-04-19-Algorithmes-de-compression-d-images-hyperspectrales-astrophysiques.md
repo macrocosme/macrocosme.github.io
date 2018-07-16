@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2013-04-19-Algorithmes-de-compression-d-images-hyperspectrales-astrophysiques
 excerpt: ''
 date: 2013-04-19
-venue: 'Universite Laval (Master's thesis)'
-paperurl: 'https://corpus.ulaval.ca/jspui/handle/20.500.11794/24459'
+venue: "Master's thesis (Université Laval)."
+paperurl: 'http://hdl.handle.net/20.500.11794/24459'
 ---
 
 ![alt text](https://macrocosme.github.io/images/xor.png "xor for lossless compression.")
