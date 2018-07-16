@@ -3,7 +3,7 @@ title: "Accelerating discovery in the petascale astronomy era"
 collection: publications
 permalink: /publication/2018-01-01-Accelerating-discovery-in-the-petascale-astronomy-era
 excerpt: ''
-date: 2013-04-19
+date: 2018-01-01
 venue: 'Swinburne University of Technology (PhD thesis)'
 paperurl: 'http://hdl.handle.net/1959.3/442128'
 ---
