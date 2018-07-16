@@ -1,6 +1,9 @@
 ---
-layout: post
 title: Style checker
+date: 2016-03-05
+permalink: /posts/2016/03/05/style-checker
+tags:
+  - Writing
 ---
 
 While having a look at [this presentation](https://github.com/lemire/talks/raw/master/goodwriting/goodwriting.pdf)

@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Introduction to relational databases with SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="db/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="db/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="db/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="db/assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-database"></span>
+					<h1>
+                        <script language="JavaScript">
+                            var myDate = new Date();   /* hour is before noon */
+                            if ( myDate.getHours() < 12 )  {
+                                document.write("Good Morning,");
+                            }
+                            else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+                                if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) {
+                                    document.write("Good Afternoon,"); }
+                                else  /* the hour is after 5pm, so it is between 6pm and midnight */
+                                    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) {
+                                        document.write("Good Evening,"); }
+                                    else  /* the hour is not between 0 and 24, so something is wrong */ {
+                                        document.write("G'day,"); }
+                            /* remove the following in your live script. It is for testing */
+                            //document.write("<br /><br /> The hour is: ") document.write( myDate.getHours() );
+                        </script>
+                        my name is <strong>Dany Vohl</strong>.<br />
+                        This is a short introductory  workshop about <br />
+                        <strong>Relational Databases</strong> and <strong>SQL</strong>,<br />
+					for <a href="http://thehackerwithin.github.io/swinburne/posts/databases01">Swinburne Hacker Within</a>.</h1>
+					<p><br /></p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Let's start!</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Relational Database (DB)<br /></h2>
+							</header>
+							<p>
+                                A relational database is a digital representation of a relational model of data (how information is linked together). <br />
+                                A typical DB stores the organized data into <strong>tables</strong> (or relations). <br />
+                                In a table, the different <strong>columns</strong> correspond to the fields (or attribute) of our data
+                                and the <strong>rows</strong> correspond to the different records (or tuples).
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/640px-Relational_database_terms.svg.png" alt="" />
+                                Figure 1. A simple relational database (source: wikipedia).
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+                        <div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>DB Tool for this tutorial</h2>
+							</header>
+							<p>
+                                There are many digital database software out there. Some are easy to use,
+                                some are slightly more complicated. Some are free, some are proprietary.
+                                But they all have more or less the same basis, which we'll cover here (a portion of it anyway!)
+                            </p>
+
+                            <p>
+                                Most of them can be used directly from the terminal, but some also provide
+                                a <strong>Graphical User Interface (GUI)</strong>. A GUI can be extremely useful,
+                                especially when you start dealing with relational databases.
+
+                            </p>
+
+                            <p>
+                                For this tutorial, we will use <a href="https://www.sqlite.org"><strong>SQLite</strong></a>
+                                along with <a href="http://sqlitebrowser.org"><strong>DB Browser for SQLite</strong></a> (GUI, Figure 1).
+
+                                You may already have SQLite on your machine.
+                            </p>
+
+                            <p>
+                                Another popular option is <a href="https://www.mysql.com"><strong>MySQL</strong></a>.
+                                Both SQLite and MySQL are free, but MySQL is a heavier solution.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/sqlitebrowser.png" alt="" />
+                                Figure 1. <a href="http://sqlitebrowser.org">DB Browser for SQLite</a>.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/fig8.png" alt="" />
+                                Figure 2. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="two" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Organising your data<br /></h2>
+							</header>
+                            <p>
+                                Say we want to create a database to represent a company's task force.<br /><br />
+
+                                First, let's create a new database by clicking "New Database" in DB Browser.<br /><br/>
+
+                                We would like to have a list of each employee and the department to which they belong.<br /><br />
+                                So, to organise the data, we could create a table like in Figure 3** and fill it with
+                                the data like in Figure 4, listing every employee and their respective department.<br /><br />
+
+                                You would then have a straight forward way to represent the information. <br /><br />
+
+                                <strong>The problem</strong> with this is that if you delete all entries (rows), you would not only
+                                delete your list of employees, but all departments as well.
+                                You would therefore have to start from scratch.<br /><br />
+
+                            </p>
+                            <p>
+                                ** weirdly, while creating this tutorial, my machine runs DB Browser in a sort of
+                                "frenglish", or french and english. You should have the same buttons in DB Browser
+                                on your machine with the proper translation!<br />
+                                You can refer to Figure 1 for some translations.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/create_whole_company.png" alt="" />
+                                Figure 3. A first attempt: creating the whole company table.
+                            </span>
+							<span class="image fit">
+                                <img src="db/images/whole_company.png" alt="" />
+                                Figure 4. the whole company data.
+                            </span>
+						</div>
+                    </div>
+				</div>
+			</section>
+            <section id="three" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Split and create relations<br /></h2>
+							</header>
+                            <p>
+                                Instead, we want to keep <strong>independent entities</strong> separate
+                                and create relations between them. This process is called normalisation.<br /><br />
+
+                                Using the principles of relational databases, the Employee and Department data can be
+                                restructured into two separate tables (say EMPLOYEE and DEPARTMENT), as shown in Figures 5 to 8.<br /><br />
+
+                                We now have created the relation between the tables, having the department
+                                data independent to the employee data, and associating each employee to a specific department.<br /><br />
+
+                                From Figures 6 and 7, we can see the relationship between DEPARTMENT and EMPLOYEE
+                                is built on the attribute departmentNo. This was made possible by setting up the
+                                "Foreign Key" during the creation of the table Employee.<br /><br />
+
+                                Therefore, when we will want to insert a new employee along with his/her department,
+                                we will get an error if we do not provide a valid departmentNo.
+                                In other word, the insertion won't happen if we want to assign a department that doesn't exist.
+                            </p>
+                            <p>
+                                OPTIONAL: For tips and rules on how to normalise your database properly, have a look at this <a href="http://www.dummies.com/how-to/content/sql-for-dummies-cheat-sheet.html">link</a>.
+                            </p>
+                            <header class="major">
+								<h3>Note<br /></h3>
+							</header>
+                            <p>
+                                I didn't use any <strong><a href="http://www.w3schools.com/sql/sql_primarykey.asp">PRIMARY KEY</a></strong>
+                                in the examples here. Using one is good practice. Your tables will be more consistent
+                                and it will accelerate your queries.<br /><br />
+
+                                    As w3schools puts it:<br /><br />
+                                    "The PRIMARY KEY constraint uniquely identifies each record in a database table.<br />
+                                    Primary keys must contain UNIQUE values.<br />
+                                    A primary key column cannot contain NULL values.<br />
+                                    Most tables should have a primary key, and each table can have only ONE primary key."<br /><br />
+
+                                    You can set your primary key using the "PK" tick box (CP in my french example)
+                                    for the ID column (e.g. employeeNo).
+                            </p>
+                            <header class="major">
+								<h3>Note 2<br /></h3>
+							</header>
+                            <p>
+                                We could have separated first name and last name to have more "atomic" data.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/department_create.png" alt="" />
+                                Figure 5. Creating the DEPARTMENT table.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/employee_create.png" alt="" />
+                                Figure 6. Creating the EMPLOYEE table.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/department_data.png" alt="" />
+                                Figure 7. The DEPARTMENT data.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/employee_data.png" alt="" />
+                                Figure 8. The EMPLOYEE data.
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="five" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Interacting with the database using <strong>SQL</strong><br /></h2>
+							</header>
+							<p>
+                                Now that we have a structure for our database,
+                                it would be nice to be able to interact with it.
+                                For instance, it would be nice to add new records of employees or new departments.
+                                To do this, we use a language called SQL. <br /><br />
+
+                                The GUI we use here helps lets us create tables and insert fields without having to
+                                type any line of SQL. However, once you know SQL, it's quite practical and easy to use.<br /><br />
+
+                                The SQL language consists of a only few <strong>key words</strong>. Some keywords were
+                                already shown in the table creation figures (e.g. CREATE TABLE).
+                                Some important keywords are shown on the right.<br /><br />
+
+                                More information about these keywords and how to use them can be
+                                found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.
+                                Also, ways to combine and use them is well explained on the
+                                <a href="http://software-carpentry.org/v5/novice/ref/04-sql.html">Software Carpentry webpage</a>.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                                <a class="button special">INSERT INTO</a> <a class="button special">VALUES</a><br /><br />
+                                <a class="button special">SELECT</a> <a class="button special">FROM</a> <br /><br />
+                                <a class="button special">JOIN</a> <a class="button special">ON</a><br /><br />
+                                <a class="button special">WHERE</a> <a class="button special">GROUP BY</a> <a class="button special">HAVING</a><br /><br />
+                                <a class="button special">ORDER BY</a><br /><br />
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Let's try <strong>SQL</strong><br /></h2>
+							</header>
+                            <p>
+                                Say we want to insert a new record in the DEPARTMENT table. We can do it as follow in the
+                                "Execute SQL" section of DB Browser:<br /><br />
+
+                                <code>
+                                    <strong>
+                                        INSERT INTO DEPARTMENT(departmentNo, departmentName)<br />
+                                        VALUES(40,'Information Technology');
+                                    </strong>
+                                </code><br /><br />
+
+                                Similarly, if we want to display a list of all departments, we can run the following
+                                simple query:<br /><br />
+
+                                <code>
+                                    <strong>
+                                    SELECT DEPARTMENT.departmentName AS Name<br />
+                                    FROM  DEPARTMENT;
+                                    </strong>
+                                </code><br /><br />
+
+                                The results of the select should now also display the newly inserted department
+                                "Information Technology" like in Figure 9! The "AS" keyword lets you format the title
+                                of the result column.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/SQL_query.png" alt="" />
+                                Figure 9. Query result.
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>A bit more<br /></h2>
+							</header>
+                            <p>
+                                Lets insert two new records in the EMPLOYEE table, both from the IT department:<br /><br />
+
+                                <code>
+                                    <strong>
+                                        INSERT INTO EMPLOYEE(employeeNo, employeeName, departmentNo)<br />
+                                        VALUES(4, 'Jason Jason', 40), (5, 'Jack Jackson', 40);
+                                    </strong>
+                                </code><br /><br />
+
+                                Now, let's find all employees from IT, and also display their department name:<br /><br />
+
+                                <code>
+                                    <strong>
+                                    SELECT EMPLOYEE.employeeName AS EmpName, DEPARTMENT.departmentName AS DeptName<br />
+                                    FROM  EMPLOYEE<br />
+                                    JOIN DEPARTMENT<br />
+                                    ON EMPLOYEE.departmentNo = DEPARTMENT.departmentNo<br />
+                                    WHERE DEPARTMENT.departmentName = 'Information Technology';
+                                    </strong>
+                                </code><br /><br />
+
+                                There you have it (Figure 10)! The <strong>JOIN</strong>*** links the two tables <strong>ON</strong>
+                                columns name departmentNo. The <strong>WHERE</strong> tells that we want only the
+                                records that relate to "Information Technology".
+                            </p>
+                            <p>*** By default, JOIN means INNER JOIN in
+                                SQLite.</p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/SQL_query_2.png" alt="" />
+                                Figure 10. Query result #2.
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+             <section id="seven" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+						        <h2>Extra</h2>
+                            </header>
+                            <p>
+                                If you want to know more about SQL itself, I encourage you to look at
+                                <a href="http://www.w3schools.com/sql/">w3school SQL's tutorial</a> or at this
+                                <a href="http://www.w3schools.com/sql/sql_quickref.asp">quick reference page</a>.
+
+                                There are many DB tutorials online. Just google something like "SQLite tutorial"
+                                and you'll find something quickly
+                                (for instance, <a href="http://swcarpentry.github.io/sql-novice-survey/">Software Carpentry</a>)!
+                                <br /><br />
+
+
+                                For example, here is a <strong>tutorial</strong> about
+                                <a href="http://www.mysqltutorial.org">MySQL</a>.
+                            </p>
+                            <p>
+                                Other topics you may want to read about (but not restricted to) are
+                                the different kinds of <a href="http://www.w3schools.com/sql/sql_join.asp"><strong>joins</strong></a>
+                                (e.g. left join, right join, ...),
+                                <a href="http://www.w3schools.com/sql/sql_autoincrement.asp">auto_increment</a> a field
+                                to avoid typing them yourself, modify a table (ALTER TABLE),
+                                <a href="http://www.sqlite.org/cvstrac/wiki?p=ImportingFiles">importing data</a>,
+                                and some more advanced concepts such as
+                                <a href="https://en.wikipedia.org/wiki/Inverted_index">inverted index</a>, etc.<br /><br />
+
+                                Have a look at the left side bar of <a href="http://www.w3schools.com/sql/">w3school</a>
+                                It's a good source of information about SQL (and for all kind of web development).<br /><br />
+                            </p>
+                            <p>
+
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/sqljoins_cheatsheet.png" alt="" />
+                                Figure 11. Venn diagrams of the different types of JOIN (source: dsin.files.wordpress.com).
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="height" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Last but not least</h2>
+					</header>
+                    <p>
+                        At this point in the workshop, I encourage you to give it a go for yourself.
+                        Try to start a database related to <strong>your own data</strong>.
+                    </p>
+					<p>
+
+                        You can then either use your database by itself to organise and mine your information,
+                        or plug it with a software (e.g. <a href="https://en.wikipedia.org/wiki/OLE_DB">OLE DB</a>,
+                        <a href="http://www.tutorialspoint.com/sqlite/sqlite_python.htm">loading a Python module</a>, etc.)
+                        or a website (e.g. <a href="http://rubyonrails.org">Ruby on Rails</a>,
+                        some <a href="https://www.airpair.com/python/posts/django-flask-pyramid">Python web server</a>,
+                        or <a href="http://php.net">PHP</a>).<br /><br />
+
+                        <h3>Happy development!</h3>
+                    </p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+                    <li><a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon alt fa-google"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/macrocosme" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:dvohl@astro.swin.edu.au" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Dany Vohl, 2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="db/assets/js/jquery.min.js"></script>
+			<script src="db/assets/js/jquery.scrolly.min.js"></script>
+			<script src="db/assets/js/skel.min.js"></script>
+			<script src="db/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="db/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="db/assets/js/main.js"></script>
+
+	</body>
+</html>
