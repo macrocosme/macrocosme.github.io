@@ -1,12 +1,8 @@
 ---
-title: VisPy and the future of big data visualisation
-date: 2016-04-20
-permalink: /posts/2016/04/20/style-checker
-tags:
-  - GPU
-  - Shader
-  - In-core visualisation
+layout: post
+title: VisPy 
 ---
+
 
 A few weeks ago I discovered PyOpenGL to run OpenGL code from Python. I thought there was some potential there.
 

@@ -1,9 +1,6 @@
 ---
+layout: post
 title: Comments and css
-date: 2016-03-06
-permalink: /posts/2016/03/06/comments-and-css
-tags:
-  - Webdev
 ---
 
 I have been fiddling around to add the comment section for this blog. By itself, it is a fairly straight forward thing to do.
