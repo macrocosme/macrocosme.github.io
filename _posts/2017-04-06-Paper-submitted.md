@@ -10,7 +10,7 @@ tags:
   - 3D 
 ---
 
-![alt text](https://macrocosme.github.io/images/shwirl.png "Shwirl")
+![alt text](https://macrocosme.github.io/images/shwirl.jpg "Shwirl")
 
 I just submitted our latest paper (shortly discussed [here](http://macrocosme.github.io/New-papers-under-way/)) 
 to the journal Monthly Notices of the Royal Astronomical Society ([MNRAS](http://mnras.oxfordjournals.org))!
