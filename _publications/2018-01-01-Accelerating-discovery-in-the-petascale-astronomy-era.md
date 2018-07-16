@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2018-01-01-Accelerating-discovery-in-the-petascale-astronomy-era
 excerpt: ''
 date: 2018-01-01
-venue: 'Swinburne University of Technology (PhD thesis)'
+venue: 'PhD thesis (Swinburne University of Technology)'
 paperurl: 'http://hdl.handle.net/1959.3/442128'
 ---
 ![alt text](https://macrocosme.github.io/images/dv-cave2.png "DV surrounded by encube running on the CAVE2 at Monash University.")
