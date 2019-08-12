@@ -1,5 +1,6 @@
 /* @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic"); */
-@import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Quattrocento&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url("font-awesome.min.css");
 
 /*
@@ -754,7 +755,8 @@
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		/* font-family: 'Source Sans Pro', sans-serif; */
-		font-family: 'Quattrocento', serif;
+		/* font-family: 'Quattrocento', serif; */
+		font-family: 'Crimson Text', serif;
 		font-weight: 300;
 		color: #666666;
 	}
