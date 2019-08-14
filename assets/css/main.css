@@ -1430,14 +1430,10 @@
 					#me .pic img {
 						position: relative;
 						display: block;
-						height: 100%;
+/* 						height: 100%; */
+                        transform: translate(-80%, 50%)
 					}
 
-					#me .pic img .me {
-						position: relative;
-						display: block;
-						
-					}
 
 					#me .pic .arrow {
 						display: block;
@@ -1482,7 +1478,8 @@
 					top: 0;
 					width: 100%;
 					height: 100%;
-					margin-left: 2.5em;
+					margin-left: 3.5em;
+                    margin-top: 1.20em;
 				}
 
 					#me header > h1 {
