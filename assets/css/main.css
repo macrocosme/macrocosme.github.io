@@ -935,6 +935,10 @@
 			width: 100%;
 		}
 
+		.image #me img {
+			display: block;
+		}
+
 		.image.fit {
 			display: block;
 			width: 100%;
