@@ -1096,8 +1096,8 @@
 		overflow: hidden;
 	}
 
-	#main .preamble {
-		style="text-align: justify;
+	#main .panel .preamble {
+		text-align: justify;
 		text-justify: inter-word;
 	}
 
