@@ -1089,11 +1089,20 @@
 		color: #000000;
 	}
 
+	#about a {
+		color: #000000;
+	}
+
 /* Panels */
 
 	#main {
 		position: relative;
 		overflow: hidden;
+	}
+
+	#main .panel .preamble {
+		text-align: justify;
+		text-justify: inter-word;
 	}
 
 	.panel {
