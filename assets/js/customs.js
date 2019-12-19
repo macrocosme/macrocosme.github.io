@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+(function() {
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
 		type: 'image',
@@ -16,7 +16,7 @@
 			}
 		}
 	});
-// });
+});
 
 // $(document).ready(function() {
 // 	$('.popup-with-zoom-anim').magnificPopup({
