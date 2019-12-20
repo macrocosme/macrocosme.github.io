@@ -247,6 +247,7 @@ layout: default
         <br />
         <span class="popup-gallery">
           {% assign paper_files = "abstract,figure1,algorithm1,figure5,figure6,figure7,figure8,figure9,table1,table4" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2015/vohl_fluke_vernardos/vohl+2015_{{ paper_file }}.png"
                title="{{ paper_file }}"
