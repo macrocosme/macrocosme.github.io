@@ -260,6 +260,19 @@ layout: default
       </p>
       <p>
         Vernardos, G., Fluke, C.J., Bate, N.F., Croton, D.A., <b>Vohl, D.</b>, 2015, GERLUMPH Data Release 2: 2.5 billion simulated microlensing light curves, <i>Astrophysical Journal Supplement Series</i>, 217, 23.
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,equation1,figure3,figure4" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2015/vernardos+/vernardos_2015_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Vernardos, Fluke, Bate, Croton & Vohl (2015)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
         <a href="http://adsabs.harvard.edu/abs/2015ApJS..217...23V" class="icon fa-external-link"></a>
       </p>
       <!--p>
