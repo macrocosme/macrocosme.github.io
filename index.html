@@ -301,12 +301,13 @@ layout: default
       <p>Sommer, B., Barnes, D. G., Boyd, S., Chandler, T., Cordeil, M., Czauderna, T., ... & Stephens, K. (2017). 3D-stereoscopic immersive analytics projects at Monash University and University of Konstanz. <i>Electronic Imaging</i>, 2017(5), 179-187.
         <br />
         <span class="popup-gallery">
-          {% assign paper_files = "abstract" | split: "," %}
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure7,figure8
+          ,figure9" | split: "," %}
           {% assign first = 1 %}
           {% for paper_file in paper_files %}
-            <a href="http://macrocosme.github.io/images/publications/2016/sommer+/vohl+_astroinfo_2016_{{ paper_file }}.png"
+            <a href="http://macrocosme.github.io/images/publications/2016/sommer+/sommer+2017_{{ paper_file }}.png"
                title="{{ paper_file }}"
-               authors="Vohl, Fluke, Barnes, Hassan & Kilborn (2016)"
+               authors="Sommer, Barnes et al. (2017)"
                {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
             {% assign first = 0 %}
