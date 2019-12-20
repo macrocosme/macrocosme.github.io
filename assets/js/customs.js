@@ -73,7 +73,7 @@ $(document).ready(function() {
 		iframe: {
 		  markup: '<div class="mfp-iframe-scaler">'+
 		            '<div class="mfp-close"></div>'+
-		            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+		            '<iframe class="mfp-iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'+
 		          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
 		  patterns: {
@@ -85,7 +85,7 @@ $(document).ready(function() {
 		      // Or a function that should return %id%, for example:
 		      // id: function(url) { return 'parsed id'; }
 
-		      src: '//www.youtube.com/embed/videoseries?%id%?autoplay=1' // URL that will be set as a source for iframe.
+		      src: '//www.youtube.com/embed/videoseries?%id%' // URL that will be set as a source for iframe.
 		    }
 
 		    // you may add here more sources
