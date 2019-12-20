@@ -85,7 +85,7 @@ $(document).ready(function() {
 		      // Or a function that should return %id%, for example:
 		      // id: function(url) { return 'parsed id'; }
 
-		      src: '//www.youtube.com/embed/videoseries?%id%' // URL that will be set as a source for iframe.
+		      src: '//www.youtube.com/embed/videoseries?list=%id%' // URL that will be set as a source for iframe.
 		    }
 
 		    // you may add here more sources
