@@ -151,7 +151,7 @@ layout: default
             <a href="http://macrocosme.github.io/images/publications/2017/vohl_pritchard_cooke_andreoni/vohl_pritchard+_2017_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Vohl, Pritchard, Andreoni, Cooke & Meade (2017)">
-               {{ paper_file }} - 
+               {{ paper_file }} -
             </a>
           {% endfor %}
         </span>
@@ -186,6 +186,16 @@ layout: default
         Wong, T. H., Kaluza, O. L., Nguyen, T. D., and Bonnington, C. P., 2016. Large-scale
         comparative visualisation of sets of multidimensional data. <i>PeerJ Computer Science</i> 2:e88 https://doi.org/10.7717/peerj-cs.88
         <a href="https://doi.org/10.7717/peerj-cs.88" class="icon fa-external-link"></a>
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,table1,figure1,figure2,figure3,figure4,figure5,figure6,figure7,figure9,figure10,figure11" | split: "," %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2016/vohl_barnes_fluke+/vohl_barnes_fluke+2016_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Vohl, Barnes, Fluke et al. (2016)">
+               {{ paper_file }} -
+            </a>
+          {% endfor %}
+        </span>
       </p>
 
       <p>
