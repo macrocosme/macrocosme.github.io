@@ -136,8 +136,8 @@ layout: default
     <article id="work" class="panel">
       <header>
         <h2>Publications</h2>
-        <a class="icon fa-picture-o" aria-hidden="true"></a>: image &middot;
-        <a class="icon fa-external-link" aria-hidden="true"></a>: External link
+        <a class="icon fa-picture-o" aria-hidden="true"></a> image &middot;&middot;&middot;
+        <a class="icon fa-external-link" aria-hidden="true"></a> External link
       </header>
       <!-- <hr> -->
 
@@ -179,6 +179,16 @@ layout: default
         Murphy, M T., <b>Vohl, D.</b>, Codoreanu, A., Kotus, S. M., Rumokoy, F., Horst, C., and Reynolds, T., 2017.
         Collaborative workspaces to accelerate discovery. <i>Publications of the Astronomical Society of Australia</i>
         34, e023.
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure11" | split: "," %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2015/meade+/meade_2017_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Meade et al. (2017)"
+               class="fa fa-picture-o" aria-hidden="true">
+            </a>
+          {% endfor %}
+        </span>
         <a href="https://arxiv.org/abs/1704.01281" class="icon fa-external-link"></a>
       </p>
 
