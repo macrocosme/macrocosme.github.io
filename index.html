@@ -206,6 +206,15 @@ layout: default
       <p>
         <b>Vohl, D.</b>, Fluke, C.J., Vernardos, G., 2015, Data Compression in the Petascale Astronomy Era: a GERLUMPH case study, <i>Astronomy & Computing</i>, 12, 200.
         <a href="http://adsabs.harvard.edu/abs/2015A%26C....12..200V" class="icon fa-external-link"></a>
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,algorithm1,figure1,figure5,figure6,figure7,figure8,figure9,table1,table4" | split: "," %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2015/vohl_fluke_vernardos/vohl+2015_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Vohl, Fluke & Vernardos (2015)">
+               {{ paper_file }} -
+            </a>
+          {% endfor %}
       </p>
       <p>
         Vernardos, G., Fluke, C.J., Bate, N.F., Croton, D.A., <b>Vohl, D.</b>, 2015, GERLUMPH Data Release 2: 2.5 billion simulated microlensing light curves, <i>Astrophysical Journal Supplement Series</i>, 217, 23.
