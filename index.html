@@ -352,6 +352,19 @@ layout: default
       <a href="https://rfi2019.sciencesconf.org" class="icon fa-external-link"></a></p>
 
       <p><b>Vohl, D.</b>, Quimper, C.-G., Dub&eacute;, D. 2012. Finding Synchronization Codes to Boost Compression by Substring Enumeration. In Proceedings of <i>the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012)</i>, held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12).
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,definition1,lemma1,table1,figure1,section4,table3,section5" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2012/vohl+/vohl+_2012_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Vohl, Quimper & Dubé (2012)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
         <a href="https://www.researchgate.net/publication/255708267_Finding_Synchronization_Codes_to_Boost_Compression_by_Substring_Enumeration" class="icon fa-external-link"></a></p>
 
       <H3>White papers</H3>
