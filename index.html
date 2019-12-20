@@ -335,7 +335,21 @@ layout: default
       <H3>Workshop proceedings</H3>
 
       <p>Sclocco, A., <b>Vohl, D.</b>, van Nieuwpoort, R. 2019. Real-Time RFI Mitigation for
-      the Apertif Radio Transient System. To appear in the proceedings of the <i>Radio Frequency Interference</i> workshop (Toulouse, France; 2019) <a href="https://rfi2019.sciencesconf.org" class="icon fa-external-link"></a></p>
+      the Apertif Radio Transient System. To appear in the proceedings of the <i>Radio Frequency Interference</i> workshop (Toulouse, France; 2019)
+      <br />
+      <span class="popup-gallery">
+        {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure7,figure8,figure9,figure10" | split: "," %}
+        {% assign first = 1 %}
+        {% for paper_file in paper_files %}
+          <a href="http://macrocosme.github.io/images/publications/2019/sclocco_vohl+/sclocco_vohl+_2019_{{ paper_file }}.png"
+             title="{{ paper_file }}"
+             authors="Sclocco, Vohl & van Nieuwpoort (2019)"
+             {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+          </a>
+          {% assign first = 0 %}
+        {% endfor %}
+      </span>
+      <a href="https://rfi2019.sciencesconf.org" class="icon fa-external-link"></a></p>
 
       <p><b>Vohl, D.</b>, Quimper, C.-G., Dub&eacute;, D. 2012. Finding Synchronization Codes to Boost Compression by Substring Enumeration. In Proceedings of <i>the Eleventh International Workshop on Constraint Modelling and Reformulation (ModRef 2012)</i>, held at the 18th International Conference on the Principles and Practice of Constraint Programming (CP 12).
         <a href="https://www.researchgate.net/publication/255708267_Finding_Synchronization_Codes_to_Boost_Compression_by_Substring_Enumeration" class="icon fa-external-link"></a></p>
