@@ -211,6 +211,16 @@ layout: default
 
       <p>
         Drijfhout, M., Kendal, D., <b>Vohl, D.</b>, Green, P., 2016. Sentiment Analysis: Ready for conservation, <i>Frontiers in Ecology and the Environment.</i> 14, 10. doi:10.1002/fee.1435.
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1" | split: "," %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2016/drijfhout+/drijfhout_2016_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Drijfhout, Kendall, Vohl & Green (2016)"
+               class="fa fa-picture-o" aria-hidden="true">
+            </a>
+          {% endfor %}
+        </span>
         <a href="http://onlinelibrary.wiley.com/doi/10.1002/fee.1435/abstract?campaign=woletoc" class="icon fa-external-link"></a>
       </p>
 
