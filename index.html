@@ -149,12 +149,14 @@ layout: default
         Enabling near real-time remote search for fast transient events with lossy data compression. <i>Publications of the Astronomical Society of Australia</i>, 34.
         <span class="popup-gallery">
           {% assign paper_files = "abstract,figure1,figure3,figure4,figure5,figure6,figure7,figure8,figure9" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2017/vohl_pritchard_cooke_andreoni/vohl_pritchard+_2017_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Vohl, Pritchard, Andreoni, Cooke & Meade (2017)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/enabling-near-realtime-remote-search-for-fast-transient-events-with-lossy-data-compression/B1A5287ADCEFC9C62165097F36DB1897" class="icon fa-external-link"></a>
@@ -165,12 +167,14 @@ layout: default
         Real-time colouring and filtering with graphics shaders. <i>Monthly Notices of the Royal Astronomical Society</i>. DOI:<a href="https://academic.oup.com/mnras/article-abstract/doi/10.1093/mnras/stx1676/3922864/Realtime-colouring-and-filtering-with-graphics">10.1093/mnras/stx1676</a>
         <span class="popup-gallery">
           {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure9,figure10,figure14,figure15,figure17,figureA1,figureA2" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2017/vohl_fluke_barnes_hassan/vohl_fluke+_2017_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Vohl, Fluke, Barnes & Hassan (2017)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="https://arxiv.org/abs/1707.00442" class="icon fa-external-link"></a>
@@ -182,12 +186,14 @@ layout: default
         34, e023.
         <span class="popup-gallery">
           {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure11" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2017/meade+/meade_2017_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Meade et al. (2017)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="https://arxiv.org/abs/1704.01281" class="icon fa-external-link"></a>
@@ -199,12 +205,14 @@ layout: default
         comparative visualisation of sets of multidimensional data. <i>PeerJ Computer Science</i> 2:e88 https://doi.org/10.7717/peerj-cs.88
         <span class="popup-gallery">
           {% assign paper_files = "abstract,table1,figure1,figure2,figure3,figure4,figure6,figure7,figure9,figure10,figure11" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2016/vohl_barnes_fluke+/vohl_barnes_fluke+2016_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Vohl, Barnes, Fluke et al. (2016)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="https://doi.org/10.7717/peerj-cs.88" class="icon fa-external-link"></a>
@@ -214,12 +222,14 @@ layout: default
         Drijfhout, M., Kendal, D., <b>Vohl, D.</b>, Green, P., 2016. Sentiment Analysis: Ready for conservation, <i>Frontiers in Ecology and the Environment.</i> 14, 10. doi:10.1002/fee.1435.
         <span class="popup-gallery">
           {% assign paper_files = "abstract,figure1" | split: "," %}
+          {% assign first = 1 %}
           {% for paper_file in paper_files %}
             <a href="http://macrocosme.github.io/images/publications/2016/drijfhout+/drijfhout_2016_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Drijfhout, Kendall, Vohl & Green (2016)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="http://onlinelibrary.wiley.com/doi/10.1002/fee.1435/abstract?campaign=woletoc" class="icon fa-external-link"></a>
@@ -233,8 +243,9 @@ layout: default
             <a href="http://macrocosme.github.io/images/publications/2015/vohl_fluke_vernardos/vohl+2015_{{ paper_file }}.png"
                title="{{ paper_file }}"
                authors="Vohl, Fluke & Vernardos (2015)"
-               class="fa fa-picture-o" aria-hidden="true">
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
             </a>
+            {% assign first = 0 %}
           {% endfor %}
         </span>
         <a href="http://adsabs.harvard.edu/abs/2015A%26C....12..200V" class="icon fa-external-link"></a>
