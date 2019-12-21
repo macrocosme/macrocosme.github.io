@@ -127,4 +127,14 @@ $(document).ready(function() {
 			removalDelay: 300,
 			mainClass: 'my-mfp-slide-bottom'
 		});
+
+		$('.simple-ajax-popup-align-top').magnificPopup({
+			type: 'ajax',
+			alignTop: true,
+			overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		});
+
+		$('.simple-ajax-popup').magnificPopup({
+			type: 'ajax'
+		});
 });
