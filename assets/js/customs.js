@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 		  patterns: {
 		    youtube: {
-		      index: item.el.attr('href'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+		      index: function(item) {return item.el.attr('href')}, // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
 		      id: null, // String that splits URL in a two parts, second part should be %id%
 		      // Or null - full URL will be returned
