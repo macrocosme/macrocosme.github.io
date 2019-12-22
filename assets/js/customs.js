@@ -85,7 +85,7 @@ $(document).ready(function() {
 		      // Or a function that should return %id%, for example:
 		      // id: function(url) { return 'parsed id'; }
 
-		      src: item.el.attr('html') // URL that will be set as a source for iframe.
+		      src: '%id' // URL that will be set as a source for iframe.
 		    }
 		  },
 
