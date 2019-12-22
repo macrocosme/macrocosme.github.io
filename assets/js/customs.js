@@ -78,14 +78,14 @@ $(document).ready(function() {
 
 		  patterns: {
 		    youtube: {
-		      index: item.el.attr('website'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+		      index: item.el.attr('html'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
 		      id: null, // String that splits URL in a two parts, second part should be %id%
 		      // Or null - full URL will be returned
 		      // Or a function that should return %id%, for example:
 		      // id: function(url) { return 'parsed id'; }
 
-		      src: item.el.attr('website') // URL that will be set as a source for iframe.
+		      src: item.el.attr('html') // URL that will be set as a source for iframe.
 		    }
 		  },
 
