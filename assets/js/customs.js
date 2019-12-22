@@ -80,7 +80,7 @@ $(document).ready(function() {
 		    youtube: {
 		      index: item.el.attr('website'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-		      id: 'v=', // String that splits URL in a two parts, second part should be %id%
+		      id: null, // String that splits URL in a two parts, second part should be %id%
 		      // Or null - full URL will be returned
 		      // Or a function that should return %id%, for example:
 		      // id: function(url) { return 'parsed id'; }
