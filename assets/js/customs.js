@@ -77,7 +77,7 @@ $(document).ready(function() {
 		          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
 		  patterns: {
-		    youtube: {
+		    webpage: {
 		      index: function(item) {return item.el.attr('href')}, // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
 		      id: null, // String that splits URL in a two parts, second part should be %id%
