@@ -73,12 +73,12 @@ $(document).ready(function() {
 		iframe: {
 		  markup: '<div class="mfp-iframe-scaler">'+
 		            '<div class="mfp-close"></div>'+
-		            '<iframe class="mfp-iframe" frameborder="0" src="'+ item.el.attr('website_url') +'" allowfullscreen></iframe>'+
+		            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
 		          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
 
 		  patterns: {
 		    youtube: {
-		      index: item.el.attr('html'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+		      index: item.el.attr('href'), // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
 		      id: null, // String that splits URL in a two parts, second part should be %id%
 		      // Or null - full URL will be returned
