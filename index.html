@@ -45,7 +45,7 @@ layout: default
 
       <p class="preamble">
         Thank you for landing on my personal research site. In case you wonder
-        who I am, here is a brief introduction to myself and my academic background. 
+        who I am, here is a brief introduction to myself and my academic background.
 
       <p class="preamble">
       <p>
@@ -153,7 +153,25 @@ layout: default
       <!--H3>Journals (refereed)</H3-->
       <H3>Journal articles</H3>
       <p>
-        <b>Vohl, D.</b>,  Pritchard, T., Andreoni, I., Cooke, J., Meade, B., 2017.
+        Andreoni, I., Cooke, J., Webb, S., Rest, A., Pritchard, T., Caleb, M., Chang, S.-W., Farah, W., Lien, A., Möller, A., Ravasio, M. E., Abbott, T. M. C., Bhandari, S., Cucchiara, A., Flynn, C., Jankowski, F., Keane, E. F., Moriya, T. J., Onken, C. A., Parthasarathy, A., Price, D. C., Petroff. E., Ryder, S., Vohl, D., and Wolf, C. 2020.
+        Probing the extragalactic fast transient sky at minute timescales with DECam. <i>Monthly Notices of the Royal Astronomical Society</i>, stz3381, https://doi.org/10.1093/mnras/stz3381.
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure7,figure8,figure9,figure10,figure11,figure12" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2020/andreoni+/andreoni+_2020_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Andreoni et al. (2020)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
+        <a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.tmp.3019A/abstract" class="icon fa-external-link"></a>
+      </p>
+      <p>
+        <b>Vohl, D.</b>,  Pritchard, T., Andreoni, I., Cooke, J., and Meade, B., 2017.
         Enabling near real-time remote search for fast transient events with lossy data compression. <i>Publications of the Astronomical Society of Australia</i>, 34.
         <br />
         <span class="popup-gallery">
