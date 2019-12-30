@@ -153,6 +153,23 @@ layout: default
       <!--H3>Journals (refereed)</H3-->
       <H3>Journal articles</H3>
       <p>
+        Oostrum, L. C.,  Maan, Y.,  van Leeuwen, J.,  Connor, L.,  Petroff, E.,  Attema, J. J.,  Bast, J. E.,  Gardenier, D. W., Hargreaves, J. E.,  Kooistra, E.,  Sclocco, A.,  Smits, R.,  Straal, S. M.,  ter Veen, S.,  Vohl, D.,  Adams, E. A. K., Adebahr, B.,  de Blok, W. J. G.,  van den Brink, R. H.,  van Cappellen, W. A.  Coolen, A. H. W. M.,  Damstra, S., van Diepen, G. N. J.,  Frank, B. S.,  Hess, K. M.,  van der Hulst, J. M.,  Hut, B.,  Ivashina, M. V.,  Loose, G. M., Lucero, D. M.,  Mika, Á.,  Morganti, R. H.,  Moss, V. A.,  Mulder, H.,  Norden, M. J.,  Oosterloo, T. A.,  Orrú, E., de Reijer, J. P. R.,  Ruiter, M.,  Vermaas, N. J.,  Wijnholds, S. J. and  Ziemke, J. 2020. Repeating fast radio bursts with WSRT/Apertif. Submitted to A&A. arXiv:1912.12217.
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,figure6,figure7,table1,table2" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2020/oostrum+/oostrum+_2020_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Oostrum et al. (Submitted to A&A. arXiv:1912.12217)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
+        <a href="https://ui.adsabs.harvard.edu/abs/2019arXiv191212217O/abstract" class="icon fa-external-link"></a>
+      </p>
+      <p>
         Andreoni, I., Cooke, J., Webb, S., Rest, A., Pritchard, T., Caleb, M., Chang, S.-W., Farah, W., Lien, A., Möller, A., Ravasio, M. E., Abbott, T. M. C., Bhandari, S., Cucchiara, A., Flynn, C., Jankowski, F., Keane, E. F., Moriya, T. J., Onken, C. A., Parthasarathy, A., Price, D. C., Petroff. E., Ryder, S., <b>Vohl, D.</b>, and Wolf, C. 2020.
         Probing the extragalactic fast transient sky at minute timescales with DECam. <i>Monthly Notices of the Royal Astronomical Society</i>, stz3381, https://doi.org/10.1093/mnras/stz3381.
         <br />
