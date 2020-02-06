@@ -151,6 +151,23 @@ layout: default
       <!--H3>Journals (refereed)</H3-->
       <H3>Journal articles</H3>
       <p>
+Connor, L., van Leeuwen, J., Oostrum, L. C., Petroff, E., Maan, Y., Adams, E. A. K., Attema, J. J., Bast, J. E., Boersma, O. M., Dénes, H., Gardenier, D. W., Hargreaves, J. E., Kooistra, E., Pastor-Marazuela, I., Schulz, R., Sclocco, A., Smits, R., Straal, S. M., van der Schuur, D., <b>Vohl, D.</b>, Adebahr, B., de Blok, W. J. G., van Cappellen, W. A., Coolen, A. H. W. M., Damstra, S., van Diepen, G. N. J., Frank, B. S., Hess, K. M., Hut, B., Marcel Loose, G., Lucero, D. M., Mika, Á., Moss, V. A., Mulder, H., Oosterloo, T. A., Ruiter, M., Vedantham, H., Vermaas, N. J., Wijnholds, S. J., Ziemke.  J. 2020. Repeating fast radio bursts with WSRT/Apertif. <i>Submitted to Monthly Notices of the Royal Astronomical Society.</i> arXiv:2002.01399.
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5,table1,figure6" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2020/connor+/connor+_2020_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Connor et al. (Submitted to MNRAS. arXiv:2002.01399)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
+        <a href="https://ui.adsabs.harvard.edu/abs/arXiv:2002.01399" class="icon fa-external-link"></a>
+      </p>
+      <p>
         Oostrum, L. C.,  Maan, Y.,  van Leeuwen, J.,  Connor, L.,  Petroff, E.,  Attema, J. J.,  Bast, J. E.,  Gardenier, D. W., Hargreaves, J. E.,  Kooistra, E.,  Sclocco, A.,  Smits, R.,  Straal, S. M.,  ter Veen, S.,  <b>Vohl, D.</b>,  Adams, E. A. K., Adebahr, B.,  de Blok, W. J. G.,  van den Brink, R. H.,  van Cappellen, W. A.  Coolen, A. H. W. M.,  Damstra, S., van Diepen, G. N. J.,  Frank, B. S.,  Hess, K. M.,  van der Hulst, J. M.,  Hut, B.,  Ivashina, M. V.,  Loose, G. M., Lucero, D. M.,  Mika, Á.,  Morganti, R. H.,  Moss, V. A.,  Mulder, H.,  Norden, M. J.,  Oosterloo, T. A.,  Orrú, E., de Reijer, J. P. R.,  Ruiter, M.,  Vermaas, N. J.,  Wijnholds, S. J. and  Ziemke, J. 2020. Repeating fast radio bursts with WSRT/Apertif. <i>Submitted to Astronomy & Astrophysics.</i> arXiv:1912.12217.
         <br />
         <span class="popup-gallery">
