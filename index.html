@@ -727,7 +727,19 @@ Connor, L., van Leeuwen, J., Oostrum, L. C., Petroff, E., Maan, Y., Adams, E. A.
         Saleheen S., and <b>Vohl, D.</b>, 2018. ADACS-SS18A-JBanfield. <a href="https://github.com/ADACS-Australia/SS18A-JBanfield/" class="icon fa-github"></a>
       </p>
       <p>
-        <b>Vohl, D.</b>, Saleheen S., and Lakerink, L., 2017. ADACS-GBKFIT. <a href="https://github.com/ADACS-Australia/ADACS-GBKFIT" class="icon fa-github"></a>&nbsp;<a href="https://adacs.org.au/2017/12/13/simplifying-access-to-high-performance-galaxy-modelling/" class="icon fa-external-link"></a>
+        <b>Vohl, D.</b>, Saleheen S., and Lakerink, L., 2017. ADACS-GBKFIT.
+        <span class="popup-gallery">
+          {% assign paper_files = "splash,workflow,results" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2017/vohl+/vohl+_2017_{{ paper_file }}.jpg"
+               title="{{ paper_file }}"
+               authors="Vohl, Saleheen, Lakerink (2017)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>&nbsp;<a href="https://github.com/ADACS-Australia/ADACS-GBKFIT" class="icon fa-github"></a>&nbsp;<a href="https://adacs.org.au/2017/12/13/simplifying-access-to-high-performance-galaxy-modelling/" class="icon fa-external-link"></a>
       </p>
       <p>
         <b>Vohl, D.</b>, 2017, “shwirl”, described in Vohl, Fluke, Barnes, and Hassan, described in <a href="https://academic.oup.com/mnras/article-abstract/doi/10.1093/mnras/stx1676/3922864/Realtime-colouring-and-filtering-with-graphics">Vohl et al., MNRAS, 2017.</a>
