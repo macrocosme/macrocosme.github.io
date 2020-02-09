@@ -484,8 +484,36 @@ Connor, L., van Leeuwen, J., Oostrum, L. C., Petroff, E., Maan, Y., Adams, E. A.
       <p>
         <b>Vohl, D.</b> Mes donn&eacute;es astronomiques &agrave; l’&egrave;re du p&eacute;taoctet. <i>D&eacute;couvrir magazine</i>, Oct. 2015.
         <br />
-        <!-- <a class="popup-webpage fa fa-book" aria-hidden="true" href="http://www.acfas.ca/publications/decouvrir/2015/10/donnees-astronomiques-l-ere-petaoctet"></a> -->
+        <span class="popup-gallery">
+          {% assign paper_files = "page1,page2,page3" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2015/vohl/vohl_2015_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Vohl (2015)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
         <a href="http://www.acfas.ca/publications/decouvrir/2015/10/donnees-astronomiques-l-ere-petaoctet" class="icon fa-external-link"></a>
+      </p>
+      <H3>Interview</H3>
+      <p>
+        Lemercier, P. 2017. <i>Que sont-ils devenus: Dany Vohl, Vers l'infini et plus loin encore!</i> La vie chez nous. Vol. 3 - No 6. <a href="https://issuu.com/laviecheznous/docs/hiver2017-laviecheznous-hr" class="icon fa-external-link"></a>
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "article" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="http://macrocosme.github.io/images/publications/2017/lemercier/lemercier_2017_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Interview by Lemercier (2017)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
       </p>
 
       <hr>
