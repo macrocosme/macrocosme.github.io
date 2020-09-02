@@ -5,7 +5,7 @@ title: Vohl et al. 2016 paper published!
 
 ![alt text](https://macrocosme.github.io/images/paper-large-scale.png "Paper as advertised on PeerJ CS.")
 
-In a [previous post](http://macrocosme.github.io/Paper-submitted/), I was discussing that I submitted a paper to PeerJ 
+In a [previous post](https://macrocosme.github.io/Paper-submitted/), I was discussing that I submitted a paper to PeerJ 
 Computer Science. Well, this very paper is now published! You can find all the details at 
 [https://peerj.com/articles/cs-88/?td=bl](https://peerj.com/articles/cs-88/?td=bl). 
 
