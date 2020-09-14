@@ -136,6 +136,25 @@ layout: default
 
       <!--H3>Journals (refereed)</H3-->
       <H3>Journal articles</H3>
+
+      <p>
+R. Morganti, T.A. Oosterloo, M. Brienza, N. Jurlin, I. Prandoni, E. Orru‘, S.S. Shabala, E.A.K. Adams, B. Adebahr, P.N. Best, A.H.W.M. Coolen, S. Damstra, W.J.G. de Blok, F. de Gasperin10, H. Dénes, M. Hardcastle, K.M. Hess, B.Hut, R. Kondapally, A.M. Kutkin, G.M. Loose, D.M. Lucero, Y. Maan, F.M. Maccagni, B. Mingo, V.A. Moss, R.I.J. Mostert, M.J. Norden, L.C. Oostrum, H.J.A. Röttgering, M. Ruiter, T.W. Shimwell, R. Schulz, N.J. Vermaas, <b>D. Vohl</b>, J.M. van der Hulst, G.M. van Diepen, J. van Leeuwen, J. Ziemke. 2020. The best of both: combining LOFAR and Apertif to derive resolved radio spectral index images. <i>Astronomy & Astrophysics.</i> Accepted.
+        <br />
+        <span class="popup-gallery">
+          {% assign paper_files = "abstract,figure1,figure2,figure3,figure4,figure5" | split: "," %}
+          {% assign first = 1 %}
+          {% for paper_file in paper_files %}
+            <a href="https://macrocosme.github.io/images/publications/2020/morganti+/morganti+_2020_{{ paper_file }}.png"
+               title="{{ paper_file }}"
+               authors="Morganti et al. (A&A)"
+               {% if first == 1 %} class="fa fa-picture-o" aria-hidden="true" {% endif %}>
+            </a>
+            {% assign first = 0 %}
+          {% endfor %}
+        </span>
+        <!-- <a href="https://arxiv.org/abs/2008.07945" class="icon fa-external-link"></a> -->
+      </p>
+      <p>
       <p>
 Oosterloo,  T.A., Vedantham,  H.K., Kutkin,  A.M., Adams,  E. A. K., Adebahr,  B., Coolen,  A.H.W.M., Damstra,  S., Blok,  W.J.G. de, Dénes,  H., Hess,  K.M., Hut,  B., Loose,  G.M., Lucero,  D.M., Maan,  Y., Morganti,  R., Moss,  V.A., Mulder,  H., Norden,  M.J., Offringa,  A.R., Oostrum,  L.C., Orrù,  E., Ruiter,  M., Schulz,  R., van den Brink,  R.H., van der Hulst,  J.M., van Leeuwen,  J., Vermaas,  N.J., <b>Vohl,  D.</b>, Ziemke, J., Wijnholds,  S.J. 2020. Extreme intra-hour variability of the radio source J1402+5347 discovered with Apertif. <i>Astronomy & Astrophysics.</i> DOI: <a href="https://doi.org/10.1051/0004-6361/202038378">10.1051/0004-6361/202038378</a>.
         <br />
