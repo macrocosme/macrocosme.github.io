@@ -1507,6 +1507,10 @@
 						margin-top: 0;
 					}
 
+					#me header > p.affiliation {
+						font-size: 1em;
+					}
+
 					#me a {
 						color: #777;
 					}
