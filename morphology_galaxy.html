@@ -1,0 +1,781 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Introduction to relational databases with SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-database"></span>
+					<h1>
+                        <script language="JavaScript">
+                            var myDate = new Date();   /* hour is before noon */
+                            if ( myDate.getHours() < 12 )  {
+                                document.write("Good Morning,");
+                            }
+                            else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+                                if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) {
+                                    document.write("Good Afternoon,"); }
+                                else  /* the hour is after 5pm, so it is between 6pm and midnight */
+                                    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) {
+                                        document.write("Good Evening,"); }
+                                    else  /* the hour is not between 0 and 24, so something is wrong */ {
+                                        document.write("G'day,"); }
+                            /* remove the following in your live script. It is for testing */
+                            //document.write("<br /><br /> The hour is: ") document.write( myDate.getHours() );
+                        </script>
+                        my name is <strong>Dany</strong>.<br />
+                        This is a short introductory  workshop about <br />
+                        <strong>Relational Databases</strong> and <strong>SQL</strong>,<br />
+					for <a href="http://thehackerwithin.github.io/swinburne/">Swinburne Hacker Within</a>.</h1>
+					<p><br /></p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Let's start</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Relational Database (DB)<br /></h2>
+							</header>
+							<p>
+                                A relational database is a digital representation of a relational model of data (how information is linked together). <br />
+                                A typical DB stores the organized data into <strong>tables</strong> (or relations). <br />
+                                In a table, the different <strong>columns</strong> correspond to the fields (or attribute) of our data
+                                and the <strong>rows</strong> correspond to the different records (or tuples).
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/640px-Relational_database_terms.svg.png" alt="" />
+                                Figure 1. A simple relational database (source: wikipedia).
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<!--ul class="major-icons">
+								<li><span class="icon style1 major fa-database"></span></li>
+								<li></li>
+								<li><span class="icon style2 major fa-table"></span></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul-->
+                            <span class="image fit">
+                                <img src="images/pict--morphological-classification-scheme-for-galaxies-tuning-fork-style-diagram-of-the-hubble-sequence.png" alt="" />
+                                Figure 2. Morphological classification scheme for galaxies (source: conceptdraw.com).
+                            </span>
+
+                            <span class="image fit">
+                                <img src="images/NGC2685.jpg" alt="" />
+                                Figure 3. The NGC 2685 galaxy : classified as S0 (source: apod.nasa.gov).
+                            </span>
+
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>A practical example<br />
+								</h2>
+							</header>
+							<p>
+                                Say we want to create a database in order to <strong>classify galaxies by morphology</strong> like in Figure 2.<br /><br />
+
+                                A <strong><a href="https://en.wikipedia.org/?title=Galaxy">galaxy</a></strong>
+                                is a system comprising <a href="https://en.wikipedia.org/wiki/Star">stars</a> (like our Sun),
+                                gas, dust and <a href="https://en.wikipedia.org/wiki/Dark_matter">dark matter</a>,
+                                tied together by gravity. For example, we live in a galaxy that we like to call
+                                <a href="https://en.wikipedia.org/?title=Milky_Way">the Milky Way</a>.
+                                They can have different <strong>shapes (or morphology)</strong>. Astronomers like to classify them by shape.
+                                Two of such examples are shown in Figures 3 and 4.
+                                <br /><br />
+                            </p>
+                            <span class="image fit">
+                                <img src="images/LMC.jpg" alt="" />
+                                Figure 4. The Large Magellanic Cloud : classified as an irregular galaxy (source: fromquarkstoquasars.com).
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="two" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+                        <div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Organising your data<br />
+								</h2>
+							</header>
+							<p>
+                                So, to organise your data, you could create a table like in Figure 5, listing all your galaxies and their
+                                respective morphology. You would then have a straight forward way to represent the information. <br /><br />
+
+                                The problem with this is that if you delete all entries (rows), you would not only
+                                delete the objects, but the morphologies as well. You would therefore have to start from scratch.<br /><br />
+
+                                Instead, we want to keep both of those <strong>entity type</strong> separate and create
+                                relations between them. <br /><br />
+
+                                Using the principles of relational databases, the Galaxy and Morphology data can be
+                                restructured into two separate tables (say MORPH and GAL), as shown in Figures 6 and 7.<br /><br />
+
+                                We now have created the relation between the tables, having the morphology
+                                data independent to the galaxy data, and associating each galaxy to a specific morphology.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/fig3.png" alt="" />
+                                Figure 5. A first attempt.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig4.png" alt="" />
+                                Figure 6. The MORPH table.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/fig5.png" alt="" />
+                                Figure 7. The GAL table.
+                            </span>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</section>
+		<!-- Three -->
+			<!--section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Adipiscing amet consequat</h2>
+					</header>
+					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section-->
+            <section id="three" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Relation<br /></h2>
+							</header>
+							<p>
+                                From Figures 6 and 7, we can represent the relationship between MORPH and GAL such as depicted in Figure 8.<br />
+
+                                Here, each table is shown in a structural form as it would be represented in a
+                                digital database. The first row is the entity (the table name), the first column comprises
+                                the different <strong>field names</strong>, and the second column the relative
+                                <strong>field types</strong> shown in italic.<br />
+
+                                When the tables are implemented in the database, the information in the two tables
+                                is linked by using special columns called <strong>foreign keys</strong>.
+                                In our exemple, morphNo is our foreign key, and we represent the link with
+                                the straight line between the two tables and the key name.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/fig6.png" alt="" />
+                                Figure 8. Relation between MORPH and GAL.
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<!--section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Ipsum feugiat consequat?</h2>
+					</header>
+					<p>Sed lacus nascetur ac ante amet sapien.</p>
+					<ul class="actions uniform">
+						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="#" class="button">Learn More</a></li>
+					</ul>
+				</div>
+			</section-->
+            <section id="four" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Normalising the database</h2>
+					</header>
+					<p>
+                        To avoid having inconsistencies in the database, where no undesired anomalies
+                        would occur during a modification, relational databases are normalised. As a rule of thumb, you can
+                        keep the following in mind when designing your first database (<a href="http://www.dummies.com/how-to/content/sql-for-dummies-cheat-sheet.html">taken from here</a>):<br/>
+                    </p>
+                    <p>
+                        <a href="#" class="button special">Table must be two-dimensional, with rows and columns.</a><br /><br />
+
+                        <a href="#" class="button special">Each row contains data related to one thing or one portion of a thing.</a><br /><br />
+
+                        <a href="#" class="button special">Each column contains data for a single attribute of the thing being described.</a><br /><br />
+
+                        <a href="#" class="button special">Each cell (intersection of row and column) of the table must be single-valued.</a><br /><br />
+
+                        <a href="#" class="button special">All entries in a column must be of the same kind.</a><br /><br />
+
+                        <a href="#" class="button special">Each column must have a unique name.</a><br /><br />
+
+                        <a href="#" class="button special">No two rows may be identical.</a><br /><br />
+
+                        <a href="#" class="button special">The order of the columns and of the rows does not matter.</a>
+                    </p>
+				</div>
+			</section>
+
+            <section id="five" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Querying the database with <strong>SQL</strong><br /></h2>
+							</header>
+							<p>
+                                Now that we have a structure for our database, it would be nice to be able to interact with it.
+                                For instance, it would be nice to add new instances of galaxies or morphologies.
+                                SQL is the language of (most) databases. <br />
+
+                                The SQL language consists of a only few <strong>key words</strong>. In this tutorial, we will
+                                only look at <strong>Query</strong> keywords shown on the right. <br />
+
+                                More information about these keywords and how to use them can be
+                                found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.<br />
+
+                                An practical example is provided in the next section.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+
+                                <a href="#" class="button special">SELECT</a> <a href="#" class="button special">AS</a> <a href="#" class="button special">*</a> <a href="#" class="button special">COUNT</a><br /><br />
+                                <a href="#" class="button special">FROM</a> <a href="#" class="button special">JOIN</a> <a href="#" class="button special">ON</a><br /><br />
+                                <a href="#" class="button special">WHERE</a> <a href="#" class="button special">GROUP BY</a> <a href="#" class="button special">HAVING</a><br /><br />
+                                <a href="#" class="button special">ORDER BY</a><br /><br />
+                                <a href="#" class="button special">SORT BY</a><br /><br />
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Querying the database with <strong>SQL</strong><br /></h2>
+							</header>
+                            <p>
+                                Here is a possible SQL query example applied to our previous example:<br />
+
+                                <code>
+                                    <strong>
+                                    SELECT MORPH.morphName AS Name,<br />
+                                       COUNT(*) AS Galaxies<br />
+                                    FROM  MORPH<br />
+                                    JOIN  GAL<br />
+                                    ON  MORPH.morphNo = GAL.morphNo<br />
+                                    GROUP BY MORPH.morphName;
+                                    </strong>
+                                </code>
+                            </p>
+                            <p>
+                               This query will return all morphological names from the table MORPH,
+                                and cound the number of individual galaxies that have this particular
+                                morphology as recorded in table GAL (Figure 9).
+                            </p>
+                            <p>
+                                The beauty of SQL (I think!), is that it is very close to natural language. For instance,
+                                our query states almost literally: "please database, show me (or select) the records in column morphName from table MORPH
+                                and count how ofter they occur in table GAL.
+                                The two tables are joint through the columns morphNo of each table. Please group the results
+                                by morphName, so that I don't have to read the same value twice."
+
+                                Since there was only two records in Figure 7, the count of each morphology is 1.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="images/fig7.png" alt="" />
+                                Figure 9. Query result.
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="seven" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+                            <span class="image fit">
+                                <img src="images/fig8.png" alt="" />
+                                Figure 10. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
+                            </span>
+                            <span class="image fit">
+                                <img src="images/sqlitebrowser.png" alt="" />
+                                Figure 11. <a href="http://sqlitebrowser.org">DB Browser for SQLite</a>.
+                            </span>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+						        <h2>Get crackin'</h2>
+                            </header>
+                            <p>
+                                There are many digital database software out there. Some are easy to use,
+                                some are slightly more complicated. Some are free, some are proprietary.
+                                But they all have more or less the same basis, which you now know!
+                            </p>
+
+                            <p>
+                                You can have a look at <a href="https://www.sqlite.org"><strong>SQLite</strong></a>
+                                (which you may already have on your machine) and
+                                <a href="https://www.mysql.com"><strong>MySQL</strong></a>, which are both free and popular examples.
+                            </p>
+
+                            <p>
+                                Most of them can be run from the terminal, but some also provide
+                                a <strong>Graphical User Interface (GUI)</strong>. Have a look at the links from Figures 10 and 11.
+                                A GUI can be extremely useful, especially when you start dealing with relational databases.
+                                To start, I think SQLite with DB Browser (GUI) is a good place to start.
+                            </p>
+
+                            <p>
+                                Here are some <strong>tutorials</strong> on <a href="http://www.mysqltutorial.org">MySQL</a> and
+                                <a href="https://www.sqlite.org/quickstart.html">SQLite</a>. And if you want to know
+                                more about SQL itself, I encourage you to look at
+                                <a href="http://www.w3schools.com/sql/">w3school SQL's tutorial</a> or at this
+                                <a href="http://www.w3schools.com/sql/sql_quickref.asp">quick reference page</a>.
+                            </p>
+                            <p>
+                                At this point in the workshop, I encourage you to give it a go for yourself.
+                                Try to start a database related to <strong>your own data</strong>.
+                                For instance, if you work in <strong>management</strong>,
+                                you could start a simple DB to list <strong>people by department</strong>
+                                (similarly to our galaxy by morphology).
+                            </p>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="height" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Last but not least</h2>
+					</header>
+					<p>
+                        Other topics you may want to read about (but not restricted to) are the different kind
+                        of <strong>keys</strong> (e.g. <a href="http://www.w3schools.com/sql/sql_primarykey.asp">primary key</a>),
+                        the different kind of <a href="http://www.w3schools.com/sql/sql_join.asp"><strong>joins</strong></a>
+                        (e.g. left join, right join, ...), how to add new records to one or multiple tables
+                        (<a href="http://www.w3schools.com/sql/sql_insert.asp"><strong>INSERT INTO</strong></a>), etc.<br /><br />
+
+                        Have a look at the left side bar of <a href="http://www.w3schools.com/sql/">w3school</a>
+                        It's a good source of information about SQL (and for all kind of web development).<br /><br />
+
+                        You can then either use your database by itself to organise and mine your information,
+                        or plug it with a software or a website (e.g. <a href="http://rubyonrails.org">Ruby on Rails</a>,
+                        some <a href="https://www.airpair.com/python/posts/django-flask-pyramid">Python web server</a>
+                        of your choice or <a href="http://php.net">PHP</a>).<br /><br />
+
+                        Happy development!
+                    </p>
+				</div>
+			</section>
+
+		<!-- Five -->
+		<!--
+			<section id="five" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions vertical">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="6u 12u$(medium)">
+								<ul class="actions vertical">
+									<li><a href="#" class="button special fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button special">Special</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button big">Big</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button special fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button special icon fa-download">Icon</a></li>
+							<li><a href="#" class="button icon fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button special disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="12u$">
+									<div class="select-wrapper">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="4u$ 12u$(small)">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="6u 12u$(small)">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="12u$">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row uniform 50%">
+								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+                    <li><a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon alt fa-google"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/macrocosme" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:dvohl@astro.swin.edu.au" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Dany Vohl, 2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

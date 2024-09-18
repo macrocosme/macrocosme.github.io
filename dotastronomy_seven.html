@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Introduction to relational databases with SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="db/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="db/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="db/assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="db/assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-database"></span>
+					<h1>
+                        <script language="JavaScript">
+                            var myDate = new Date();   /* hour is before noon */
+                            if ( myDate.getHours() < 12 )
+                            {
+                                document.write("Good Morning,");
+                            }
+                            else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+                                if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+                                {
+                                    document.write("Good Afternoon,");
+                                }
+                                else  /* the hour is after 5pm, so it is between 6pm and midnight */
+                                    if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+                                    {
+                                        document.write("Good Evening,");
+                                    }
+                                    else  /* the hour is not between 0 and 24, so something is wrong */
+                                    {
+                                        document.write("G'day,");
+                                    }
+                            /* remove the following in your live script. It is for testing */
+                            //document.write("<br /><br /> The hour is: ") document.write( myDate.getHours() );
+                        </script>
+                        my name is <strong>Dany Vohl</strong>.<br />
+                        This is a short tutorial on <br />
+                        <strong>Relational Databases</strong> and <strong>SQL</strong>,<br />
+					for <a href="http://dotastronomy.com/events/seven/">.Astronomy7</a>.</h1>
+					<p><br /></p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Let's start!</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Relational Database (DB)<br /></h2>
+							</header>
+							<p>
+                                A relational database is a digital representation of a relational model of data (how information is linked together). <br />
+                                A typical DB stores the organized data into <strong>tables</strong> (or relations). <br />
+                                In a table, the different <strong>columns</strong> correspond to the fields (or attribute) of our data
+                                and the <strong>rows</strong> correspond to the different records (or tuples).
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/640px-Relational_database_terms.svg.png" alt="" />
+                                Figure 1. A simple relational database (source: wikipedia).
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+                        <div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>DB Tool for this tutorial</h2>
+							</header>
+							<p>
+                                There are many digital database software out there. Some are easy to use,
+                                some are slightly more complicated. Some are free, some are proprietary.
+                                But they all have more or less the same basis, which we'll cover here (a portion of it anyway!)
+                            </p>
+
+                            <p>
+                                Most of them can be used directly from the terminal, but some also provide
+                                a <strong>Graphical User Interface (GUI)</strong>. A GUI can be extremely useful,
+                                especially when you start dealing with relational databases.
+
+                            </p>
+
+                            <p>
+                                For this tutorial, we will use <a href="https://www.sqlite.org"><strong>SQLite</strong></a>
+                                along with <a href="http://sqlitebrowser.org"><strong>DB Browser for SQLite</strong></a> (GUI, Figure 2).
+
+                                You may already have SQLite on your machine.
+                            </p>
+
+                            <p>
+                                Other popular options are <a href="https://www.mysql.com"><strong>MySQL</strong></a> (e.g. LSST), or
+                                <a href="http://www.postgresql.org"><strong>PostgreSQL</strong></a> (along with pgAdmin as GUI).
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/sqlitebrowser.png" alt="" />
+                                Figure 2. <a href="http://sqlitebrowser.org">DB Browser for SQLite</a>.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/fig8.png" alt="" />
+                                Figure 3. <a href="https://www.mysql.com/products/workbench/">MySQL Workbench GUI</a>.
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="two" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Organising your data<br /></h2>
+							</header>
+                            <p>
+                                Say we want to create a database to represent a catalogue of galaxies classified by morphologies.<br /><br />
+
+                                We would like to have a list of all galaxies from our survey and the morphology to which they belong.<br /><br />
+
+                                <b>An easy way to represent the information would be to put everything together in one table.</b> <br /><br />
+
+                                <strong>The problem</strong> with this is that if you delete all entries (rows), you would not only
+                                delete your list of galaxies, but all morphologies as well.
+                                You would therefore have to start from scratch.<br /><br />
+
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/pict--morphological-classification-scheme-for-galaxies-tuning-fork-style-diagram-of-the-hubble-sequence.png" alt="" />
+                                Figure 4. (Outdated) Hubble Classification of Galaxy Morphology.
+                            </span>
+						</div>
+                    </div>
+				</div>
+			</section>
+            <section id="three" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Split and create relations<br /></h2>
+							</header>
+                            <p>
+                                To keep our data organized, it's good practice to categorize our information into logical groups. <br /><br />
+
+                                We want to keep <strong>independent entities</strong> separate
+                                and create relations between them. This process is called normalisation.<br /><br />
+
+                                Simply by the GUI (e.g. using buttons, dropdown menues and input/tick boxes), the Galaxy and Morphology data can be
+                                structured into two separate tables (say MORPHOLOGY and GALAXY), as shown in <strong>Figures 5 to 7</strong>.<br /><br />
+
+                                We now have created the relation between the tables, having the morphology
+                                data independent to the galaxy data, and associating each galaxy to a specific morphology.<br /><br />
+
+                                From Figures 5 and 6, we can see the relationship between MORPHOLOGY and GALAXY
+                                is built on the attribute morphologyNo. This was made possible by setting up the
+                                "Foreign Key" during the creation of the table GALAXY with <code>MORPHOLOGY(morphologyNo)</code>.<br /><br />
+
+                                Therefore, when we will want to insert a new galaxy along with its morphology,
+                                we will get an error if we do not provide a valid morphologyNo.
+                                In other word, the insertion won't happen if we want to assign a morphology that doesn't exist.
+                            </p>
+                            <header class="major">
+								<h3>Extra<br /></h3>
+							</header>
+                            <p>
+                                Extra information about <strong><a href="http://www.w3schools.com/sql/sql_primarykey.asp">PRIMARY KEY</a></strong>.
+                            </p>
+                            <header class="major">
+                                <h3>Note<br /></h3>
+                            </header>
+                            <p>
+                                By default, DB Browser displayed the menus in French on my machine. Don't you worry, it should be in your langage on your machine!
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit">
+                                <img src="db/images/dotAstro/morphology.png" alt="" />
+                                Figure 5. Creating the MORPHOLOGY table.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/dotAstro/galaxy_long.png" alt="" />
+                                Figure 6. Creating the GALAXY table.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/dotAstro/morphology_1-10.png" alt="" />
+                                Figure 7. Manually adding data to the MORPHOLOGY table.
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="five" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Interacting with the database using <strong>SQL</strong><br /></h2>
+							</header>
+							<p>
+                                Now that we have a structure for our database,
+                                it would be nice to be able to interact with it.
+                                For instance, it would be nice to add new records of galaxies or new morphologies.
+                                To do this, we use a language called SQL. <br /><br />
+
+                                The GUI we use here helps lets us create tables and insert fields without having to
+                                type any line of SQL (like in Figure 7). However, once you know SQL, it's quite practical and easy to use.
+                                For instance, you won't need to remember what is the morphologyNo to insert a new galaxy
+                                (which can be very impractical if you have a lot of items in a table).<br /><br />
+
+                                The SQL language consists of a only few <strong>key words</strong>. Some keywords were
+                                already shown in the table creation figures (e.g. <code>CREATE TABLE</code>).
+                                Some important keywords are shown on the right.<br /><br />
+
+                                More information about the multiple keywords and how to use them can be
+                                found <a href="https://en.wikipedia.org/?title=SQL#Queries">here</a>.
+                                Also, ways to combine and use them is well explained on the
+                                <a href="http://software-carpentry.org/v5/novice/ref/04-sql.html">Software Carpentry webpage</a>.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+                                <a class="button special">INSERT INTO</a> <a class="button special">VALUES</a><br /><br />
+                                <a class="button special">SELECT</a> <a class="button special">FROM</a> <br /><br />
+                                <a class="button special">JOIN</a> <a class="button special">ON</a><br /><br />
+                                <a class="button special">WHERE</a> <a class="button special">GROUP BY</a> <a class="button special">HAVING</a><br /><br />
+                                <a class="button special">ORDER BY</a><br /><br />
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Let's try <strong>SQL</strong><br /></h2>
+							</header>
+                            <p>
+                                Say we want to insert a new record in the MORPHOLOGY table for irregular galaxies. We can do it as follow in the
+                                "Execute SQL" section of DB Browser:<br /><br />
+
+                                <code>
+                                    <strong>
+                                        INSERT INTO MORPHOLOGY(morphologyNo, morphologyName)<br />
+                                        VALUES(NULL, 'Irregular');
+                                    </strong>
+                                </code><br /><br />
+
+                                Since morphologyNo is an auto_increment variable, typing NULL during the INSERT INTO query lets the database assign the next available value.
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/dotAstro/insert_into_morphology.png" alt="" />
+                                Figure 8. Query result.
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section id="six" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>A bit more<br /></h2>
+							</header>
+                            <p>
+                                Lets now insert a new galaxy in the GALAXY table:<br /><br />
+
+                                <code>
+                                    <strong>
+                                        INSERT INTO GALAXY(galaxyNo, galaxyName, morphologyNo)<br />
+                                        VALUES(NULL, 'Large Magellanic Cloud', (SELECT morphologyNo FROM MORPHOLOGY WHERE morphologyName LIKE 'irregular'));
+                                    </strong>
+                                </code><br /><br />
+
+                                Now, let's find all galaxies, and also display their morphology name:<br /><br />
+
+                                <code>
+                                    <strong>
+                                    SELECT GALAXY.galaxyName, MORPHOLOGY.morphologyName<br />
+                                    FROM  GALAXY<br />
+                                    JOIN MORPHOLOGY<br />
+                                    ON GALAXY.morphologyNo = MORPHOLOGY.morphologyNo;
+                                    </strong>
+                                </code><br /><br />
+
+                                This will return you all galaxies (well, only the one we added so far) and its morphology name (no numbers).
+                                The <strong>JOIN</strong>*** links the two tables <strong>ON</strong>
+                                columns name morphologyNo.
+                            </p>
+                            <p>*** By default, JOIN means INNER JOIN in
+                                SQLite.</p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/dotAstro/insert_into_like.png" alt="" />
+                                Figure 9. Query result #2.
+                            </span>
+                            <span class="image fit">
+                                <img src="db/images/LMC.jpg" alt="" />
+                                Figure 10. The Large Magellanic Cloud (source: fromquarkstoquasars.com).
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+             <section id="seven" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+						        <h2>Extra</h2>
+                            </header>
+                            <p>
+                                If you want to know more about SQL itself, I encourage you to look at
+                                <a href="http://www.w3schools.com/sql/">w3school SQL's tutorial</a> or at this
+                                <a href="http://www.w3schools.com/sql/sql_quickref.asp">quick reference page</a>.
+
+                                There are many DB tutorials online. Just google something like "SQLite tutorial"
+                                and you'll find something quickly
+                                (for instance, <a href="http://swcarpentry.github.io/sql-novice-survey/">Software Carpentry</a>)!
+                                <br /><br />
+
+
+                                For example, here is a <strong>tutorial</strong> about
+                                <a href="http://www.mysqltutorial.org">MySQL</a>.
+
+                                And here is one about <a href="http://www.w3resource.com/PostgreSQL/tutorial.php">PostgreSQL</a>
+                            </p>
+                            <p>
+                                Other topics you may want to read about (but not restricted to) are
+                                the different kinds of <a href="http://www.w3schools.com/sql/sql_join.asp"><strong>joins</strong></a>
+                                (e.g. left join, right join, ...),
+                                <a href="http://www.w3schools.com/sql/sql_autoincrement.asp">auto_increment</a> a field
+                                to avoid typing them yourself, modify a table (ALTER TABLE),
+                                <a href="http://www.sqlite.org/cvstrac/wiki?p=ImportingFiles">importing data</a>,
+                                and some more advanced concepts such as
+                                <a href="https://en.wikipedia.org/wiki/Inverted_index">inverted index</a>, etc.<br /><br />
+
+                                Have a look at the left side bar of <a href="http://www.w3schools.com/sql/">w3school</a>
+                                It's a good source of information about SQL (and for all kind of web development).<br /><br />
+                            </p>
+                            <p>
+
+                            </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit">
+                                <img src="db/images/sqljoins_cheatsheet.png" alt="" />
+                                Figure 11. Venn diagrams of the different types of JOIN (source: dsin.files.wordpress.com).
+                            </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+        <section id="six" class="main style1">
+            <div class="container">
+                <div class="row 150%">
+                    <div class="6u 12u$(medium)">
+                        <header class="major">
+                            <h2>Last but not least: SDSS SkyServer!</h2>
+                        </header>
+
+                        <p>
+                            Now that you have an idea of how works a database and how to query it,
+                            <a href="http://skyserver.sdss.org/dr12/en/tools/search/sql.aspx">have a look at SDSS SkyServer's SQL Search.</a>
+
+                            You can now query the database quickly without using Imaging Query form or Spectral Query form.<br /><br />
+
+                            Also, for <b>tutorial and examples</b> on how to use SkyServer's SQL Search,
+                            look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/realquery.aspx">this page</a>.<br /><br />
+
+                            For more information about how the database is structured, look at <a href="http://skyserver.sdss.org/dr12/en/help/docs/intro.aspx">this page</a>.<br /><br />
+
+                            Have fun with your colleagues/new .astro friends!
+                        </p>
+
+                        <header class="major">
+                            <h3>Example<br /></h3>
+                        </header>
+                        <p>
+                            To get quasars with redshifts less than 3.5, ordered by right ascension, that are in both the FIRST Bright Quasar Survey (FBQS) and SDSS.<br />
+                            <code>
+                                SELECT sp.ra, sp.dec, sp.z, sp.zErr, sp.zWarning, f.ra as FIRST_ra, f.dec as FIRST_dec<br />
+                                FROM SpecPhotoAll AS sp<br />
+                                INNER JOIN FIRST AS f ON sp.objid = f.objid WHERE class = 'QSO'<br />
+                                AND sp.z < 3.5<br />
+                                ORDER BY sp.ra
+                            </code>
+
+                            A snapshot of the outcome is shown in Figure 13.
+                        </p>
+                    </div>
+                    <div class="6u$ 12u$(medium) important(medium)">
+                        <span class="image fit">
+                            <img src="db/images/dotAstro/datamodelbest.jpg" alt="" />
+                            Figure 12. SDSS DR12 Database schema (source: http://skyserver.sdss.org/dr12).
+                        </span>
+
+                        <span class="image fit">
+                            <img src="db/images/dotAstro/SDSS_query.png" alt="" />
+                            Figure 13. Query result.
+                        </span>
+                    </div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+                    <li><a href="https://scholar.google.com.au/citations?user=VgE2lqMAAAAJ&hl=en" class="icon alt fa-google"><span class="label">Email</span></a></li>
+					<li><a href="https://github.com/macrocosme" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:dvohl@astro.swin.edu.au" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Dany Vohl, 2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="db/assets/js/jquery.min.js"></script>
+			<script src="db/assets/js/jquery.scrolly.min.js"></script>
+			<script src="db/assets/js/skel.min.js"></script>
+			<script src="db/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="db/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="db/assets/js/main.js"></script>
+
+	</body>
+</html>

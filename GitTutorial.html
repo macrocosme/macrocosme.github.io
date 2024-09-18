@@ -1,0 +1,67 @@
+---
+layout: tutorial
+permalink: /GitTutorial/
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Header -->
+<header id="header" class="alt">
+	<span class="logo"><img src="https://macrocosme.github.io/git_tutorial/images/git.png" alt="" /></span>
+	<h1>Introduction to version control with git</h1>
+</header>
+
+<!-- Nav -->
+<nav id="nav">
+	<ul>
+		<li><a href="#intro" class="active">Introduction</a></li>
+		<li><a href="#basics">Basics</a></li>
+		<li><a href="#view">Changes</a></li>
+		<li><a href="#branch">Branching</a></li>
+		<li><a href="#merge">Merging</a></li>
+		<li><a href="#collaboration">Collaboration</a></li>
+		<li><a href="#more">More</a></li>
+		<li><a href="#cheatsheet">Overview</a></li>
+	</ul>
+</nav>
+
+<!-- Main -->
+<div id="main">
+
+		<script>
+			ids = ['intro', 'basics', 'view', 'branch', 'merge', 'collaboration', 'more', 'cheatsheet'];
+			counter = 0;
+		</script>
+		{% for post in site.git_tutorial %}
+			<script>document.write('<section id="'+ids[counter]+'" class="main">'); counter+=1;</script>
+				<header class="major">
+					<h2>{{ post.title }}</h2>
+				</header>
+				{{ post.content }}
+			</section>
+		{% endfor %}
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<p class="copyright"> This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License.</a>
+		Scaffold: <a href="http://html5up.net">HTML5 UP</a>
+	</p>
+</footer>
+
+</div>
+
+
+<!-- This version of the tutorial was produced and designed by Dany Vohl. -->
+
+<!--script>
+	var x = document.getElementById("main").querySelectorAll("p");
+	for (i=0; i<x.length; i++){
+		x[i].className += "content";
+	}
+
+	var x = document.getElementById(".intro").querySelectorAll("p");
+	for (i=0; i<x.length; i++){
+		x[i].className = "";
+	}
+</script-->
