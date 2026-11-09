@@ -8,7 +8,7 @@ Audit date: 2026-11-09. This covers the first two goals for macrocosme.github.io
 
 The site carries about 208 MB of tracked files, and about 169 MB of that is images that no page links to. The homepage itself is reasonably light, so the main thinning job is clearing out the repository rather than speeding up the page.
 
-I found no leaked credentials and no location data in images. The real safety problems are smaller and easy to fix: a dead Google Analytics tag that still loads for every visitor, a contact form that appears to be broken and exposes a personal address, and old libraries in the tutorial pages.
+I found no leaked credentials and no location data in images. The real safety problems are smaller and easy to fix: a dead Google Analytics tag that still loads for every visitor, a contact form that exposes a personal address in the page source, and old libraries in the tutorial pages.
 
 I recommend cleaning up first, on the current Jekyll setup, and then rebuilding the site as a small Hugo site. Hugo suits the safety goal better than Astro because it is one program with no package tree to keep patched.
 
@@ -16,7 +16,7 @@ I recommend cleaning up first, on the current Jekyll setup, and then rebuilding 
 
 | Priority | Problem | Evidence | Fix |
 |---|---|---|---|
-| High | The contact form probably does not work. It posts to `formspree.io/danyvohl@gmail.com`, an address-in-the-URL format. It also publishes the personal address in the page source. | A plain GET of that URL returns 404. I did not submit the form, because that would send a real message, so please send one test message to confirm. It appears in `index.html` and `nac2024.html`. | Replace the form with a plain email link, preferably an institutional address. |
+| Low | The contact form publishes the personal address in the page source, because it posts to `formspree.io/danyvohl@gmail.com`. | The form works, as confirmed by a real test message. It appears in `index.html` and `nac2024.html`. | Optional: use a Formspree form ID, which hides the address. |
 | High | Google Analytics still loads on every page but collects nothing useful. The site uses the old `UA-74679561-1` property, and Google stopped processing that product in July 2023. | The live homepage still contains the tag, and `analytics.js` still returns 200. See `_config.yml` and `_includes/analytics.html`. | Remove it. Visitor data currently goes to Google, with no consent notice and no benefit to you. |
 | Medium | Template text is live at `/about/`: "Some information about you!" and `email@domain.com`. | The page returns 200 and contains that text. | Remove the page. |
 | Medium | About 150 MB of figures copied from journal papers are publicly downloadable even though nothing links to them. | 306 of the 314 files in `images/publications/` are unlinked. One sampled unlinked figure returned 200 from the live site. | Remove them from the site. Whether each may be republished depends on the paper's licence, so linking to the paper is simpler. |
@@ -123,7 +123,7 @@ Moving to Hugo means switching Pages from "deploy from a branch" to "GitHub Acti
 
 ## Suggested order
 
-- [ ] Remove Google Analytics, replace the contact form, and remove `/about/`.
+- [ ] Remove Google Analytics and remove `/about/`.
 - [ ] Remove unlinked images and leftovers, and move the tutorials out, with redirects.
 - [ ] Turn on secret scanning and push protection, and limit Actions.
 - [ ] Rebuild as a single Hugo page with WebP images, no jQuery, and a `<meta>` content policy.
@@ -143,7 +143,7 @@ These are outside the first two goals:
 ## Decisions
 
 - Removed files go to a local archive outside the repository, and stay in Git history.
-- The contact form is left as it is for now.
+- The contact form stays. A test message confirmed that it works.
 - The tutorials stay on this site for now.
 - `utm/` was archived locally and taken off the site.
 - Git history will not be rewritten for now.
